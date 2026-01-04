@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+
+{% block title %}{{ sighting.common_name }} - {{ config.site_title }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <article class="sighting-detail">
+        <header class="sighting-header">
+            <h1>{{ sighting.common_name }}</h1>
+            {% if sighting.scientific_name %}
+            <p class="scientific-name"><em>{{ sighting.scientific_name }}</em></p>
+            {% endif %}
+        </header>
+
+        {% if sighting.images %}
+        <div class="sighting-images">
+            {% for image in sighting.images %}
+            <figure class="sighting-figure">
+                <img src="{{ base_url }}/images/web/{{ image.filename }}"
+                     alt="{{ sighting.common_name }}{% if image.caption %} - {{ image.caption }}{% endif %}"
+                     class="lightbox-trigger"
+                     data-full="{{ base_url }}/images/full/{{ image.filename }}">
+                {% if image.caption %}
+                <figcaption>{{ image.caption }}</figcaption>
+                {% endif %}
+            </figure>
+            {% endfor %}
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <button class="lightbox-close">&times;</button>
+            <img class="lightbox-image" src="" alt="">
+        </div>
+        {% endif %}
+
+        <div class="sighting-meta">
+            <div class="meta-group">
+                <h3>Details</h3>
+                <dl>
+                    <dt>ID</dt>
+                    <dd>{{ sighting.id }}</dd>
+
+                    <dt>Category</dt>
+                    <dd>{{ sighting.category | title }}</dd>
+
+                    <dt>Season</dt>
+                    <dd>{{ sighting.season | title }}</dd>
+
+                    <dt>Observed</dt>
+                    <dd>{{ sighting.captured_at | date }}</dd>
+
+                    {% if sighting.time_of_day %}
+                    <dt>Time of Day</dt>
+                    <dd>{{ sighting.time_of_day | title }}</dd>
+                    {% endif %}
+                </dl>
+            </div>
+
+            {% if sighting.tags %}
+            <div class="meta-group">
+                <h3>Tags</h3>
+                <div class="tags-list">
+                    {% for tag in sighting.tags %}
+                    <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if sighting.weather %}
+            <div class="meta-group">
+                <h3>Weather</h3>
+                <dl>
+                    {% if sighting.weather.temp_max_c %}
+                    <dt>Temperature</dt>
+                    <dd>{{ sighting.weather.temp_min_c }}°C - {{ sighting.weather.temp_max_c }}°C</dd>
+                    {% endif %}
+
+                    <dt>Conditions</dt>
+                    <dd>{{ sighting.weather.conditions }}</dd>
+
+                    {% if sighting.weather.humidity_percent %}
+                    <dt>Humidity</dt>
+                    <dd>{{ sighting.weather.humidity_percent | int }}%</dd>
+                    {% endif %}
+
+                    {% if sighting.weather.precipitation_mm %}
+                    <dt>Precipitation</dt>
+                    <dd>{{ sighting.weather.precipitation_mm }} mm</dd>
+                    {% endif %}
+
+                    {% if sighting.weather.wind_speed_kmh %}
+                    <dt>Wind</dt>
+                    <dd>{{ sighting.weather.wind_speed_kmh | int }} km/h ({{ sighting.weather.wind_direction_deg }}°)</dd>
+                    {% endif %}
+
+                    {% if sighting.weather.pressure_hpa %}
+                    <dt>Pressure</dt>
+                    <dd>{{ sighting.weather.pressure_hpa | int }} hPa</dd>
+                    {% endif %}
+
+                    {% if sighting.weather.soil_temp_c %}
+                    <dt>Soil Temp</dt>
+                    <dd>{{ sighting.weather.soil_temp_c }}°C</dd>
+                    {% endif %}
+
+                    {% if sighting.weather.uv_index %}
+                    <dt>UV Index</dt>
+                    <dd>{{ sighting.weather.uv_index }}</dd>
+                    {% endif %}
+                </dl>
+            </div>
+            {% endif %}
+
+            {% if sighting.celestial %}
+            <div class="meta-group">
+                <h3>Celestial</h3>
+                <dl>
+                    <dt>Moon Phase</dt>
+                    <dd>{{ sighting.celestial.moon_phase }} ({{ (sighting.celestial.moon_illumination * 100) | int }}%)</dd>
+
+                    <dt>Sunrise</dt>
+                    <dd>{{ sighting.celestial.sunrise }}</dd>
+
+                    <dt>Sunset</dt>
+                    <dd>{{ sighting.celestial.sunset }}</dd>
+                </dl>
+            </div>
+            {% endif %}
+        </div>
+
+        {% if sighting.notes %}
+        <div class="sighting-notes">
+            <h3>Notes</h3>
+            <p>{{ sighting.notes }}</p>
+        </div>
+        {% endif %}
+
+        <nav class="sighting-nav">
+            <div class="nav-prev">
+                {% if next_sighting %}
+                <a href="{{ base_url }}/sightings/{{ next_sighting.id }}.html" id="nav-prev">&larr; {{ next_sighting.common_name }}</a>
+                {% endif %}
+            </div>
+            <div class="nav-center">
+                <a href="{{ base_url }}/browse.html">Browse All</a>
+            </div>
+            <div class="nav-next">
+                {% if prev_sighting %}
+                <a href="{{ base_url }}/sightings/{{ prev_sighting.id }}.html" id="nav-next">{{ prev_sighting.common_name }} &rarr;</a>
+                {% endif %}
+            </div>
+        </nav>
+    </article>
+</div>
+
+<script>
+(function() {
+    const lightbox = document.getElementById('lightbox');
+    if (!lightbox) return;
+
+    const lightboxImg = lightbox.querySelector('.lightbox-image');
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+    const triggers = document.querySelectorAll('.lightbox-trigger');
+
+    triggers.forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.dataset.full;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    closeBtn.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+    });
+})();
+
+// Keyboard navigation for prev/next sighting
+document.addEventListener('keydown', (e) => {
+    if (document.getElementById('lightbox')?.classList.contains('active')) return;
+    if (e.key === 'ArrowLeft') {
+        const prev = document.getElementById('nav-prev');
+        if (prev) prev.click();
+    } else if (e.key === 'ArrowRight') {
+        const next = document.getElementById('nav-next');
+        if (next) next.click();
+    }
+});
+</script>
+{% endblock %}

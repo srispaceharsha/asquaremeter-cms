@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}{{ config.site_title }} - Home{% endblock %}
+
+{% block content %}
+<section class="hero" style="background-image: url('{{ base_url }}/images/hero.jpeg');">
+    <div class="container">
+        <h1>{{ config.site_title }}</h1>
+        <p class="hero-blurb">{{ config.site_description }}</p>
+    </div>
+</section>
+
+<section class="nav-cards">
+    <div class="container">
+        <div class="cards-grid">
+            
+            
+            <a href="{{ base_url }}/browse.html" class="nav-card">
+                <div class="card-content">
+                    <h3>Browse</h3>
+                    <p>Explore all {{ sightings | length }} sightings</p>
+                </div>
+            </a>
+            <a href="{{ base_url }}/posts/" class="nav-card">
+                <div class="card-content">
+                    <h3>Posts</h3>
+                    <p>Weekly narratives and observations</p>
+                </div>
+            </a>
+            <a href="{{ base_url }}/about.html" class="nav-card">
+                <div class="card-content">
+                    <h3>About</h3>
+                    <p>Know about this project here</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+{% if latest_sightings %}
+<section class="latest">
+    <div class="container">
+        <h2>Latest Sightings</h2>
+        <div class="latest-strip">
+            {% for sighting in latest_sightings %}
+            <a href="{{ base_url }}/sightings/{{ sighting.id }}.html" class="latest-item">
+                {% if sighting.images %}
+                <img src="{{ base_url }}/images/thumb/{{ sighting.images[0].filename }}" alt="{{ sighting.common_name }}">
+                {% endif %}
+                <span class="latest-name">{{ sighting.common_name }}</span>
+                <span class="latest-date">{{ sighting.captured_at | short_date }}</span>
+            </a>
+            {% endfor %}
+            {% if sightings | length > 4 %}
+            <a href="{{ base_url }}/browse.html" class="latest-item more">
+                <span>View all</span>
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if posts %}
+<section class="recent-posts">
+    <div class="container">
+        <h2>Recent Posts</h2>
+        <ul class="posts-list">
+            {% for post in posts[:3] %}
+            <li>
+                <a href="{{ base_url }}/posts/{{ post.slug }}.html">
+                    <span class="post-title">{{ post.title }}</span>
+                    <span class="post-date">{{ post.date | date }}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% if posts | length > 3 %}
+        <p><a href="{{ base_url }}/posts/">View all posts</a></p>
+        {% endif %}
+    </div>
+</section>
+{% endif %}
+{% endblock %}

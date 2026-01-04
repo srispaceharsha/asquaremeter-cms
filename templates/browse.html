@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}Browse Sightings - {{ config.site_title }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Browse Sightings</h1>
+
+    <div class="filters">
+        <select id="filter-category">
+            <option value="">All Categories</option>
+            {% for cat in config.categories %}
+            <option value="{{ cat }}">{{ cat | title }}</option>
+            {% endfor %}
+        </select>
+
+        <select id="filter-season">
+            <option value="">All Seasons</option>
+            {% for season in config.season_definitions.keys() %}
+            <option value="{{ season }}">{{ season | title }}</option>
+            {% endfor %}
+        </select>
+
+        <select id="filter-time">
+            <option value="">All Times</option>
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+            <option value="night">Night</option>
+        </select>
+
+        <select id="filter-tag">
+            <option value="">All Tags</option>
+            {% set all_tags = [] %}
+            {% for sighting in sightings %}
+                {% for tag in sighting.tags|default([]) %}
+                    {% if tag not in all_tags %}
+                        {% set _ = all_tags.append(tag) %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+            {% for tag in all_tags|sort %}
+            <option value="{{ tag }}">{{ tag }}</option>
+            {% endfor %}
+        </select>
+
+        <span class="filter-count"><span id="visible-count">{{ sightings | length }}</span> sightings</span>
+    </div>
+
+    {% if sightings %}
+    <div class="sightings-grid" id="sightings-grid">
+        {% for sighting in sightings %}
+        <a href="{{ base_url }}/sightings/{{ sighting.id }}.html"
+           class="sighting-card"
+           data-category="{{ sighting.category }}"
+           data-season="{{ sighting.season }}"
+           data-time="{{ sighting.time_of_day|default('') }}"
+           data-tags="{{ sighting.tags|default([])|join(',') }}">
+            {% if sighting.images %}
+            <img src="{{ base_url }}/images/thumb/{{ sighting.images[0].filename }}"
+                 alt="{{ sighting.common_name }}"
+                 loading="lazy">
+            {% else %}
+            <div class="no-image">No image</div>
+            {% endif %}
+            <div class="sighting-info">
+                <span class="common-name">{{ sighting.common_name }}</span>
+                <span class="meta">
+                    <span class="category">{{ sighting.category }}</span>
+                    <span class="date">{{ sighting.captured_at | short_date }}</span>
+                </span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p class="no-data">No sightings yet. Check back soon!</p>
+    {% endif %}
+</div>
+
+<script>
+(function() {
+    const categoryFilter = document.getElementById('filter-category');
+    const seasonFilter = document.getElementById('filter-season');
+    const timeFilter = document.getElementById('filter-time');
+    const tagFilter = document.getElementById('filter-tag');
+    const visibleCount = document.getElementById('visible-count');
+    const cards = document.querySelectorAll('.sighting-card');
+
+    function filterSightings() {
+        const category = categoryFilter.value;
+        const season = seasonFilter.value;
+        const time = timeFilter.value;
+        const tag = tagFilter.value;
+        let count = 0;
+
+        cards.forEach(card => {
+            const matchCategory = !category || card.dataset.category === category;
+            const matchSeason = !season || card.dataset.season === season;
+            const matchTime = !time || card.dataset.time === time;
+            const cardTags = card.dataset.tags ? card.dataset.tags.split(',') : [];
+            const matchTag = !tag || cardTags.includes(tag);
+            const visible = matchCategory && matchSeason && matchTime && matchTag;
+            card.style.display = visible ? '' : 'none';
+            if (visible) count++;
+        });
+
+        visibleCount.textContent = count;
+    }
+
+    categoryFilter.addEventListener('change', filterSightings);
+    seasonFilter.addEventListener('change', filterSightings);
+    timeFilter.addEventListener('change', filterSightings);
+    tagFilter.addEventListener('change', filterSightings);
+})();
+</script>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Posts - {{ config.site_title }}{% endblock %}
+
+{% block content %}
+<div class="container page-content">
+    <h1>Posts</h1>
+
+    {% if posts %}
+    <ul class="posts-archive">
+        {% for post in posts %}
+        <li class="post-item">
+            <a href="{{ base_url }}/posts/{{ post.slug }}.html">
+                <span class="post-date">{{ post.date | date }}</span>
+                <span class="post-title">{{ post.title }}</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p class="no-data">No posts yet. Check back soon!</p>
+    {% endif %}
+</div>
+{% endblock %}

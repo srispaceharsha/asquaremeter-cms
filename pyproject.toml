@@ -1,0 +1,17 @@
+[project]
+name = "asquaremeter"
+version = "0.1.0"
+description = "A CLI workflow and static site generator for documenting biodiversity within 1 square meter"
+requires-python = ">=3.12"
+dependencies = [
+    "Pillow>=10.0.0",
+    "Jinja2>=3.1.0",
+    "requests>=2.31.0",
+    "ephem>=4.1.0",
+    "python-dateutil>=2.8.0",
+    "markdown>=3.5.0",
+]
+
+[project.scripts]
+pipeline = "pipeline:main"
+build = "build:main"

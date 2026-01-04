@@ -1,0 +1,19 @@
+{
+  "site_title": "One Square Meter",
+  "site_description": "A year-long biodiversity documetation of 1m² area in Gundmi, India.",
+  "site_url": "https://asquaremeter.com",
+  "author": "<a href=https://srispaceharsha.com/>Sri Harsha</a>",
+  "location": {
+    "latitude": 13.4818836,
+    "longitude": 74.6955852,
+    "timezone": "Asia/Kolkata",
+    "place_name": "Gundmi, Karnataka, India."
+  },
+  "season_definitions": {
+    "winter": ["december", "january", "february"],
+    "summer": ["march", "april", "may"],
+    "monsoon": ["june", "july", "august", "september"],
+    "post-monsoon": ["october", "november"]
+  },
+  "categories": ["insect", "arachnid", "fungus", "mollusk", "other"]
+}

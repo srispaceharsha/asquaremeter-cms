@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block title %}About - {{ config.site_title }}{% endblock %}
+
+{% block content %}
+<div class="container page-content">
+    <h1>About This Project</h1>
+
+    <section class="about-section">
+        <h2>The Concept</h2>
+        <p>{{ config.site_description }}</p>
+        <p>
+            This project documents every insect, fungus, and other creatures found within a fixed
+            1 meter × 1 meter plot of land over the course of one year. By observing this tiny patch
+            of earth through all seasons, we may discover the remarkable biodiversity that exists in even
+            the smallest spaces.
+        </p>
+    </section>
+
+    <section class="about-section">
+        <h2>Methodology</h2>
+        <ul>
+            <li>A fixed 1m × 1m plot has been marked in {{ config.location.place_name }}</li>
+            <li>The plot is visited regularly, (almost) everyday throughout the year</li>
+            <li>All visible life forms are photographed and documented</li>
+            <li>Weather conditions and moon phases are recorded for each sighting</li>
+            <li>Identifications are made to the best of ability, with scientific names when known</li>
+            <li>The patch will not be intentionally disturbed</li>
+        </ul>
+    </section>
+
+    <section class="about-section">
+        <h2>Location</h2>
+        <p>
+            The study plot is located in <strong>{{ config.location.place_name }}</strong>.
+            
+        </p>
+        <p>Timezone: {{ config.location.timezone }}</p>
+    </section>
+
+    <section class="about-section">
+        <h2>Seasons</h2>
+        <p>The local seasons are defined as:</p>
+        <ul>
+            {% for season, months in config.season_definitions.items() %}
+            <li><strong>{{ season | title }}:</strong> Months {{ months | join(', ') }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section class="about-section">
+        <h2>Categories</h2>
+        <p>Sightings are organized into these categories:</p>
+        <ul>
+            {% for category in config.categories %}
+            <li>{{ category | title }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section class="about-section">
+        <h2>About the Author</h2>
+        <p>This project is maintained by <strong>{{ config.author }}</strong>.</p>
+    </section>
+
+    <section class="about-section">
+        <h2>Subscribe</h2>
+        <p>
+            Follow along with new sightings and posts via the
+            <a href="{{ base_url }}/feed.xml">RSS feed</a>.
+        </p>
+    </section>
+</div>
+{% endblock %}

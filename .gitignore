@@ -1,0 +1,28 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Generated site output
+site/
+
+# Inbox (raw photos waiting to be processed)
+inbox/*.jpg
+inbox/*.jpeg
+inbox/*.png
+inbox/*.JPG
+inbox/*.JPEG
+inbox/*.PNG
+
+# Keep catalog images tracked (they're processed and renamed)
+# catalog/
+
+# OS files
+.DS_Store
+Thumbs.db

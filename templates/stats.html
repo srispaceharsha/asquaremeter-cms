@@ -1,0 +1,239 @@
+{% extends "base.html" %}
+
+{% block title %}Statistics - {{ config.site_title }}{% endblock %}
+
+{% block content %}
+<div class="container page-content">
+    <h1>Statistics</h1>
+    <p class="stats-updated">Last updated: {{ stats.generated_at }}</p>
+
+    <!-- Core Counts -->
+    <section class="stats-section">
+        <h2>Overview</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">{{ stats.total_sightings }}</span>
+                <span class="stat-label">Sightings</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">{{ stats.total_observations }}</span>
+                <span class="stat-label">Quick Logs</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">{{ stats.unique_species }}</span>
+                <span class="stat-label">Unique Species</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">{{ stats.days_documented }}</span>
+                <span class="stat-label">Days Documented</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">{{ stats.days_elapsed }}</span>
+                <span class="stat-label">Days Elapsed</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Species by Category -->
+    <section class="stats-section">
+        <h2>Species by Category</h2>
+        <div class="bar-chart">
+            {% for cat, count in stats.by_category.items() %}
+            <div class="bar-row">
+                <span class="bar-label">{{ cat | title }}</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: {{ (count / stats.max_category * 100) | int }}%;">
+                        <span class="bar-value">{{ count }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Sightings by Month -->
+    <section class="stats-section">
+        <h2>Sightings by Month</h2>
+        {% if stats.by_month %}
+        <div class="bar-chart">
+            {% for month, count in stats.by_month.items() %}
+            <div class="bar-row">
+                <span class="bar-label">{{ month }}</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: {{ (count / stats.max_month * 100) | int }}%;">
+                        <span class="bar-value">{{ count }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="no-data">No data yet</p>
+        {% endif %}
+    </section>
+
+    <!-- Sightings by Season -->
+    <section class="stats-section">
+        <h2>Sightings by Season</h2>
+        <div class="bar-chart">
+            {% for season, count in stats.by_season.items() %}
+            <div class="bar-row">
+                <span class="bar-label">{{ season | title }}</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: {{ (count / stats.max_season * 100) if stats.max_season else 0 }}%;">
+                        <span class="bar-value">{{ count }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- New vs Repeat This Month -->
+    <section class="stats-section">
+        <h2>This Month</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">{{ stats.new_species_this_month }}</span>
+                <span class="stat-label">New Species</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">{{ stats.repeat_sightings_this_month }}</span>
+                <span class="stat-label">Repeat Sightings</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discovery Curve -->
+    <section class="stats-section">
+        <h2>Discovery Curve</h2>
+        <p class="stats-description">Cumulative unique species discovered over time</p>
+        {% if stats.discovery_curve %}
+        <div class="bar-chart">
+            {% for month, count in stats.discovery_curve.items() %}
+            <div class="bar-row">
+                <span class="bar-label">{{ month }}</span>
+                <div class="bar-container">
+                    <div class="bar bar-accent" style="width: {{ (count / stats.max_discovery * 100) | int }}%;">
+                        <span class="bar-value">{{ count }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="no-data">No data yet</p>
+        {% endif %}
+    </section>
+
+    <!-- Weather Correlations -->
+    <section class="stats-section">
+        <h2>Sightings by Weather</h2>
+        {% if stats.by_weather %}
+        <div class="bar-chart">
+            {% for condition, count in stats.by_weather.items() %}
+            <div class="bar-row">
+                <span class="bar-label">{{ condition }}</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: {{ (count / stats.max_weather * 100) | int }}%;">
+                        <span class="bar-value">{{ count }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="no-data">No data yet</p>
+        {% endif %}
+    </section>
+
+    <!-- Moon Phase -->
+    <section class="stats-section">
+        <h2>Sightings by Moon Phase</h2>
+        {% if stats.by_moon_phase %}
+        <div class="bar-chart">
+            {% for phase, count in stats.by_moon_phase.items() %}
+            <div class="bar-row">
+                <span class="bar-label">{{ phase }}</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: {{ (count / stats.max_moon * 100) | int }}%;">
+                        <span class="bar-value">{{ count }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="no-data">No data yet</p>
+        {% endif %}
+    </section>
+
+    <!-- Most Frequent Species -->
+    <section class="stats-section">
+        <h2>Most Frequently Seen</h2>
+        {% if stats.top_species %}
+        <ol class="top-list">
+            {% for name, count in stats.top_species %}
+            <li><span class="species-name">{{ name }}</span> <span class="species-count">({{ count }} sightings)</span></li>
+            {% endfor %}
+        </ol>
+        {% else %}
+        <p class="no-data">No data yet</p>
+        {% endif %}
+    </section>
+
+    <!-- Single Sighting Species (Rare Finds) -->
+    <section class="stats-section">
+        <h2>Rare Finds</h2>
+        <p class="stats-description">Species seen only once</p>
+        {% if stats.single_sighting_species %}
+        <ul class="rare-list">
+            {% for name in stats.single_sighting_species %}
+            <li>{{ name }}</li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="no-data">No rare finds yet</p>
+        {% endif %}
+    </section>
+
+    <!-- First Sightings by Category -->
+    <section class="stats-section">
+        <h2>First Sightings</h2>
+        <p class="stats-description">First documented specimen in each category</p>
+        {% if stats.first_by_category %}
+        <ul class="firsts-list">
+            {% for cat, info in stats.first_by_category.items() %}
+            <li>
+                <strong>{{ cat | title }}:</strong>
+                <a href="{{ base_url }}/sightings/{{ info.id }}.html">{{ info.name }}</a>
+                <span class="first-date">({{ info.date }})</span>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="no-data">No data yet</p>
+        {% endif %}
+    </section>
+
+    <!-- Days with Zero Sightings -->
+    <section class="stats-section">
+        <h2>Coverage</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">{{ stats.days_with_sightings }}</span>
+                <span class="stat-label">Days with Sightings</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">{{ stats.days_without_sightings }}</span>
+                <span class="stat-label">Days without Sightings</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">{{ stats.coverage_percent }}%</span>
+                <span class="stat-label">Coverage Rate</span>
+            </div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}
