@@ -200,39 +200,22 @@ def compute_stats(sightings: list, observations: list, config: dict) -> dict:
     stats["by_month"] = OrderedDict((m, month_counts[m]) for m in sorted_months)
     stats["max_month"] = max(month_counts.values()) if month_counts else 1
 
-    # New vs repeat this month (sightings + observations)
+    # This month stats (sightings only, matching Overview)
     current_month = now.strftime("%Y-%m")
-    species_before_this_month = set()
     species_this_month = set()
-    total_this_month = 0
+    sightings_this_month = 0
 
-    for s in sorted(sightings, key=lambda x: x["captured_at"]):
+    for s in sightings:
         try:
             dt = datetime.fromisoformat(s["captured_at"].replace("Z", "+00:00"))
-            name = s["common_name"].lower()
             if dt.strftime("%Y-%m") == current_month:
-                species_this_month.add(name)
-                total_this_month += 1
-            else:
-                species_before_this_month.add(name)
+                species_this_month.add(s["common_name"].lower())
+                sightings_this_month += 1
         except:
             pass
 
-    for o in observations:
-        try:
-            dt = datetime.strptime(o["date"], "%Y-%m-%d")
-            name = o["common_name"].lower()
-            if dt.strftime("%Y-%m") == current_month:
-                species_this_month.add(name)
-                total_this_month += 1
-            else:
-                species_before_this_month.add(name)
-        except:
-            pass
-
-    new_this_month = species_this_month - species_before_this_month
-    stats["new_species_this_month"] = len(new_this_month)
-    stats["repeat_sightings_this_month"] = total_this_month - len(new_this_month)
+    stats["sightings_this_month"] = sightings_this_month
+    stats["unique_species_this_month"] = len(species_this_month)
 
     # Discovery curve (cumulative unique species by month)
     seen_species = set()
