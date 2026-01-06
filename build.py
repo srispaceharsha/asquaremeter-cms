@@ -167,8 +167,15 @@ def compute_stats(sightings: list, observations: list, config: dict) -> dict:
     stats["days_without_sightings"] = stats["days_elapsed"] - len(sighting_dates)
     stats["coverage_percent"] = round(len(sighting_dates) / stats["days_elapsed"] * 100)
 
-    # By category
-    by_category = Counter(s["category"] for s in sightings)
+    # Unique species by category
+    species_by_category = {}
+    for s in sightings:
+        cat = s["category"]
+        name = s["common_name"].lower()
+        if cat not in species_by_category:
+            species_by_category[cat] = set()
+        species_by_category[cat].add(name)
+    by_category = {cat: len(species) for cat, species in species_by_category.items()}
     stats["by_category"] = dict(sorted(by_category.items(), key=lambda x: -x[1]))
     stats["max_category"] = max(by_category.values()) if by_category else 1
 
