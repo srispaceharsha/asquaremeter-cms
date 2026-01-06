@@ -37,6 +37,27 @@
     </div>
 </section>
 
+{% if featured_sightings %}
+<section class="featured">
+    <div class="container">
+        <h2>Featured</h2>
+        <div class="featured-grid">
+            {% for sighting in featured_sightings %}
+            <a href="{{ base_url }}/sightings/{{ sighting.id }}.html" class="featured-item">
+                {% if sighting.images %}
+                <img src="{{ base_url }}/images/web/{{ sighting.images[0].filename }}" alt="{{ sighting.common_name }}">
+                {% endif %}
+                <div class="featured-info">
+                    <span class="featured-common">{{ sighting.common_name }}</span>
+                    <span class="featured-scientific">{{ sighting.scientific_name }}</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
 {% if latest_sightings %}
 <section class="latest">
     <div class="container">

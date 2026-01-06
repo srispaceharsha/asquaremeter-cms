@@ -15,5 +15,6 @@
     "monsoon": ["june", "july", "august", "september"],
     "post-monsoon": ["october", "november"]
   },
-  "categories": ["insect", "arachnid", "fungus", "mollusk", "other"]
+  "categories": ["insect", "arachnid", "fungus", "mollusk", "other"],
+  "featured_sightings": ["20260105-003", "20260105-005", "20260104-001", "20260102-004"]
 }
