@@ -129,21 +129,46 @@ posts/2025-01-15.md
 
 ### Step 2: Add Frontmatter and Content
 
+**Minimal template (recommended):**
+
 ```markdown
 ---
-title: "Week 3: The Spider's Web"
+title: "Week 1: Title Here"
 date: 2025-01-15
-cover_image: 20250115-001-a.jpg
-sightings: ["20250115-001", "20250114-002", "20250113-001"]
+cover_image: static/images/week1-cover.jpg
 ---
 
-This week brought unexpected visitors to the square meter...
+Your post content here...
+```
 
-The garden spider has built an impressive web spanning nearly
-the entire plot. Each morning, dew drops cling to the silk threads,
-creating a beautiful pattern.
+**With all options:**
 
-[Your narrative continues...]
+```markdown
+---
+title: "Week 1: Title Here"
+date: 2025-01-15
+cover_image: static/images/week1-cover.jpg
+sightings: ["20250115-001", "20250114-002"]
+---
+
+Your post content here...
+```
+
+### Cover Image Options
+
+You can use either:
+- **Custom image**: `cover_image: static/images/my-photo.jpg` - Put your image in `static/images/` folder
+- **Sighting image**: `cover_image: 20250115-001-a.jpg` - Use a processed sighting image from catalog
+
+### Auto-Populated Sightings
+
+If you omit the `sightings` field (or leave it empty), the build will **automatically include all sightings** between the previous post's date and the current post's date.
+
+Example: If your first post is dated `2025-01-07`, it will include all sightings from the start of the project up to Jan 7. Your next post dated `2025-01-14` will automatically include sightings from Jan 8-14.
+
+To manually specify sightings instead, add:
+```yaml
+sightings: ["20250115-001", "20250114-002", "20250113-001"]
 ```
 
 ### Step 3: Rebuild the Site
@@ -160,25 +185,41 @@ The post will appear in the Posts section and RSS feed.
 
 For species you see frequently (like carpenter ants), you can quickly log sightings without adding photos. This keeps a count for your records without cluttering your site with repetitive images.
 
-### Quick Log a Sighting
+### Quick Log Sightings
 
 ```bash
-# Interactive mode (will prompt for species name)
+# Interactive mode (shows known species, prompts for input)
 uv run python pipeline.py log
 
-# With species name directly
+# Single species
 uv run python pipeline.py log "Carpenter Ant"
+
+# Multiple species at once (comma-separated)
+uv run python pipeline.py log "Carpenter Ant, Tropical Fire Ant, Wolf Spider"
 ```
 
-You'll be asked:
+Example session:
 ```
-Species name: Carpenter Ant
+Known species:
+  Carpenter Ant
+  Tropical Fire Ant
+  Wolf Spider
+  ...
+
+Species (comma-separated): carpenter ant, tropical fire ant
 Time of day [morning/afternoon/evening/night]: morning
-Note (optional): 3 spotted near the grass edge
 
-✓ Logged: Carpenter Ant (morning)
-  Total observations of this species: 5
+✓ Carpenter Ant (total: 5)
+✓ Tropical Fire Ant (total: 3)
+
+Logged 2 observation(s)
 ```
+
+### Auto-Correction
+
+Names are automatically normalized to Title Case and matched against existing species to prevent duplicates from typos:
+- `carpenter ant` → `Carpenter Ant`
+- `WOLF SPIDER` → `Wolf Spider`
 
 Quick logs are saved to `data/observations.json` and included in your statistics (total count and unique species), but they don't create individual pages on the site.
 
@@ -367,9 +408,10 @@ uv run python pipeline.py add
 # Add specific file
 uv run python pipeline.py add --file path/to/image.jpg
 
-# Quick log a common species (no photo)
+# Quick log common species (no photo)
 uv run python pipeline.py log
 uv run python pipeline.py log "Carpenter Ant"
+uv run python pipeline.py log "Carpenter Ant, Wolf Spider, Tropical Fire Ant"
 
 # List sightings
 uv run python pipeline.py list
@@ -383,9 +425,26 @@ uv run python pipeline.py delete 20250115-001
 # View stats
 uv run python pipeline.py stats
 
+# Backfill weather data for old sightings
+uv run python backfill_weather.py
+
 # Build site
 uv run python build.py
 
 # Build and preview
 uv run python build.py --serve
+```
+
+## Post Template
+
+Copy this for new posts:
+
+```markdown
+---
+title: "Week X: Title Here"
+date: 2026-01-07
+cover_image: static/images/weekX-cover.jpg
+---
+
+Your post content here...
 ```

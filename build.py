@@ -391,13 +391,48 @@ def build_site(output_path: Path):
 
     # Generate individual post pages
     template = env.get_template("post.html")
-    for post in posts:
-        # Get linked sightings
+
+    # Sort posts by date for determining date ranges
+    sorted_posts = sorted(posts, key=lambda p: p["date"])
+
+    for idx, post in enumerate(posts):
+        # Determine cover_image_url based on path
+        cover_image = post.get("cover_image", "")
+        if cover_image:
+            if cover_image.startswith("static/"):
+                # Image from static/images folder - strip "static/images/" prefix
+                post["cover_image_url"] = "/images/" + cover_image[14:]
+            else:
+                # Sighting image from catalog
+                post["cover_image_url"] = "/images/web/" + cover_image
+        else:
+            post["cover_image_url"] = ""
+
+        # Auto-populate sightings based on date range if not specified
         linked_sightings = []
-        if isinstance(post["sightings"], list):
+        if post.get("sightings") and isinstance(post["sightings"], list) and len(post["sightings"]) > 0:
+            # Use explicitly specified sightings
             for sid in post["sightings"]:
                 if sid in sightings_by_id:
                     linked_sightings.append(sightings_by_id[sid])
+        else:
+            # Auto-populate: find sightings between previous post date and this post date
+            post_date = post["date"]
+            # Find previous post date
+            post_idx_sorted = next((i for i, p in enumerate(sorted_posts) if p["slug"] == post["slug"]), 0)
+            if post_idx_sorted > 0:
+                prev_post_date = sorted_posts[post_idx_sorted - 1]["date"]
+            else:
+                prev_post_date = "1900-01-01"  # Include all sightings before first post
+
+            # Get sightings in date range (after prev_post_date, up to and including post_date)
+            for s in sightings:
+                sighting_date = s["captured_at"][:10]
+                if prev_post_date < sighting_date <= post_date:
+                    linked_sightings.append(s)
+
+            # Sort by date
+            linked_sightings = sorted(linked_sightings, key=lambda s: s["captured_at"])
 
         html = template.render(
             **base_context,
@@ -590,8 +625,25 @@ def serve(output_path: Path, port: int = 8000):
     """Serve the site locally"""
     os.chdir(output_path)
 
-    handler = http.server.SimpleHTTPRequestHandler
-    with socketserver.TCPServer(("", port), handler) as httpd:
+    # Custom handler that skips DNS lookup (much faster)
+    class QuietHandler(http.server.SimpleHTTPRequestHandler):
+        def address_string(self):
+            # Skip reverse DNS lookup
+            return self.client_address[0]
+
+        def log_message(self, format, *args):
+            # Quieter logging
+            pass
+
+    # Custom server that ignores broken pipe errors
+    class QuietServer(socketserver.TCPServer):
+        allow_reuse_address = True
+
+        def handle_error(self, request, client_address):
+            # Silently ignore broken pipe errors (browser cancelled request)
+            pass
+
+    with QuietServer(("", port), QuietHandler) as httpd:
         print(f"\nServing at http://localhost:{port}")
         print("Press Ctrl+C to stop\n")
         try:

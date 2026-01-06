@@ -78,5 +78,77 @@
     "time_of_day": "morning",
     "note": "",
     "created_at": "2026-01-03T18:36:13.690715+05:30"
+  },
+  {
+    "date": "2026-01-04",
+    "time": "10:51",
+    "common_name": "Carpenter Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-04T10:51:30.493008+05:30"
+  },
+  {
+    "date": "2026-01-04",
+    "time": "10:51",
+    "common_name": "Wolf Spider",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-04T10:51:30.493008+05:30"
+  },
+  {
+    "date": "2026-01-04",
+    "time": "10:51",
+    "common_name": "Tropical Fire Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-04T10:51:30.493008+05:30"
+  },
+  {
+    "date": "2026-01-05",
+    "time": "19:43",
+    "common_name": "Acrobat Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-05T19:43:05.283182+05:30"
+  },
+  {
+    "date": "2026-01-05",
+    "time": "19:43",
+    "common_name": "Carpenter Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-05T19:43:05.283182+05:30"
+  },
+  {
+    "date": "2026-01-05",
+    "time": "19:43",
+    "common_name": "Dusty Surface Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-05T19:43:05.283182+05:30"
+  },
+  {
+    "date": "2026-01-05",
+    "time": "19:43",
+    "common_name": "Fruit Flies",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-05T19:43:05.283182+05:30"
+  },
+  {
+    "date": "2026-01-05",
+    "time": "19:43",
+    "common_name": "Ground Cricket",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-05T19:43:05.283182+05:30"
+  },
+  {
+    "date": "2026-01-05",
+    "time": "19:43",
+    "common_name": "Tropical Fire Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-05T19:43:05.283182+05:30"
   }
 ]

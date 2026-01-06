@@ -10,9 +10,9 @@
             <time datetime="{{ post.date }}">{{ post.date | date }}</time>
         </header>
 
-        {% if post.cover_image %}
+        {% if post.cover_image_url %}
         <figure class="post-cover">
-            <img src="{{ base_url }}/images/web/{{ post.cover_image }}" alt="{{ post.title }}">
+            <img src="{{ base_url }}{{ post.cover_image_url }}" alt="{{ post.title }}">
         </figure>
         {% endif %}
 

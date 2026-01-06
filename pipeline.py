@@ -91,6 +91,23 @@ def save_observations(observations: list) -> None:
         json.dump(observations, f, indent=2, ensure_ascii=False)
 
 
+def to_title_case(text: str) -> str:
+    """Convert text to Title Case for consistent naming"""
+    return " ".join(word.capitalize() for word in text.split())
+
+
+def normalize_name(name: str, existing_names: set) -> str:
+    """Normalize a species name, matching existing if similar"""
+    title_name = to_title_case(name.strip())
+
+    # Check for exact match (case-insensitive)
+    for existing in existing_names:
+        if existing.lower() == title_name.lower():
+            return existing
+
+    return title_name
+
+
 def get_exif_date(image_path: Path) -> Optional[datetime]:
     """Extract DateTimeOriginal from image EXIF data"""
     try:
@@ -335,8 +352,17 @@ def cmd_add(args):
 
         print()
 
+        # Build set of existing species names for normalization
+        observations = load_observations()
+        existing_species = set(s["common_name"] for s in sightings)
+        existing_species.update(o["common_name"] for o in observations)
+
         # Collect metadata
-        common_name = input("Common name: ").strip()
+        common_name_input = input("Common name: ").strip()
+        common_name = normalize_name(common_name_input, existing_species)
+        if common_name != common_name_input:
+            print(f"  → Normalized to: {common_name}")
+
         scientific_name = input("Scientific name (blank if unknown): ").strip()
 
         # Category selection
@@ -366,7 +392,7 @@ def cmd_add(args):
         if existing_tags:
             print(f"Existing tags: {', '.join(sorted(existing_tags))}")
         tags_input = input("Tags (comma-separated): ").strip()
-        tags = [t.strip().lower() for t in tags_input.split(",") if t.strip()]
+        tags = [normalize_name(t, existing_tags) for t in tags_input.split(",") if t.strip()]
 
         # Collect additional images for same sighting
         images_to_process = [(image_path, "a")]
@@ -467,6 +493,10 @@ def cmd_log(args):
     observations = load_observations()
     sightings = load_sightings()
 
+    # Build set of existing species names for normalization
+    existing_species = set(s["common_name"] for s in sightings)
+    existing_species.update(o["common_name"] for o in observations)
+
     # Get current date/time
     local_tz = tz.gettz(config["location"]["timezone"])
     now = datetime.now(local_tz)
@@ -476,11 +506,9 @@ def cmd_log(args):
         species_input = args.species
     else:
         # Show recent species for quick selection
-        all_species = set(s["common_name"] for s in sightings)
-        all_species.update(o["common_name"] for o in observations)
-        if all_species:
+        if existing_species:
             print("Known species:")
-            for name in sorted(all_species):
+            for name in sorted(existing_species):
                 print(f"  {name}")
             print()
         species_input = input("Species (comma-separated): ").strip()
@@ -489,8 +517,9 @@ def cmd_log(args):
         print("No species name provided.")
         return
 
-    # Parse comma-separated species
-    species_list = [s.strip() for s in species_input.split(",") if s.strip()]
+    # Parse comma-separated species and normalize names
+    species_list_raw = [s.strip() for s in species_input.split(",") if s.strip()]
+    species_list = [normalize_name(s, existing_species) for s in species_list_raw]
 
     if not species_list:
         print("No species name provided.")
