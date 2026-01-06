@@ -20,6 +20,8 @@ from pathlib import Path
 import markdown
 from jinja2 import Environment, FileSystemLoader
 
+from taxonomy import fetch_all_taxonomy, build_species_tree, get_species_stats
+
 # Project paths
 PROJECT_ROOT = Path(__file__).parent
 CONFIG_PATH = PROJECT_ROOT / "config.json"
@@ -368,8 +370,14 @@ def build_site(output_path: Path):
 
     # Generate index.html
     template = env.get_template("index.html")
+
+    # Get featured sightings from config
+    featured_ids = config.get("featured_sightings", [])
+    featured_sightings = [sightings_by_id[sid] for sid in featured_ids if sid in sightings_by_id]
+
     html = template.render(
         **base_context,
+        featured_sightings=featured_sightings,
         latest_sightings=sightings[:6],
     )
     (output_path / "index.html").write_text(html)
@@ -480,6 +488,21 @@ def build_site(output_path: Path):
     )
     (output_path / "stats.html").write_text(html)
 
+    # Generate species tree page
+    print("Fetching taxonomy data...")
+    taxonomy_cache = fetch_all_taxonomy(sightings)
+    tree_data = build_species_tree(sightings, taxonomy_cache)
+    tree_stats = get_species_stats(tree_data)
+
+    template = env.get_template("tree.html")
+    html = template.render(
+        **base_context,
+        tree=tree_data["tree"],
+        unclassified=tree_data["unclassified"],
+        tree_stats=tree_stats,
+    )
+    (output_path / "tree.html").write_text(html)
+
     # Generate RSS feed
     generate_rss(output_path, config, sightings, posts)
 
@@ -488,6 +511,7 @@ def build_site(output_path: Path):
     print(f"  - 1 index page")
     print(f"  - 1 about page")
     print(f"  - 1 browse page ({len(sightings)} sightings)")
+    print(f"  - 1 tree page ({tree_stats['total_species']} species)")
     print(f"  - 1 stats page")
     print(f"  - {len(posts)} post pages")
     print(f"  - {len(sightings)} sighting pages")

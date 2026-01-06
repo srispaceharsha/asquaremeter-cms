@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+{% block title %}Species Tree - {{ config.site_title }}{% endblock %}
+
+{% block content %}
+<div class="tree-page">
+    <div class="tree-panel">
+        <h1>Species Tree</h1>
+        <p class="tree-intro">Browse {{ tree_stats.total_species }} species across {{ tree_stats.classes }} classes, {{ tree_stats.orders }} orders, and {{ tree_stats.families }} families.</p>
+
+        <nav class="species-tree" aria-label="Species taxonomy tree">
+            {% for class_name, orders in tree.items() | sort %}
+            <details open>
+                <summary class="tree-class">{{ class_name }}</summary>
+                {% for order_name, families in orders.items() | sort %}
+                <details>
+                    <summary class="tree-order">{{ order_name }}</summary>
+                    {% for family_name, species_list in families.items() | sort %}
+                    <details>
+                        <summary class="tree-family">{{ family_name }}</summary>
+                        <ul class="tree-species-list">
+                            {% for species in species_list %}
+                            <li>
+                                <a href="#species-{{ species.sighting_id }}" class="tree-species-link">
+                                    {{ species.common_name }}
+                                    <em>({{ species.scientific_name }})</em>
+                                    {% if species.sighting_count > 1 %}
+                                    <span class="sighting-badge">{{ species.sighting_count }}</span>
+                                    {% endif %}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </details>
+                    {% endfor %}
+                </details>
+                {% endfor %}
+            </details>
+            {% endfor %}
+
+            {% if unclassified %}
+            <details>
+                <summary class="tree-class tree-unclassified">Unclassified</summary>
+                <ul class="tree-species-list">
+                    {% for species in unclassified %}
+                    <li>
+                        <a href="#species-{{ species.sighting_id }}" class="tree-species-link">
+                            {{ species.common_name }}
+                            <em>({{ species.scientific_name }})</em>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </details>
+            {% endif %}
+        </nav>
+    </div>
+
+    <div class="detail-panel">
+        <div class="detail-placeholder" id="detail-placeholder">
+            <p>Select a species from the tree to view details</p>
+        </div>
+
+        {% for class_name, orders in tree.items() %}
+        {% for order_name, families in orders.items() %}
+        {% for family_name, species_list in families.items() %}
+        {% for species in species_list %}
+        <article id="species-{{ species.sighting_id }}" class="species-detail">
+            <h2>{{ species.common_name }}</h2>
+            <p class="detail-scientific"><em>{{ species.scientific_name }}</em></p>
+
+            {% if species.image %}
+            <figure class="detail-image">
+                <img src="{{ base_url }}/images/web/{{ species.image }}" alt="{{ species.common_name }}" loading="lazy">
+            </figure>
+            {% endif %}
+
+            <dl class="detail-taxonomy">
+                <dt>Class</dt><dd>{{ class_name }}</dd>
+                <dt>Order</dt><dd>{{ order_name }}</dd>
+                <dt>Family</dt><dd>{{ family_name }}</dd>
+                {% if species.genus %}<dt>Genus</dt><dd>{{ species.genus }}</dd>{% endif %}
+            </dl>
+
+            {% if species.notes %}
+            <p class="detail-notes">{{ species.notes }}</p>
+            {% endif %}
+
+            <nav class="detail-links">
+                <h3>Learn More</h3>
+                <ul>
+                    {% if species.gbif_key %}
+                    <li><a href="https://www.gbif.org/species/{{ species.gbif_key }}" target="_blank" rel="noopener">GBIF</a></li>
+                    {% endif %}
+                    <li><a href="https://en.wikipedia.org/wiki/{{ species.scientific_name | replace(' ', '_') }}" target="_blank" rel="noopener">Wikipedia</a></li>
+                    <li><a href="https://www.inaturalist.org/taxa/search?q={{ species.scientific_name | urlencode }}" target="_blank" rel="noopener">iNaturalist</a></li>
+                </ul>
+            </nav>
+
+            <a href="{{ base_url }}/sightings/{{ species.sighting_id }}.html" class="detail-view-sighting">View full sighting &rarr;</a>
+
+            <button class="back-to-tree" onclick="scrollToTree()">↑ Back to tree</button>
+        </article>
+        {% endfor %}
+        {% endfor %}
+        {% endfor %}
+        {% endfor %}
+
+        {% for species in unclassified %}
+        <article id="species-{{ species.sighting_id }}" class="species-detail">
+            <h2>{{ species.common_name }}</h2>
+            <p class="detail-scientific"><em>{{ species.scientific_name }}</em></p>
+
+            {% if species.image %}
+            <figure class="detail-image">
+                <img src="{{ base_url }}/images/web/{{ species.image }}" alt="{{ species.common_name }}" loading="lazy">
+            </figure>
+            {% endif %}
+
+            <p class="detail-notes">Taxonomy data unavailable for this species.</p>
+
+            {% if species.notes %}
+            <p class="detail-notes">{{ species.notes }}</p>
+            {% endif %}
+
+            <a href="{{ base_url }}/sightings/{{ species.sighting_id }}.html" class="detail-view-sighting">View full sighting &rarr;</a>
+
+            <button class="back-to-tree" onclick="scrollToTree()">↑ Back to tree</button>
+        </article>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+// Scroll back to tree (mobile)
+function scrollToTree() {
+    document.querySelector('.species-tree').scrollIntoView({ behavior: 'smooth' });
+    history.pushState(null, '', location.pathname);
+}
+
+// Highlight active species in tree
+function highlightActiveNode() {
+    document.querySelectorAll('.tree-species-link').forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === location.hash);
+    });
+
+    // Hide placeholder when a species is selected
+    const placeholder = document.getElementById('detail-placeholder');
+    if (location.hash && location.hash.startsWith('#species-')) {
+        placeholder.style.display = 'none';
+    } else {
+        placeholder.style.display = 'block';
+    }
+}
+
+// Expand tree path to active species
+function expandPathToTarget() {
+    if (!location.hash || !location.hash.startsWith('#species-')) return;
+
+    const link = document.querySelector(`a[href="${location.hash}"]`);
+    if (!link) return;
+
+    let el = link.parentElement;
+    while (el) {
+        if (el.tagName === 'DETAILS') el.open = true;
+        el = el.parentElement;
+    }
+}
+
+window.addEventListener('hashchange', () => {
+    highlightActiveNode();
+    expandPathToTarget();
+});
+
+// On page load
+highlightActiveNode();
+expandPathToTarget();
+</script>
+{% endblock %}

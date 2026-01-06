@@ -252,6 +252,81 @@ li {
 }
 
 /* ========================================
+   Featured Grid
+   ======================================== */
+.featured {
+    padding: 2rem 0;
+    background: white;
+    border-top: 1px solid var(--color-border);
+}
+
+.featured h2 {
+    margin-bottom: 1.5rem;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.featured-item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: var(--radius);
+    aspect-ratio: 4 / 3;
+    text-decoration: none;
+}
+
+.featured-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.featured-item:hover img {
+    transform: scale(1.05);
+}
+
+.featured-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.featured-common {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.featured-scientific {
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+}
+
+/* ========================================
    Latest Sightings Strip
    ======================================== */
 .latest {
@@ -1011,6 +1086,284 @@ li {
 
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ========================================
+   Species Tree Page
+   ======================================== */
+.tree-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing);
+    min-height: calc(100vh - 200px);
+}
+
+.tree-panel h1 {
+    margin-bottom: 0.5rem;
+}
+
+.tree-intro {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Tree Navigation */
+.species-tree {
+    font-size: 0.95rem;
+}
+
+.species-tree details {
+    margin-left: 1rem;
+}
+
+.species-tree > details {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+.species-tree summary {
+    cursor: pointer;
+    padding: 0.3rem 0;
+    list-style: none;
+}
+
+.species-tree summary::-webkit-details-marker {
+    display: none;
+}
+
+.species-tree summary::before {
+    content: "▶ ";
+    font-size: 0.7rem;
+    margin-right: 0.3rem;
+    color: var(--color-text-light);
+}
+
+.species-tree details[open] > summary::before {
+    content: "▼ ";
+}
+
+.tree-class {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-accent);
+}
+
+.tree-order {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.tree-family {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-text-light);
+}
+
+.tree-unclassified {
+    color: var(--color-text-light);
+    font-style: italic;
+}
+
+.tree-species-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.25rem 0 0.5rem 1rem;
+}
+
+.tree-species-list li {
+    margin: 0;
+}
+
+.tree-species-link {
+    display: block;
+    padding: 0.35rem 0.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: background 0.15s;
+}
+
+.tree-species-link:hover {
+    background: var(--color-bg-alt);
+    text-decoration: none;
+}
+
+.tree-species-link.active {
+    background: var(--color-accent);
+    color: white;
+}
+
+.tree-species-link em {
+    color: var(--color-text-light);
+    font-size: 0.85rem;
+}
+
+.tree-species-link.active em {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.sighting-badge {
+    background: var(--color-accent);
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: 1rem;
+    margin-left: 0.3rem;
+}
+
+.tree-species-link.active .sighting-badge {
+    background: white;
+    color: var(--color-accent);
+}
+
+/* Detail Panel */
+.detail-panel {
+    position: sticky;
+    top: 1rem;
+    align-self: start;
+}
+
+.detail-placeholder {
+    background: var(--color-bg-alt);
+    border: 2px dashed var(--color-border);
+    border-radius: var(--radius);
+    padding: 3rem;
+    text-align: center;
+    color: var(--color-text-light);
+}
+
+.species-detail {
+    display: none;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+}
+
+.species-detail:target {
+    display: block;
+}
+
+.species-detail h2 {
+    margin-bottom: 0.25rem;
+}
+
+.detail-scientific {
+    color: var(--color-text-light);
+    margin-bottom: 1rem;
+}
+
+.detail-image {
+    margin: 0 0 1rem 0;
+}
+
+.detail-image img {
+    width: 100%;
+    border-radius: var(--radius);
+}
+
+.detail-taxonomy {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.25rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.detail-taxonomy dt {
+    color: var(--color-text-light);
+}
+
+.detail-taxonomy dd {
+    margin: 0;
+}
+
+.detail-notes {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: var(--color-bg-alt);
+    border-radius: var(--radius);
+}
+
+.detail-links {
+    margin-bottom: 1rem;
+}
+
+.detail-links h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-light);
+    margin-bottom: 0.5rem;
+}
+
+.detail-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.detail-links a {
+    font-size: 0.9rem;
+}
+
+.detail-view-sighting {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--color-accent);
+    color: white;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.detail-view-sighting:hover {
+    background: var(--color-accent-dark);
+    color: white;
+    text-decoration: none;
+}
+
+.back-to-tree {
+    display: none;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+}
+
+.back-to-tree:hover {
+    background: var(--color-border);
+}
+
+@media (max-width: 768px) {
+    .tree-page {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-panel {
+        position: static;
+    }
+
+    .back-to-tree {
+        display: block;
+    }
+
+    .species-tree details {
+        margin-left: 0.75rem;
     }
 }
 
