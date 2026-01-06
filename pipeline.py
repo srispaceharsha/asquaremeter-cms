@@ -210,32 +210,51 @@ def fetch_weather(lat: float, lon: float, date: datetime, timezone: str) -> dict
 def get_moon_phase(date: datetime) -> dict:
     """Calculate moon phase for a given date"""
     observer = ephem.Observer()
-    observer.date = date.strftime("%Y/%m/%d")
+    date_str = date.strftime("%Y/%m/%d")
+    observer.date = date_str
 
     moon = ephem.Moon(observer)
-    moon_phase_number = moon.phase / 100.0  # 0 to 1
+    illumination = moon.phase / 100.0  # 0 to 1
 
-    # Determine phase name
-    if moon_phase_number < 0.03:
-        phase_name = "New Moon"
-    elif moon_phase_number < 0.25:
-        phase_name = "Waxing Crescent"
-    elif moon_phase_number < 0.28:
-        phase_name = "First Quarter"
-    elif moon_phase_number < 0.50:
-        phase_name = "Waxing Gibbous"
-    elif moon_phase_number < 0.53:
+    # Determine if waxing or waning by comparing to next/previous full moon
+    next_full = ephem.next_full_moon(date_str)
+    prev_full = ephem.previous_full_moon(date_str)
+    next_new = ephem.next_new_moon(date_str)
+    prev_new = ephem.previous_new_moon(date_str)
+
+    # Calculate days to/from key phases
+    days_since_new = float(ephem.Date(date_str) - prev_new)
+    days_to_full = float(next_full - ephem.Date(date_str))
+    days_since_full = float(ephem.Date(date_str) - prev_full)
+    days_to_new = float(next_new - ephem.Date(date_str))
+
+    # Determine phase based on position in lunar cycle
+    if days_to_full < 1.0 or days_since_full < 1.0:
+        # Within 1 day of full moon
         phase_name = "Full Moon"
-    elif moon_phase_number < 0.75:
-        phase_name = "Waning Gibbous"
-    elif moon_phase_number < 0.78:
-        phase_name = "Last Quarter"
+    elif days_to_new < 1.0 or days_since_new < 1.0:
+        # Within 1 day of new moon
+        phase_name = "New Moon"
+    elif days_since_new < days_since_full:
+        # We're in the first half (waxing) - between new and full
+        if illumination < 0.50:
+            phase_name = "Waxing Crescent"
+        elif illumination < 0.55:
+            phase_name = "First Quarter"
+        else:
+            phase_name = "Waxing Gibbous"
     else:
-        phase_name = "Waning Crescent"
+        # We're in the second half (waning) - between full and new
+        if illumination > 0.55:
+            phase_name = "Waning Gibbous"
+        elif illumination > 0.45:
+            phase_name = "Last Quarter"
+        else:
+            phase_name = "Waning Crescent"
 
     return {
         "moon_phase": phase_name,
-        "moon_illumination": round(moon_phase_number, 2),
+        "moon_illumination": round(illumination, 2),
     }
 
 
