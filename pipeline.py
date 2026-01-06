@@ -722,6 +722,55 @@ def cmd_delete(args):
     print(f"  Removed {len(deleted_images)} image files")
 
 
+def cmd_status(args):
+    """Show what's been logged today"""
+    from datetime import date
+
+    today = date.today().isoformat()
+
+    sightings = load_sightings()
+    observations = load_observations()
+
+    # Get today's sightings
+    today_sightings = []
+    for s in sightings:
+        if s["captured_at"][:10] == today:
+            today_sightings.append(s["common_name"])
+
+    # Get today's observations
+    today_observations = []
+    for o in observations:
+        if o["date"] == today:
+            today_observations.append(o["common_name"])
+
+    print(f"\nToday ({today})")
+    print("=" * 40)
+
+    print(f"\nSightings ({len(today_sightings)}):")
+    if today_sightings:
+        for name in sorted(set(today_sightings)):
+            count = today_sightings.count(name)
+            if count > 1:
+                print(f"  {name} (x{count})")
+            else:
+                print(f"  {name}")
+    else:
+        print("  (none)")
+
+    print(f"\nObservations ({len(today_observations)}):")
+    if today_observations:
+        for name in sorted(set(today_observations)):
+            count = today_observations.count(name)
+            if count > 1:
+                print(f"  {name} (x{count})")
+            else:
+                print(f"  {name}")
+    else:
+        print("  (none)")
+
+    print()
+
+
 def cmd_stats(args):
     """Show project statistics"""
     config = load_config()
@@ -801,6 +850,9 @@ def main():
     # stats command
     subparsers.add_parser("stats", help="Show project statistics")
 
+    # status command
+    subparsers.add_parser("status", help="Show what's been logged today")
+
     args = parser.parse_args()
 
     if args.command == "add":
@@ -815,6 +867,8 @@ def main():
         cmd_delete(args)
     elif args.command == "stats":
         cmd_stats(args)
+    elif args.command == "status":
+        cmd_status(args)
     else:
         parser.print_help()
 
