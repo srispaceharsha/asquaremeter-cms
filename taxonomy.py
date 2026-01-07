@@ -166,11 +166,12 @@ def build_species_tree(sightings: list, cache: dict) -> dict:
 
         if not taxonomy or not taxonomy.get("class"):
             # No taxonomy data - add to unclassified
+            images = sighting.get("images") or []
             unclassified.append({
                 "common_name": sighting.get("common_name", "Unknown"),
                 "scientific_name": sighting.get("scientific_name", ""),
                 "sighting_id": sighting.get("id"),
-                "image": sighting.get("images", [{}])[0].get("filename", ""),
+                "image": images[0].get("filename", "") if images else "",
                 "notes": sighting.get("notes", ""),
                 "sighting_count": sighting.get("sighting_count", 1),
             })
@@ -190,11 +191,12 @@ def build_species_tree(sightings: list, cache: dict) -> dict:
             tree[class_name][order_name][family_name] = []
 
         # Add species to family
+        images = sighting.get("images") or []
         tree[class_name][order_name][family_name].append({
             "common_name": sighting.get("common_name", "Unknown"),
             "scientific_name": sighting.get("scientific_name", ""),
             "sighting_id": sighting.get("id"),
-            "image": sighting.get("images", [{}])[0].get("filename", ""),
+            "image": images[0].get("filename", "") if images else "",
             "notes": sighting.get("notes", ""),
             "sighting_count": sighting.get("sighting_count", 1),
             "gbif_key": taxonomy.get("gbif_key"),

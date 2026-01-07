@@ -15,3 +15,8 @@ dependencies = [
 [project.scripts]
 pipeline = "pipeline:main"
 build = "build:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
