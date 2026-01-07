@@ -137,6 +137,19 @@ def prompt_for_date() -> datetime:
             print("Invalid format. Use YYYY-MM-DD HH:MM or YYYY-MM-DD")
 
 
+def get_time_of_day(dt: datetime) -> str:
+    """Infer time of day from datetime hour"""
+    hour = dt.hour
+    if 5 <= hour < 12:
+        return "morning"
+    elif 12 <= hour < 16:
+        return "afternoon"
+    elif 16 <= hour < 19:
+        return "evening"
+    else:
+        return "night"
+
+
 def fetch_weather(lat: float, lon: float, date: datetime, timezone: str) -> dict:
     """Fetch weather data from Open-Meteo API"""
     date_str = date.strftime("%Y-%m-%d")
@@ -395,14 +408,17 @@ def cmd_add(args):
 
         notes = input("Notes: ").strip()
 
-        # Time of day selection
+        # Time of day - infer from capture time
+        inferred_tod = get_time_of_day(captured_at)
         times_of_day = ["morning", "afternoon", "evening", "night"]
-        tod_str = "/".join(times_of_day)
-        while True:
-            time_of_day = input(f"Time of day [{tod_str}]: ").strip().lower()
-            if time_of_day in times_of_day:
-                break
-            print(f"Invalid. Choose from: {tod_str}")
+        tod_input = input(f"Time of day [{inferred_tod}]: ").strip().lower()
+        if tod_input and tod_input in times_of_day:
+            time_of_day = tod_input
+        elif tod_input and tod_input not in times_of_day:
+            print(f"Invalid. Using inferred: {inferred_tod}")
+            time_of_day = inferred_tod
+        else:
+            time_of_day = inferred_tod
 
         # Tags (comma-separated)
         existing_tags = set()
