@@ -372,5 +372,66 @@
     "gbif_key": 1721102,
     "canonical_name": "Trigonidium cicindeloides",
     "match_type": "EXACT"
+  },
+  "bombyliidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Bombyliidae",
+    "genus": null,
+    "species": "Bombyliidae",
+    "gbif_key": 7285,
+    "canonical_name": "Bombyliidae",
+    "match_type": "HIGHERRANK"
+  },
+  "braconidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Braconidae",
+    "genus": null,
+    "species": "Braconidae",
+    "gbif_key": 6910,
+    "canonical_name": "Braconidae",
+    "match_type": "HIGHERRANK"
+  },
+  "dolichopodidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Dolichopodidae",
+    "genus": null,
+    "species": "Dolichopodidae",
+    "gbif_key": 7305,
+    "canonical_name": "Dolichopodidae",
+    "match_type": "HIGHERRANK"
+  },
+  "nomada sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Apidae",
+    "genus": "Nomada",
+    "species": "Nomada",
+    "gbif_key": 11937213,
+    "canonical_name": "Nomada",
+    "match_type": "HIGHERRANK"
+  },
+  "nomia sp.": null,
+  "tenebrionidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Coleoptera",
+    "family": "Tenebrionidae",
+    "genus": null,
+    "species": "Tenebrionidae",
+    "gbif_key": 7857,
+    "canonical_name": "Tenebrionidae",
+    "match_type": "HIGHERRANK"
   }
 }

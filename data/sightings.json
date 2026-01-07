@@ -1480,5 +1480,235 @@
     "season": "winter",
     "notes": "Crickets are cool, they sit still.",
     "created_at": "2026-01-06T10:40:51.015198+05:30"
+  },
+  {
+    "id": "20260106-004",
+    "images": [
+      {
+        "filename": "20260106-004-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Bee Fly",
+    "scientific_name": "Bombyliidae Sp.",
+    "category": "insect",
+    "captured_at": "2026-01-06T11:06:32+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Unknown Species"
+    ],
+    "weather": {
+      "temp_max_c": 29.8,
+      "temp_min_c": 25.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.91,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    },
+    "season": "winter",
+    "notes": "Not very sure of the identification. I think I have done many mistakes already. This one looks like a mosquito, but bee apparently. How.",
+    "created_at": "2026-01-06T17:32:52.999552+05:30"
+  },
+  {
+    "id": "20260106-005",
+    "images": [
+      {
+        "filename": "20260106-005-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Darkling Beetle",
+    "scientific_name": "Tenebrionidae Sp.",
+    "category": "insect",
+    "captured_at": "2026-01-06T16:11:53+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "Beetles"
+    ],
+    "weather": {
+      "temp_max_c": 29.8,
+      "temp_min_c": 25.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.91,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    },
+    "season": "winter",
+    "notes": "This one allowed me click just 2 photos, lucky me.",
+    "created_at": "2026-01-06T17:33:48.408771+05:30"
+  },
+  {
+    "id": "20260106-006",
+    "images": [
+      {
+        "filename": "20260106-006-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Long Legged Fly",
+    "scientific_name": "Dolichopodidae Sp.",
+    "category": "insect",
+    "captured_at": "2026-01-06T16:39:53+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "Cool Bugs",
+      "Common Bugs",
+      "Flies"
+    ],
+    "weather": {
+      "temp_max_c": 29.8,
+      "temp_min_c": 25.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.91,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    },
+    "season": "winter",
+    "notes": "What is with these metallic green shiny bugs! Quite a few around here.",
+    "created_at": "2026-01-06T17:34:50.802920+05:30"
+  },
+  {
+    "id": "20260106-007",
+    "images": [
+      {
+        "filename": "20260106-007-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Nomad Bee",
+    "scientific_name": "Nomada Sp.",
+    "category": "insect",
+    "captured_at": "2026-01-06T12:02:14+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Scary Looking Bugs"
+    ],
+    "weather": {
+      "temp_max_c": 29.8,
+      "temp_min_c": 25.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.91,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    },
+    "season": "winter",
+    "notes": "This one allowed me take a quite a few snaps. Eventually landed where in the sunshine!",
+    "created_at": "2026-01-06T17:35:50.020784+05:30"
+  },
+  {
+    "id": "20260106-008",
+    "images": [
+      {
+        "filename": "20260106-008-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Parasitoid Wasp",
+    "scientific_name": "Braconidae Sp.",
+    "category": "insect",
+    "captured_at": "2026-01-06T16:41:28+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "Wasps"
+    ],
+    "weather": {
+      "temp_max_c": 29.8,
+      "temp_min_c": 25.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.91,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    },
+    "season": "winter",
+    "notes": "Not sure of the identification. I couldn't get more than one angle of this.",
+    "created_at": "2026-01-06T17:36:38.949134+05:30"
+  },
+  {
+    "id": "20260106-009",
+    "images": [
+      {
+        "filename": "20260106-009-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Rainbow Bee",
+    "scientific_name": "Nomia Sp.",
+    "category": "insect",
+    "captured_at": "2026-01-06T12:13:29+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Cool Bugs"
+    ],
+    "weather": {
+      "temp_max_c": 29.8,
+      "temp_min_c": 25.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.91,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    },
+    "season": "winter",
+    "notes": "So tiny! like about 1.2 mm may be. I am not sure of the ID.",
+    "created_at": "2026-01-06T17:37:36.641100+05:30"
   }
 ]
