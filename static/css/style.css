@@ -10,6 +10,7 @@
     --color-text-light: #5a6b5c;
     --color-accent: #4a7c4e;
     --color-accent-dark: #3a6340;
+    --color-primary: #3a6340;
     --color-border: #d4d0c8;
     --color-shadow: rgba(45, 58, 46, 0.1);
 
@@ -216,21 +217,20 @@ li {
    Status Banner
    ======================================== */
 .status-banner {
-    background: linear-gradient(135deg, var(--color-primary), #2d5a3d);
-    color: white;
     text-align: center;
-    padding: 0.875rem 0;
+    padding: 1rem 0;
 }
 
 .status-banner p {
     margin: 0;
     font-size: 1rem;
+    color: var(--color-accent-dark);
     letter-spacing: 0.02em;
 }
 
 .status-banner strong {
     font-weight: 700;
-    font-size: 1.1em;
+    color: var(--color-accent);
 }
 
 /* ========================================

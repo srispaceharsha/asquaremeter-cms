@@ -126,6 +126,19 @@ def compute_stats(sightings: list, observations: list, config: dict) -> dict:
     """Compute all statistics from sightings and observations data"""
     from collections import Counter, OrderedDict
 
+    # Helper to get season from month number
+    def get_season_from_month(month: int) -> str:
+        month_names = [
+            "", "january", "february", "march", "april", "may", "june",
+            "july", "august", "september", "october", "november", "december"
+        ]
+        month_name = month_names[month]
+        season_defs = config.get("season_definitions", {})
+        for season, months in season_defs.items():
+            if month_name in months:
+                return season
+        return "unknown"
+
     stats = {}
 
     now = datetime.now()
@@ -145,11 +158,9 @@ def compute_stats(sightings: list, observations: list, config: dict) -> dict:
     stats["total_observations"] = len(observations)
     stats["generated_at"] = now.strftime("%B %d, %Y")
 
-    # Unique species (by common_name, case-insensitive) - from both sightings and observations
-    species_names = [s["common_name"].lower() for s in sightings]
-    observation_species = [o["common_name"].lower() for o in observations]
-    all_species = set(species_names) | set(observation_species)
-    stats["unique_species"] = len(all_species)
+    # Unique species (by scientific_name) - from sightings only (observations don't have scientific names)
+    scientific_names = set(s["scientific_name"].lower() for s in sightings if s.get("scientific_name"))
+    stats["unique_species"] = len(scientific_names)
 
     # Days elapsed since project start
     stats["days_elapsed"] = max(1, (now - project_start).days + 1)
@@ -167,20 +178,30 @@ def compute_stats(sightings: list, observations: list, config: dict) -> dict:
     stats["days_without_sightings"] = stats["days_elapsed"] - len(sighting_dates)
     stats["coverage_percent"] = round(len(sighting_dates) / stats["days_elapsed"] * 100)
 
-    # Unique species by category
+    # Unique species by category (using scientific name)
     species_by_category = {}
     for s in sightings:
         cat = s["category"]
-        name = s["common_name"].lower()
+        sci_name = s.get("scientific_name", "").lower()
+        if not sci_name:
+            continue
         if cat not in species_by_category:
             species_by_category[cat] = set()
-        species_by_category[cat].add(name)
+        species_by_category[cat].add(sci_name)
     by_category = {cat: len(species) for cat, species in species_by_category.items()}
     stats["by_category"] = dict(sorted(by_category.items(), key=lambda x: -x[1]))
     stats["max_category"] = max(by_category.values()) if by_category else 1
 
-    # By season
+    # By season (sightings + observations)
     by_season = Counter(s.get("season", "unknown") for s in sightings)
+    # Add observations (infer season from date)
+    for o in observations:
+        try:
+            dt = datetime.strptime(o["date"], "%Y-%m-%d")
+            season = get_season_from_month(dt.month)
+            by_season[season] += 1
+        except:
+            pass
     # Order seasons logically
     season_order = ["winter", "summer", "monsoon", "post-monsoon"]
     stats["by_season"] = OrderedDict()
@@ -188,11 +209,19 @@ def compute_stats(sightings: list, observations: list, config: dict) -> dict:
         stats["by_season"][season] = by_season.get(season, 0)
     stats["max_season"] = max(by_season.values()) if by_season else 1
 
-    # By month
+    # By month (sightings + observations)
     month_counts = Counter()
     for s in sightings:
         try:
             dt = datetime.fromisoformat(s["captured_at"].replace("Z", "+00:00"))
+            month_key = dt.strftime("%b %Y")
+            month_counts[month_key] += 1
+        except:
+            pass
+    # Add observations
+    for o in observations:
+        try:
+            dt = datetime.strptime(o["date"], "%Y-%m-%d")
             month_key = dt.strftime("%b %Y")
             month_counts[month_key] += 1
         except:
@@ -207,32 +236,33 @@ def compute_stats(sightings: list, observations: list, config: dict) -> dict:
     stats["by_month"] = OrderedDict((m, month_counts[m]) for m in sorted_months)
     stats["max_month"] = max(month_counts.values()) if month_counts else 1
 
-    # This month stats (sightings only, matching Overview)
+    # This month stats (using scientific name from sightings only)
     current_month = now.strftime("%Y-%m")
     species_this_month = set()
-    sightings_this_month = 0
 
     for s in sightings:
         try:
             dt = datetime.fromisoformat(s["captured_at"].replace("Z", "+00:00"))
             if dt.strftime("%Y-%m") == current_month:
-                species_this_month.add(s["common_name"].lower())
-                sightings_this_month += 1
+                sci_name = s.get("scientific_name", "").lower()
+                if sci_name:
+                    species_this_month.add(sci_name)
         except:
             pass
 
-    stats["sightings_this_month"] = sightings_this_month
     stats["unique_species_this_month"] = len(species_this_month)
 
-    # Discovery curve (cumulative unique species by month)
+    # Discovery curve (cumulative unique species by month - using scientific name)
     seen_species = set()
     discovery_curve = OrderedDict()
     for s in sorted(sightings, key=lambda x: x["captured_at"]):
         try:
+            sci_name = s.get("scientific_name", "").lower()
+            if not sci_name:
+                continue
             dt = datetime.fromisoformat(s["captured_at"].replace("Z", "+00:00"))
             month_key = dt.strftime("%b %Y")
-            name = s["common_name"].lower()
-            seen_species.add(name)
+            seen_species.add(sci_name)
             discovery_curve[month_key] = len(seen_species)
         except:
             pass
@@ -375,10 +405,8 @@ def build_site(output_path: Path):
     else:
         days_elapsed = 1
 
-    # Unique species from sightings + observations
-    species_names = set(s["common_name"].lower() for s in sightings)
-    species_names.update(o["common_name"].lower() for o in observations)
-    unique_species = len(species_names)
+    # Unique species by scientific name (from sightings only)
+    unique_species = len(set(s["scientific_name"].lower() for s in sightings if s.get("scientific_name")))
 
     html = template.render(
         **base_context,

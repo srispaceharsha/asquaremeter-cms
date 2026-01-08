@@ -138,85 +138,84 @@ class TestComputeStats:
 
     def test_total_sightings_count(self, sample_config):
         sightings = [
-            {"id": "20260101-001", "common_name": "Ant", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
-            {"id": "20260101-002", "common_name": "Beetle", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T11:00:00Z"},
+            {"id": "20260101-001", "common_name": "Ant", "scientific_name": "Formica sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
+            {"id": "20260101-002", "common_name": "Beetle", "scientific_name": "Coleoptera sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T11:00:00Z"},
         ]
         stats = compute_stats(sightings, [], sample_config)
         assert stats["total_sightings"] == 2
 
     def test_unique_species_count(self, sample_config):
         sightings = [
-            {"id": "20260101-001", "common_name": "Ant", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
-            {"id": "20260101-002", "common_name": "Ant", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T11:00:00Z"},
-            {"id": "20260101-003", "common_name": "Beetle", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T12:00:00Z"},
+            {"id": "20260101-001", "common_name": "Ant", "scientific_name": "Formica sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
+            {"id": "20260101-002", "common_name": "Ant", "scientific_name": "Formica sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T11:00:00Z"},
+            {"id": "20260101-003", "common_name": "Beetle", "scientific_name": "Coleoptera sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T12:00:00Z"},
         ]
         stats = compute_stats(sightings, [], sample_config)
-        assert stats["unique_species"] == 2  # Ant and Beetle
+        assert stats["unique_species"] == 2  # Formica sp. and Coleoptera sp.
 
     def test_unique_species_case_insensitive(self, sample_config):
         sightings = [
-            {"id": "20260101-001", "common_name": "Ant", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
-            {"id": "20260101-002", "common_name": "ANT", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T11:00:00Z"},
-            {"id": "20260101-003", "common_name": "ant", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T12:00:00Z"},
+            {"id": "20260101-001", "common_name": "Ant", "scientific_name": "Formica sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
+            {"id": "20260101-002", "common_name": "ANT", "scientific_name": "FORMICA SP.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T11:00:00Z"},
+            {"id": "20260101-003", "common_name": "ant", "scientific_name": "formica sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T12:00:00Z"},
         ]
         stats = compute_stats(sightings, [], sample_config)
-        assert stats["unique_species"] == 1  # All same species
+        assert stats["unique_species"] == 1  # All same species (case-insensitive)
 
     def test_species_by_category_counts_unique(self, sample_config):
         sightings = [
-            {"id": "20260101-001", "common_name": "Ant", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
-            {"id": "20260101-002", "common_name": "Ant", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T11:00:00Z"},
-            {"id": "20260101-003", "common_name": "Spider", "category": "arachnid",
-             "season": "winter", "captured_at": "2026-01-01T12:00:00Z"},
+            {"id": "20260101-001", "common_name": "Ant", "scientific_name": "Formica sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
+            {"id": "20260101-002", "common_name": "Ant", "scientific_name": "Formica sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T11:00:00Z"},
+            {"id": "20260101-003", "common_name": "Spider", "scientific_name": "Araneae sp.",
+             "category": "arachnid", "season": "winter", "captured_at": "2026-01-01T12:00:00Z"},
         ]
         stats = compute_stats(sightings, [], sample_config)
         assert stats["by_category"]["insect"] == 1  # Only 1 unique species
         assert stats["by_category"]["arachnid"] == 1
 
-    def test_observations_included_in_unique_species(self, sample_config):
+    def test_unique_species_uses_scientific_name(self, sample_config):
+        """Test that species with same common name but different scientific names are counted separately"""
         sightings = [
-            {"id": "20260101-001", "common_name": "Ant", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
+            {"id": "20260101-001", "common_name": "Lynx Spider", "scientific_name": "Oxyopes sertatus",
+             "category": "arachnid", "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
+            {"id": "20260101-002", "common_name": "Lynx Spider", "scientific_name": "Oxyopes salticus",
+             "category": "arachnid", "season": "winter", "captured_at": "2026-01-01T11:00:00Z"},
         ]
-        observations = [
-            {"common_name": "Beetle", "date": "2026-01-01"},
-            {"common_name": "Spider", "date": "2026-01-01"},
-        ]
-        stats = compute_stats(sightings, observations, sample_config)
-        assert stats["unique_species"] == 3  # Ant, Beetle, Spider
+        stats = compute_stats(sightings, [], sample_config)
+        assert stats["unique_species"] == 2  # Two different species despite same common name
 
     def test_days_with_sightings(self, sample_config):
         sightings = [
-            {"id": "20260101-001", "common_name": "Ant", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
-            {"id": "20260101-002", "common_name": "Beetle", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T14:00:00Z"},
-            {"id": "20260102-001", "common_name": "Spider", "category": "arachnid",
-             "season": "winter", "captured_at": "2026-01-02T10:00:00Z"},
+            {"id": "20260101-001", "common_name": "Ant", "scientific_name": "Formica sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
+            {"id": "20260101-002", "common_name": "Beetle", "scientific_name": "Coleoptera sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T14:00:00Z"},
+            {"id": "20260102-001", "common_name": "Spider", "scientific_name": "Araneae sp.",
+             "category": "arachnid", "season": "winter", "captured_at": "2026-01-02T10:00:00Z"},
         ]
         stats = compute_stats(sightings, [], sample_config)
         assert stats["days_with_sightings"] == 2  # Jan 1 and Jan 2
 
     def test_top_species(self, sample_config):
         sightings = [
-            {"id": "20260101-001", "common_name": "Ant", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
-            {"id": "20260101-002", "common_name": "Ant", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T11:00:00Z"},
-            {"id": "20260101-003", "common_name": "Ant", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T12:00:00Z"},
-            {"id": "20260101-004", "common_name": "Beetle", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T13:00:00Z"},
+            {"id": "20260101-001", "common_name": "Ant", "scientific_name": "Formica sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
+            {"id": "20260101-002", "common_name": "Ant", "scientific_name": "Formica sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T11:00:00Z"},
+            {"id": "20260101-003", "common_name": "Ant", "scientific_name": "Formica sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T12:00:00Z"},
+            {"id": "20260101-004", "common_name": "Beetle", "scientific_name": "Coleoptera sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T13:00:00Z"},
         ]
         stats = compute_stats(sightings, [], sample_config)
         # Ant should be top with 3 sightings
@@ -224,12 +223,12 @@ class TestComputeStats:
 
     def test_single_sighting_species(self, sample_config):
         sightings = [
-            {"id": "20260101-001", "common_name": "Ant", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
-            {"id": "20260101-002", "common_name": "Ant", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T11:00:00Z"},
-            {"id": "20260101-003", "common_name": "Rare Beetle", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T12:00:00Z"},
+            {"id": "20260101-001", "common_name": "Ant", "scientific_name": "Formica sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
+            {"id": "20260101-002", "common_name": "Ant", "scientific_name": "Formica sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T11:00:00Z"},
+            {"id": "20260101-003", "common_name": "Rare Beetle", "scientific_name": "Rarum sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T12:00:00Z"},
         ]
         stats = compute_stats(sightings, [], sample_config)
         assert "Rare Beetle" in stats["single_sighting_species"]
@@ -237,12 +236,12 @@ class TestComputeStats:
 
     def test_by_season(self, sample_config):
         sightings = [
-            {"id": "20260101-001", "common_name": "Ant", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
-            {"id": "20260101-002", "common_name": "Beetle", "category": "insect",
-             "season": "winter", "captured_at": "2026-01-01T11:00:00Z"},
-            {"id": "20260601-001", "common_name": "Spider", "category": "arachnid",
-             "season": "monsoon", "captured_at": "2026-06-01T10:00:00Z"},
+            {"id": "20260101-001", "common_name": "Ant", "scientific_name": "Formica sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T10:00:00Z"},
+            {"id": "20260101-002", "common_name": "Beetle", "scientific_name": "Coleoptera sp.",
+             "category": "insect", "season": "winter", "captured_at": "2026-01-01T11:00:00Z"},
+            {"id": "20260601-001", "common_name": "Spider", "scientific_name": "Araneae sp.",
+             "category": "arachnid", "season": "monsoon", "captured_at": "2026-06-01T10:00:00Z"},
         ]
         stats = compute_stats(sightings, [], sample_config)
         assert stats["by_season"]["winter"] == 2

@@ -243,7 +243,7 @@
       }
     ],
     "common_name": "Acrobat Ant",
-    "scientific_name": "Crematogaster sp.",
+    "scientific_name": "Crematogaster Sp.",
     "category": "insect",
     "captured_at": "2026-01-02T10:18:27+05:30",
     "time_of_day": "morning",
@@ -359,7 +359,7 @@
       }
     ],
     "common_name": "Rust Fly",
-    "scientific_name": "Psilidae sp.",
+    "scientific_name": "Psilidae Sp.",
     "category": "insect",
     "captured_at": "2026-01-02T11:11:54+05:30",
     "time_of_day": "morning",
@@ -512,7 +512,7 @@
       }
     ],
     "common_name": "Whitefly",
-    "scientific_name": "Aleyrodidae sp.",
+    "scientific_name": "Aleyrodidae Sp.",
     "category": "insect",
     "captured_at": "2026-01-02T13:05:03+05:30",
     "time_of_day": "afternoon",
@@ -588,7 +588,7 @@
       }
     ],
     "common_name": "Flea Beetle",
-    "scientific_name": "Chaetocnema sp.",
+    "scientific_name": "Chaetocnema Sp.",
     "category": "insect",
     "captured_at": "2026-01-02T17:17:08+05:30",
     "time_of_day": "evening",
@@ -626,8 +626,8 @@
         "caption": ""
       }
     ],
-    "common_name": "Flat-footed Flies",
-    "scientific_name": "Platypezidae sp.",
+    "common_name": "Flat-footed Fly",
+    "scientific_name": "Platypezidae Sp.",
     "category": "insect",
     "captured_at": "2026-01-02T17:08:29+05:30",
     "time_of_day": "evening",
@@ -665,8 +665,8 @@
         "caption": ""
       }
     ],
-    "common_name": "Fruit Flies",
-    "scientific_name": "Tephritinae sp.",
+    "common_name": "Fruit Fly",
+    "scientific_name": "Tephritinae Sp.",
     "category": "insect",
     "captured_at": "2026-01-02T17:13:48+05:30",
     "time_of_day": "evening",
@@ -896,7 +896,7 @@
       }
     ],
     "common_name": "Flea Beetle",
-    "scientific_name": "Chaetocnema sp.",
+    "scientific_name": "Chaetocnema Sp.",
     "category": "insect",
     "captured_at": "2026-01-04T10:41:42+05:30",
     "time_of_day": "morning",
@@ -1013,7 +1013,7 @@
       }
     ],
     "common_name": "Leafhopper",
-    "scientific_name": "Orosius sp.",
+    "scientific_name": "Orosius Sp.",
     "category": "insect",
     "captured_at": "2026-01-04T10:55:45+05:30",
     "time_of_day": "morning",
@@ -1094,7 +1094,7 @@
       }
     ],
     "common_name": "Thrips",
-    "scientific_name": "",
+    "scientific_name": "Thysanoptera Sp.",
     "category": "insect",
     "captured_at": "2026-01-04T16:59:41+05:30",
     "time_of_day": "evening",
@@ -1174,7 +1174,7 @@
       }
     ],
     "common_name": "Green Lacewing Larva",
-    "scientific_name": "Chrysopidae Sp",
+    "scientific_name": "Chrysopidae Sp.",
     "category": "insect",
     "captured_at": "2026-01-05T11:28:55+05:30",
     "time_of_day": "morning",
@@ -1251,7 +1251,7 @@
       }
     ],
     "common_name": "Jumping Spider",
-    "scientific_name": "Salticidae sp",
+    "scientific_name": "Salticidae Sp.",
     "category": "arachnid",
     "captured_at": "2026-01-05T14:19:25+05:30",
     "time_of_day": "afternoon",
@@ -1710,5 +1710,363 @@
     "season": "winter",
     "notes": "So tiny! like about 1.2 mm may be. I am not sure of the ID.",
     "created_at": "2026-01-06T17:37:36.641100+05:30"
+  },
+  {
+    "id": "20260107-001",
+    "images": [
+      {
+        "filename": "20260107-001-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260107-001-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Ant-mimicking Jumping Spider",
+    "scientific_name": "Myrmarachne Sp.",
+    "category": "arachnid",
+    "captured_at": "2026-01-07T09:02:22+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Spiders",
+      "Cool Bugs",
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 8,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.84,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    },
+    "season": "winter",
+    "notes": "At first, I fell for it. I thought it is the carpenter ant. But it wasn't moving around, unlike the other ants near by. Hah! It figured the mimicking part really well, but didn't copy the behaviour. I got him!",
+    "created_at": "2026-01-07T13:45:55.187847+05:30"
+  },
+  {
+    "id": "20260107-002",
+    "images": [
+      {
+        "filename": "20260107-002-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Black Scavenger Fly",
+    "scientific_name": "Sepsidae Sp.",
+    "category": "insect",
+    "captured_at": "2026-01-07T07:47:12+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Flies",
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 8,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.84,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    },
+    "season": "winter",
+    "notes": "It has funny walk. Keeps flapping its wings every few steps.",
+    "created_at": "2026-01-07T13:47:04.191299+05:30"
+  },
+  {
+    "id": "20260107-003",
+    "images": [
+      {
+        "filename": "20260107-003-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Damselfly",
+    "scientific_name": "Agriocnemis pygmaea",
+    "category": "insect",
+    "captured_at": "2026-01-07T09:10:54+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting",
+      "Common Bugs",
+      "Cool Bugs"
+    ],
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 8,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.84,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    },
+    "season": "winter",
+    "notes": "Dame is here! What a beauty!",
+    "created_at": "2026-01-07T13:47:52.465094+05:30"
+  },
+  {
+    "id": "20260107-004",
+    "images": [
+      {
+        "filename": "20260107-004-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Velvet Ant",
+    "scientific_name": "Dasymutilla quadriguttata",
+    "category": "insect",
+    "captured_at": "2026-01-07T07:57:01+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting",
+      "Tiny Bugs"
+    ],
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 8,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.84,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    },
+    "season": "winter",
+    "notes": "Like many ants in the patch, this kept moving along each grass blade, leaves. Tiny one.",
+    "created_at": "2026-01-07T13:49:10.623709+05:30"
+  },
+  {
+    "id": "20260107-005",
+    "images": [
+      {
+        "filename": "20260107-005-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260107-005-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Weevil",
+    "scientific_name": "Curculionidae Sp.",
+    "category": "insect",
+    "captured_at": "2026-01-07T10:13:19+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting",
+      "Cool Bugs"
+    ],
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 8,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.84,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    },
+    "season": "winter",
+    "notes": "insect",
+    "created_at": "2026-01-07T13:50:04.588522+05:30"
+  },
+  {
+    "id": "20260107-006",
+    "images": [
+      {
+        "filename": "20260107-006-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Carpenter Ant",
+    "scientific_name": "Camponotus Parius",
+    "category": "insect",
+    "captured_at": "2026-01-07T16:12:10+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "Ants",
+      "Common Bugs"
+    ],
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.9,
+      "wind_speed_kmh": 19.8,
+      "wind_direction_deg": 9,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.84,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    },
+    "season": "winter",
+    "notes": "Communication, ant style.",
+    "created_at": "2026-01-07T17:43:19.658145+05:30"
+  },
+  {
+    "id": "20260107-007",
+    "images": [
+      {
+        "filename": "20260107-007-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Grass Moth",
+    "scientific_name": "Crambidae Sp.",
+    "category": "insect",
+    "captured_at": "2026-01-07T16:29:47+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "Unknown Species"
+    ],
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.9,
+      "wind_speed_kmh": 19.8,
+      "wind_direction_deg": 9,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.84,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    },
+    "season": "winter",
+    "notes": "I am so not sure what species, family, order, etc etc.",
+    "created_at": "2026-01-07T17:44:04.887505+05:30"
+  },
+  {
+    "id": "20260107-008",
+    "images": [
+      {
+        "filename": "20260107-008-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Leaf Miner Moth",
+    "scientific_name": "Lepidoptera",
+    "category": "insect",
+    "captured_at": "2026-01-07T16:19:13+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "Unknown Species"
+    ],
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.9,
+      "wind_speed_kmh": 19.8,
+      "wind_direction_deg": 9,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.84,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    },
+    "season": "winter",
+    "notes": "Very small, looks like a tiny twig.",
+    "created_at": "2026-01-07T17:44:44.776480+05:30"
+  },
+  {
+    "id": "20260107-009",
+    "images": [
+      {
+        "filename": "20260107-009-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Parasitoid Wasp",
+    "scientific_name": "Platygastridae Sp.",
+    "category": "insect",
+    "captured_at": "2026-01-07T15:51:16+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Tiny Bugs"
+    ],
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.9,
+      "wind_speed_kmh": 19.8,
+      "wind_direction_deg": 9,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.84,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    },
+    "season": "winter",
+    "notes": "These are very small. Takes a lot of patience.",
+    "created_at": "2026-01-07T17:45:19.060309+05:30"
   }
 ]
