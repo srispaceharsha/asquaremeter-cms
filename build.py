@@ -365,10 +365,27 @@ def build_site(output_path: Path):
     featured_ids = config.get("featured_sightings", [])
     featured_sightings = [sightings_by_id[sid] for sid in featured_ids if sid in sightings_by_id]
 
+    # Calculate days elapsed and unique species for status banner
+    if sightings:
+        first_date = min(
+            datetime.fromisoformat(s["captured_at"].replace("Z", "+00:00")).date()
+            for s in sightings
+        )
+        days_elapsed = max(1, (datetime.now().date() - first_date).days + 1)
+    else:
+        days_elapsed = 1
+
+    # Unique species from sightings + observations
+    species_names = set(s["common_name"].lower() for s in sightings)
+    species_names.update(o["common_name"].lower() for o in observations)
+    unique_species = len(species_names)
+
     html = template.render(
         **base_context,
         featured_sightings=featured_sightings,
         latest_sightings=sightings[:6],
+        days_elapsed=days_elapsed,
+        unique_species=unique_species,
     )
     (output_path / "index.html").write_text(html)
 

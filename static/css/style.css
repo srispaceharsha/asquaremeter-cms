@@ -213,6 +213,27 @@ li {
 }
 
 /* ========================================
+   Status Banner
+   ======================================== */
+.status-banner {
+    background: linear-gradient(135deg, var(--color-primary), #2d5a3d);
+    color: white;
+    text-align: center;
+    padding: 0.875rem 0;
+}
+
+.status-banner p {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+}
+
+.status-banner strong {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+/* ========================================
    Navigation Cards
    ======================================== */
 .nav-cards {
