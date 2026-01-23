@@ -7,6 +7,10 @@
     <h1>Statistics</h1>
     <p class="stats-updated">Last updated: {{ stats.generated_at }}</p>
 
+    <section class="stats-intro">
+        <p>This page tracks all documented life in the one square meter plot. <strong>Sightings</strong> are species captured with photographs and <strong>observations</strong> ( quick notes of species seen without photos, typically repeat visitors). The charts below combine both to show the full picture of activity in the plot.</p>
+    </section>
+
     <!-- Core Counts -->
     <section class="stats-section">
         <h2>Overview</h2>
@@ -16,11 +20,21 @@
                 <span class="stat-label">Unique Species</span>
             </div>
             <div class="stat-card">
-                <span class="stat-number">{{ stats.days_elapsed }}</span>
+                <span class="stat-number" id="stats-days-elapsed">{{ stats.days_elapsed }}</span>
                 <span class="stat-label">Days Elapsed</span>
             </div>
         </div>
     </section>
+    <script>
+    (function() {
+        var start = new Date('2026-01-01T00:00:00+05:30');
+        var now = new Date();
+        var days = Math.floor((now - start) / (1000 * 60 * 60 * 24)) + 1;
+        if (days > 0 && days <= 365) {
+            document.getElementById('stats-days-elapsed').textContent = days;
+        }
+    })();
+    </script>
 
     <!-- Species by Category -->
     <section class="stats-section">
@@ -163,21 +177,6 @@
         </ol>
         {% else %}
         <p class="no-data">No data yet</p>
-        {% endif %}
-    </section>
-
-    <!-- Single Sighting Species (Rare Finds) -->
-    <section class="stats-section">
-        <h2>Rare Finds</h2>
-        <p class="stats-description">Species seen only once</p>
-        {% if stats.single_sighting_species %}
-        <ul class="rare-list">
-            {% for name in stats.single_sighting_species %}
-            <li>{{ name }}</li>
-            {% endfor %}
-        </ul>
-        {% else %}
-        <p class="no-data">No rare finds yet</p>
         {% endif %}
     </section>
 

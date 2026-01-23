@@ -152,19 +152,80 @@ li {
 /* ========================================
    Footer
    ======================================== */
+
 .site-footer {
+    position: relative;
     background: var(--color-bg-alt);
     border-top: 1px solid var(--color-border);
-    padding: 2rem 0;
     margin-top: 3rem;
+
+    /* tighter top, generous bottom for illustrations */
+    padding-top: clamp(3rem, 8vw, 6rem);
+    padding-bottom: clamp(3rem, 12vw, 6rem);
+
     text-align: center;
     color: var(--color-text-light);
     font-size: 0.9rem;
+    overflow: hidden; /* safely crop overflow */
+}
+
+/* Footer content */
+.site-footer .container {
+    position: relative;
+    z-index: 2; /* above illustrations */
+
+    /* slightly lifted compared to before */
+    margin-bottom: clamp(1.5rem, 4vw, 3rem);
 }
 
 .site-footer p {
     margin: 0.25rem 0;
 }
+
+/* ========================================
+   Decorative illustrations
+   ======================================== */
+
+.footer-illustration {
+    position: absolute;
+    bottom: 0;
+
+    /* fluid scaling with guardrails */
+    width: clamp(260px, 53vw, 900px);
+    height: auto;
+
+    opacity: 1;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.footer-illustration-left {
+    left: 0;
+}
+
+.footer-illustration-right {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+/* ========================================
+   Mobile refinement
+   ======================================== */
+
+@media (max-width: 600px) {
+    .footer-illustration-right {
+        display: none;
+    }
+
+    .footer-illustration-left {
+        left: 50%;
+        transform: translateX(-50%);
+        width: clamp(200px, 100vw, 420px);
+    }
+}
+
+
+
 
 /* ========================================
    Hero Section
@@ -563,6 +624,69 @@ li {
     margin: 0;
 }
 
+/* Gallery - main image + thumbnail strip */
+.sighting-gallery {
+    margin-bottom: 2rem;
+}
+
+.gallery-main {
+    margin: 0 0 1rem 0;
+}
+
+.gallery-main img {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.gallery-main figcaption {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-top: 0.5rem;
+    text-align: center;
+    min-height: 1.4em;
+}
+
+.gallery-thumbs {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.gallery-thumb {
+    padding: 0;
+    border: 3px solid transparent;
+    border-radius: var(--radius);
+    background: none;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.gallery-thumb:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.gallery-thumb.active {
+    opacity: 1;
+    border-color: var(--color-accent);
+}
+
+.gallery-thumb img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: calc(var(--radius) - 3px);
+}
+
+/* Legacy - keep for backwards compatibility */
 .sighting-images {
     margin-bottom: 2rem;
 }
@@ -640,6 +764,36 @@ li {
     text-transform: lowercase;
 }
 
+.size-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-left: 0.4rem;
+    text-transform: uppercase;
+}
+
+.size-tiny {
+    background: #e8d5e8;
+    color: #6b3a6b;
+}
+
+.size-small {
+    background: #d5e8d5;
+    color: #3a6b3a;
+}
+
+.size-medium {
+    background: #e8e2d5;
+    color: #6b5a3a;
+}
+
+.size-large {
+    background: #d5dde8;
+    color: #3a4a6b;
+}
+
 .sighting-notes {
     background: white;
     border: 1px solid var(--color-border);
@@ -709,6 +863,8 @@ li {
     z-index: 1000;
     align-items: center;
     justify-content: center;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .lightbox.active {
@@ -719,6 +875,7 @@ li {
     max-width: 98vw;
     max-height: 98vh;
     object-fit: contain;
+    touch-action: pinch-zoom pan-x pan-y;
 }
 
 .lightbox-close {
@@ -947,7 +1104,19 @@ li {
 .stats-updated {
     color: var(--color-text-light);
     font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.stats-intro {
     margin-bottom: 2rem;
+    padding: 1rem;
+    background: var(--color-bg-alt);
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+}
+
+.stats-intro p {
+    margin: 0;
 }
 
 .stats-section {

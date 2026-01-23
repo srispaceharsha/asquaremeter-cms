@@ -5,7 +5,25 @@
     "common_name": "Carpenter Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-02T08:24:24.226191+05:30"
+    "created_at": "2026-01-02T08:24:24.226191+05:30",
+    "weather": {
+      "temp_max_c": 27.6,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 77,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 23.5,
+      "wind_direction_deg": 328,
+      "soil_temp_c": null,
+      "uv_index": 7.0
+    },
+    "celestial": {
+      "moon_phase": "Waxing Gibbous",
+      "moon_illumination": 0.97,
+      "sunrise": "06:54",
+      "sunset": "18:16"
+    }
   },
   {
     "date": "2026-01-02",
@@ -13,7 +31,25 @@
     "common_name": "Tropical Fire Ant",
     "time_of_day": "afternoon",
     "note": "",
-    "created_at": "2026-01-02T13:46:53.711727+05:30"
+    "created_at": "2026-01-02T13:46:53.711727+05:30",
+    "weather": {
+      "temp_max_c": 27.6,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 77,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 23.5,
+      "wind_direction_deg": 328,
+      "soil_temp_c": null,
+      "uv_index": 7.0
+    },
+    "celestial": {
+      "moon_phase": "Waxing Gibbous",
+      "moon_illumination": 0.97,
+      "sunrise": "06:54",
+      "sunset": "18:16"
+    }
   },
   {
     "date": "2026-01-02",
@@ -21,7 +57,25 @@
     "common_name": "Dusty Surface Beetle",
     "time_of_day": "afternoon",
     "note": "",
-    "created_at": "2026-01-02T14:14:36.723414+05:30"
+    "created_at": "2026-01-02T14:14:36.723414+05:30",
+    "weather": {
+      "temp_max_c": 27.6,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 77,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 23.5,
+      "wind_direction_deg": 328,
+      "soil_temp_c": null,
+      "uv_index": 7.0
+    },
+    "celestial": {
+      "moon_phase": "Waxing Gibbous",
+      "moon_illumination": 0.97,
+      "sunrise": "06:54",
+      "sunset": "18:16"
+    }
   },
   {
     "date": "2026-01-02",
@@ -29,7 +83,25 @@
     "common_name": "Ground Beetle",
     "time_of_day": "afternoon",
     "note": "",
-    "created_at": "2026-01-02T14:15:17.078182+05:30"
+    "created_at": "2026-01-02T14:15:17.078182+05:30",
+    "weather": {
+      "temp_max_c": 27.6,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 77,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 23.5,
+      "wind_direction_deg": 328,
+      "soil_temp_c": null,
+      "uv_index": 7.0
+    },
+    "celestial": {
+      "moon_phase": "Waxing Gibbous",
+      "moon_illumination": 0.97,
+      "sunrise": "06:54",
+      "sunset": "18:16"
+    }
   },
   {
     "date": "2026-01-03",
@@ -37,7 +109,25 @@
     "common_name": "Carpenter Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-03T18:36:13.690715+05:30"
+    "created_at": "2026-01-03T18:36:13.690715+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0.5,
+      "conditions": "Slight rain showers",
+      "humidity_percent": 82,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 19.5,
+      "wind_direction_deg": 301,
+      "soil_temp_c": null,
+      "uv_index": 7.0
+    },
+    "celestial": {
+      "moon_phase": "Full Moon",
+      "moon_illumination": 1.0,
+      "sunrise": "06:54",
+      "sunset": "18:16"
+    }
   },
   {
     "date": "2026-01-03",
@@ -45,7 +135,25 @@
     "common_name": "Dusty Surface Beetle",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-03T18:36:13.690715+05:30"
+    "created_at": "2026-01-03T18:36:13.690715+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0.5,
+      "conditions": "Slight rain showers",
+      "humidity_percent": 82,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 19.5,
+      "wind_direction_deg": 301,
+      "soil_temp_c": null,
+      "uv_index": 7.0
+    },
+    "celestial": {
+      "moon_phase": "Full Moon",
+      "moon_illumination": 1.0,
+      "sunrise": "06:54",
+      "sunset": "18:16"
+    }
   },
   {
     "date": "2026-01-03",
@@ -53,7 +161,25 @@
     "common_name": "Fruit Flies",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-03T18:36:13.690715+05:30"
+    "created_at": "2026-01-03T18:36:13.690715+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0.5,
+      "conditions": "Slight rain showers",
+      "humidity_percent": 82,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 19.5,
+      "wind_direction_deg": 301,
+      "soil_temp_c": null,
+      "uv_index": 7.0
+    },
+    "celestial": {
+      "moon_phase": "Full Moon",
+      "moon_illumination": 1.0,
+      "sunrise": "06:54",
+      "sunset": "18:16"
+    }
   },
   {
     "date": "2026-01-03",
@@ -61,7 +187,25 @@
     "common_name": "Tropical Fire Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-03T18:36:13.690715+05:30"
+    "created_at": "2026-01-03T18:36:13.690715+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0.5,
+      "conditions": "Slight rain showers",
+      "humidity_percent": 82,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 19.5,
+      "wind_direction_deg": 301,
+      "soil_temp_c": null,
+      "uv_index": 7.0
+    },
+    "celestial": {
+      "moon_phase": "Full Moon",
+      "moon_illumination": 1.0,
+      "sunrise": "06:54",
+      "sunset": "18:16"
+    }
   },
   {
     "date": "2026-01-03",
@@ -69,7 +213,25 @@
     "common_name": "Acrobat Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-03T18:36:13.690715+05:30"
+    "created_at": "2026-01-03T18:36:13.690715+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0.5,
+      "conditions": "Slight rain showers",
+      "humidity_percent": 82,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 19.5,
+      "wind_direction_deg": 301,
+      "soil_temp_c": null,
+      "uv_index": 7.0
+    },
+    "celestial": {
+      "moon_phase": "Full Moon",
+      "moon_illumination": 1.0,
+      "sunrise": "06:54",
+      "sunset": "18:16"
+    }
   },
   {
     "date": "2026-01-03",
@@ -77,7 +239,25 @@
     "common_name": "Grasshopper",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-03T18:36:13.690715+05:30"
+    "created_at": "2026-01-03T18:36:13.690715+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0.5,
+      "conditions": "Slight rain showers",
+      "humidity_percent": 82,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 19.5,
+      "wind_direction_deg": 301,
+      "soil_temp_c": null,
+      "uv_index": 7.0
+    },
+    "celestial": {
+      "moon_phase": "Full Moon",
+      "moon_illumination": 1.0,
+      "sunrise": "06:54",
+      "sunset": "18:16"
+    }
   },
   {
     "date": "2026-01-04",
@@ -85,7 +265,25 @@
     "common_name": "Carpenter Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-04T10:51:30.493008+05:30"
+    "created_at": "2026-01-04T10:51:30.493008+05:30",
+    "weather": {
+      "temp_max_c": 29.4,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 69,
+      "pressure_hpa": 1012.1,
+      "wind_speed_kmh": 19.3,
+      "wind_direction_deg": 3,
+      "soil_temp_c": null,
+      "uv_index": 7.0
+    },
+    "celestial": {
+      "moon_phase": "Full Moon",
+      "moon_illumination": 0.99,
+      "sunrise": "06:55",
+      "sunset": "18:17"
+    }
   },
   {
     "date": "2026-01-04",
@@ -93,7 +291,25 @@
     "common_name": "Wolf Spider",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-04T10:51:30.493008+05:30"
+    "created_at": "2026-01-04T10:51:30.493008+05:30",
+    "weather": {
+      "temp_max_c": 29.4,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 69,
+      "pressure_hpa": 1012.1,
+      "wind_speed_kmh": 19.3,
+      "wind_direction_deg": 3,
+      "soil_temp_c": null,
+      "uv_index": 7.0
+    },
+    "celestial": {
+      "moon_phase": "Full Moon",
+      "moon_illumination": 0.99,
+      "sunrise": "06:55",
+      "sunset": "18:17"
+    }
   },
   {
     "date": "2026-01-04",
@@ -101,7 +317,25 @@
     "common_name": "Tropical Fire Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-04T10:51:30.493008+05:30"
+    "created_at": "2026-01-04T10:51:30.493008+05:30",
+    "weather": {
+      "temp_max_c": 29.4,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 69,
+      "pressure_hpa": 1012.1,
+      "wind_speed_kmh": 19.3,
+      "wind_direction_deg": 3,
+      "soil_temp_c": null,
+      "uv_index": 7.0
+    },
+    "celestial": {
+      "moon_phase": "Full Moon",
+      "moon_illumination": 0.99,
+      "sunrise": "06:55",
+      "sunset": "18:17"
+    }
   },
   {
     "date": "2026-01-05",
@@ -109,7 +343,25 @@
     "common_name": "Acrobat Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-05T19:43:05.283182+05:30"
+    "created_at": "2026-01-05T19:43:05.283182+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 54,
+      "pressure_hpa": 1012.6,
+      "wind_speed_kmh": 21.6,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.96,
+      "sunrise": "06:55",
+      "sunset": "18:17"
+    }
   },
   {
     "date": "2026-01-05",
@@ -117,7 +369,25 @@
     "common_name": "Carpenter Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-05T19:43:05.283182+05:30"
+    "created_at": "2026-01-05T19:43:05.283182+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 54,
+      "pressure_hpa": 1012.6,
+      "wind_speed_kmh": 21.6,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.96,
+      "sunrise": "06:55",
+      "sunset": "18:17"
+    }
   },
   {
     "date": "2026-01-05",
@@ -125,7 +395,25 @@
     "common_name": "Dusty Surface Beetle",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-05T19:43:05.283182+05:30"
+    "created_at": "2026-01-05T19:43:05.283182+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 54,
+      "pressure_hpa": 1012.6,
+      "wind_speed_kmh": 21.6,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.96,
+      "sunrise": "06:55",
+      "sunset": "18:17"
+    }
   },
   {
     "date": "2026-01-05",
@@ -133,7 +421,25 @@
     "common_name": "Fruit Flies",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-05T19:43:05.283182+05:30"
+    "created_at": "2026-01-05T19:43:05.283182+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 54,
+      "pressure_hpa": 1012.6,
+      "wind_speed_kmh": 21.6,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.96,
+      "sunrise": "06:55",
+      "sunset": "18:17"
+    }
   },
   {
     "date": "2026-01-05",
@@ -141,7 +447,25 @@
     "common_name": "Ground Cricket",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-05T19:43:05.283182+05:30"
+    "created_at": "2026-01-05T19:43:05.283182+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 54,
+      "pressure_hpa": 1012.6,
+      "wind_speed_kmh": 21.6,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.96,
+      "sunrise": "06:55",
+      "sunset": "18:17"
+    }
   },
   {
     "date": "2026-01-05",
@@ -149,7 +473,25 @@
     "common_name": "Tropical Fire Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-05T19:43:05.283182+05:30"
+    "created_at": "2026-01-05T19:43:05.283182+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 54,
+      "pressure_hpa": 1012.6,
+      "wind_speed_kmh": 21.6,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.96,
+      "sunrise": "06:55",
+      "sunset": "18:17"
+    }
   },
   {
     "date": "2026-01-06",
@@ -157,7 +499,25 @@
     "common_name": "Acrobat Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-06T08:45:00.973556+05:30"
+    "created_at": "2026-01-06T08:45:00.973556+05:30",
+    "weather": {
+      "temp_max_c": 29.6,
+      "temp_min_c": 25.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 61,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 22,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.91,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-06",
@@ -165,7 +525,25 @@
     "common_name": "Banded Pearl",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-06T08:45:00.973556+05:30"
+    "created_at": "2026-01-06T08:45:00.973556+05:30",
+    "weather": {
+      "temp_max_c": 29.6,
+      "temp_min_c": 25.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 61,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 22,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.91,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-06",
@@ -173,7 +551,25 @@
     "common_name": "Carpenter Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-06T08:45:00.973556+05:30"
+    "created_at": "2026-01-06T08:45:00.973556+05:30",
+    "weather": {
+      "temp_max_c": 29.6,
+      "temp_min_c": 25.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 61,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 22,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.91,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-06",
@@ -181,7 +577,25 @@
     "common_name": "Ground Cricket",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-06T08:45:00.973556+05:30"
+    "created_at": "2026-01-06T08:45:00.973556+05:30",
+    "weather": {
+      "temp_max_c": 29.6,
+      "temp_min_c": 25.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 61,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 22,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.91,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-06",
@@ -189,7 +603,25 @@
     "common_name": "Vegetable Grasshopper",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-06T08:45:00.973556+05:30"
+    "created_at": "2026-01-06T08:45:00.973556+05:30",
+    "weather": {
+      "temp_max_c": 29.6,
+      "temp_min_c": 25.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 61,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 22,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.91,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-06",
@@ -197,7 +629,25 @@
     "common_name": "Tropical Fire Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-06T08:45:00.973556+05:30"
+    "created_at": "2026-01-06T08:45:00.973556+05:30",
+    "weather": {
+      "temp_max_c": 29.6,
+      "temp_min_c": 25.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 61,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 22,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.91,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-06",
@@ -205,7 +655,25 @@
     "common_name": "Ground Beetle",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-06T10:41:02.246069+05:30"
+    "created_at": "2026-01-06T10:41:02.246069+05:30",
+    "weather": {
+      "temp_max_c": 29.6,
+      "temp_min_c": 25.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 61,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 22,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.91,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-06",
@@ -213,7 +681,25 @@
     "common_name": "Rust Fly",
     "time_of_day": "afternoon",
     "note": "",
-    "created_at": "2026-01-06T16:50:35.729950+05:30"
+    "created_at": "2026-01-06T16:50:35.729950+05:30",
+    "weather": {
+      "temp_max_c": 29.6,
+      "temp_min_c": 25.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 61,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 22,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.91,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-06",
@@ -221,7 +707,25 @@
     "common_name": "Dusty Surface Beetle",
     "time_of_day": "afternoon",
     "note": "",
-    "created_at": "2026-01-06T16:50:35.729950+05:30"
+    "created_at": "2026-01-06T16:50:35.729950+05:30",
+    "weather": {
+      "temp_max_c": 29.6,
+      "temp_min_c": 25.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 61,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 22,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.91,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-06",
@@ -229,7 +733,25 @@
     "common_name": "Wolf Spider",
     "time_of_day": "afternoon",
     "note": "",
-    "created_at": "2026-01-06T16:50:35.729950+05:30"
+    "created_at": "2026-01-06T16:50:35.729950+05:30",
+    "weather": {
+      "temp_max_c": 29.6,
+      "temp_min_c": 25.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 61,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 22,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.91,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-07",
@@ -237,7 +759,25 @@
     "common_name": "Acrobat Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-07T13:50:08.259083+05:30"
+    "created_at": "2026-01-07T13:50:08.259083+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 8,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.84,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-07",
@@ -245,7 +785,25 @@
     "common_name": "Wolf Spider",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-07T13:50:08.259083+05:30"
+    "created_at": "2026-01-07T13:50:08.259083+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 8,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.84,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-07",
@@ -253,7 +811,25 @@
     "common_name": "Tropical Fire Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-07T13:50:08.259083+05:30"
+    "created_at": "2026-01-07T13:50:08.259083+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 8,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.84,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-07",
@@ -261,7 +837,25 @@
     "common_name": "Rust Fly",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-07T13:50:08.259083+05:30"
+    "created_at": "2026-01-07T13:50:08.259083+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 8,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.84,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-07",
@@ -269,7 +863,25 @@
     "common_name": "Ground Cricket",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-07T13:50:08.259083+05:30"
+    "created_at": "2026-01-07T13:50:08.259083+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 8,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.84,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-07",
@@ -277,7 +889,25 @@
     "common_name": "Fruit Flies",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-07T13:50:08.259083+05:30"
+    "created_at": "2026-01-07T13:50:08.259083+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 8,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.84,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-07",
@@ -285,7 +915,25 @@
     "common_name": "Dusty Surface Beetle",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-07T13:50:08.259083+05:30"
+    "created_at": "2026-01-07T13:50:08.259083+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 8,
+      "soil_temp_c": null,
+      "uv_index": 7.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.84,
+      "sunrise": "06:55",
+      "sunset": "18:18"
+    }
   },
   {
     "date": "2026-01-08",
@@ -293,7 +941,25 @@
     "common_name": "Acrobat Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-08T09:35:14.277353+05:30"
+    "created_at": "2026-01-08T09:35:14.277353+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 52,
+      "pressure_hpa": 1013.1,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 14,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.75,
+      "sunrise": "06:56",
+      "sunset": "18:19"
+    }
   },
   {
     "date": "2026-01-08",
@@ -301,7 +967,25 @@
     "common_name": "Ground Beetle",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-08T09:35:14.277353+05:30"
+    "created_at": "2026-01-08T09:35:14.277353+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 52,
+      "pressure_hpa": 1013.1,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 14,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.75,
+      "sunrise": "06:56",
+      "sunset": "18:19"
+    }
   },
   {
     "date": "2026-01-08",
@@ -309,7 +993,25 @@
     "common_name": "Ground Cricket",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-08T09:35:14.277353+05:30"
+    "created_at": "2026-01-08T09:35:14.277353+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 52,
+      "pressure_hpa": 1013.1,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 14,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.75,
+      "sunrise": "06:56",
+      "sunset": "18:19"
+    }
   },
   {
     "date": "2026-01-08",
@@ -317,7 +1019,25 @@
     "common_name": "Tropical Fire Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-08T09:35:14.277353+05:30"
+    "created_at": "2026-01-08T09:35:14.277353+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 52,
+      "pressure_hpa": 1013.1,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 14,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.75,
+      "sunrise": "06:56",
+      "sunset": "18:19"
+    }
   },
   {
     "date": "2026-01-08",
@@ -325,6 +1045,4739 @@
     "common_name": "Carpenter Ant",
     "time_of_day": "morning",
     "note": "",
-    "created_at": "2026-01-08T09:35:14.277353+05:30"
+    "created_at": "2026-01-08T09:35:14.277353+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 52,
+      "pressure_hpa": 1013.1,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 14,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.75,
+      "sunrise": "06:56",
+      "sunset": "18:19"
+    }
+  },
+  {
+    "date": "2026-01-08",
+    "time": "18:25",
+    "common_name": "Planthopper",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-08T18:25:09.727328+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 52,
+      "pressure_hpa": 1013.1,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 14,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.75,
+      "sunrise": "06:56",
+      "sunset": "18:19"
+    }
+  },
+  {
+    "date": "2026-01-08",
+    "time": "18:25",
+    "common_name": "Wolf Spider",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-08T18:25:09.727328+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 52,
+      "pressure_hpa": 1013.1,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 14,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.75,
+      "sunrise": "06:56",
+      "sunset": "18:19"
+    }
+  },
+  {
+    "date": "2026-01-08",
+    "time": "18:25",
+    "common_name": "Dusty Surface Beetle",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-08T18:25:09.727328+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 52,
+      "pressure_hpa": 1013.1,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 14,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.75,
+      "sunrise": "06:56",
+      "sunset": "18:19"
+    }
+  },
+  {
+    "date": "2026-01-08",
+    "time": "18:25",
+    "common_name": "Lynx Spider",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-08T18:25:09.727328+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 52,
+      "pressure_hpa": 1013.1,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 14,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.75,
+      "sunrise": "06:56",
+      "sunset": "18:19"
+    }
+  },
+  {
+    "date": "2026-01-08",
+    "time": "18:25",
+    "common_name": "Jumping Spider",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-08T18:25:09.727328+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 52,
+      "pressure_hpa": 1013.1,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 14,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.75,
+      "sunrise": "06:56",
+      "sunset": "18:19"
+    }
+  },
+  {
+    "date": "2026-01-08",
+    "time": "18:25",
+    "common_name": "Rust Fly",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-08T18:25:09.727328+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 52,
+      "pressure_hpa": 1013.1,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 14,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.75,
+      "sunrise": "06:56",
+      "sunset": "18:19"
+    }
+  },
+  {
+    "date": "2026-01-08",
+    "time": "18:44",
+    "common_name": "Flea Beetle",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-08T18:44:46.308528+05:30",
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 52,
+      "pressure_hpa": 1013.1,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 14,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.75,
+      "sunrise": "06:56",
+      "sunset": "18:19"
+    }
+  },
+  {
+    "date": "2026-01-09",
+    "time": "11:04",
+    "common_name": "Acrobat Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-09T11:04:49.492648+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.5,
+      "wind_direction_deg": 6,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.66,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-09",
+    "time": "11:04",
+    "common_name": "Darkling Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-09T11:04:49.492648+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.5,
+      "wind_direction_deg": 6,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.66,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-09",
+    "time": "11:04",
+    "common_name": "Carpenter Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-09T11:04:49.492648+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.5,
+      "wind_direction_deg": 6,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.66,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-09",
+    "time": "11:04",
+    "common_name": "Ground Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-09T11:04:49.492648+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.5,
+      "wind_direction_deg": 6,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.66,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-09",
+    "time": "11:04",
+    "common_name": "Ground Cricket",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-09T11:04:49.492648+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.5,
+      "wind_direction_deg": 6,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.66,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-09",
+    "time": "11:04",
+    "common_name": "Dusty Surface Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-09T11:04:49.492648+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.5,
+      "wind_direction_deg": 6,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.66,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-09",
+    "time": "11:04",
+    "common_name": "Grasshopper",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-09T11:04:49.492648+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.5,
+      "wind_direction_deg": 6,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.66,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-09",
+    "time": "11:04",
+    "common_name": "Lynx Spider",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-09T11:04:49.492648+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.5,
+      "wind_direction_deg": 6,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.66,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-09",
+    "time": "11:19",
+    "common_name": "Velvet Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-09T11:19:52.083687+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.5,
+      "wind_direction_deg": 6,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.66,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-09",
+    "time": "11:19",
+    "common_name": "Weevil",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-09T11:19:52.083687+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.5,
+      "wind_direction_deg": 6,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.66,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-10",
+    "time": "11:24",
+    "common_name": "Carpenter Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-10T11:24:59.943968+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-10",
+    "time": "11:24",
+    "common_name": "Carpet Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-10T11:24:59.943968+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-10",
+    "time": "11:24",
+    "common_name": "Dusty Surface Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-10T11:24:59.943968+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-10",
+    "time": "11:24",
+    "common_name": "Lynx Spider",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-10T11:24:59.943968+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-10",
+    "time": "11:24",
+    "common_name": "Green Lacewing Larva",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-10T11:24:59.943968+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-10",
+    "time": "11:24",
+    "common_name": "Ground Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-10T11:24:59.943968+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-10",
+    "time": "11:24",
+    "common_name": "Ground Cricket",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-10T11:24:59.943968+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-10",
+    "time": "11:24",
+    "common_name": "Tropical Fire Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-10T11:24:59.943968+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-10",
+    "time": "11:24",
+    "common_name": "Velvet Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-10T11:24:59.943968+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-10",
+    "time": "17:58",
+    "common_name": "Fruit Fly",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-10T17:58:36.492301+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-10",
+    "time": "17:58",
+    "common_name": "Jumping Spider",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-10T17:58:36.492301+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-10",
+    "time": "17:58",
+    "common_name": "Ant-mimicking Jumping Spider",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-10T17:58:36.492301+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-10",
+    "time": "17:58",
+    "common_name": "Nomad Bee",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-10T17:58:36.492301+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    }
+  },
+  {
+    "date": "2026-01-11",
+    "time": "14:08",
+    "common_name": "Acrobat Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-11T14:08:38.203813+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-11",
+    "time": "14:08",
+    "common_name": "Wolf Spider",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-11T14:08:38.203813+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-11",
+    "time": "14:08",
+    "common_name": "Weevil",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-11T14:08:38.203813+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-11",
+    "time": "14:08",
+    "common_name": "Rust Fly",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-11T14:08:38.203813+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-11",
+    "time": "14:08",
+    "common_name": "Leafhopper",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-11T14:08:38.203813+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-11",
+    "time": "14:08",
+    "common_name": "Parasitoid Wasp",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-11T14:08:38.203813+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-11",
+    "time": "14:08",
+    "common_name": "Indian Stingless Bee",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-11T14:08:38.203813+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-11",
+    "time": "14:08",
+    "common_name": "Fruit Fly",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-11T14:08:38.203813+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-11",
+    "time": "14:08",
+    "common_name": "Dusty Surface Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-11T14:08:38.203813+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-11",
+    "time": "14:08",
+    "common_name": "Acrobat Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-11T14:08:38.203813+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-11",
+    "time": "14:08",
+    "common_name": "Carpenter Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-11T14:08:38.203813+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-11",
+    "time": "14:08",
+    "common_name": "Tropical Fire Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-11T14:08:38.203813+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-11",
+    "time": "15:03",
+    "common_name": "Maize Leafhopper",
+    "time_of_day": "afternoon",
+    "note": "",
+    "created_at": "2026-01-11T15:03:28.546643+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-11",
+    "time": "15:03",
+    "common_name": "Ghost Ants",
+    "time_of_day": "afternoon",
+    "note": "",
+    "created_at": "2026-01-11T15:03:28.546643+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-12",
+    "time": "10:25",
+    "common_name": "Carpenter Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-12T10:25:01.854961+05:30",
+    "weather": {
+      "temp_max_c": 28.0,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0.4,
+      "conditions": "Slight rain showers",
+      "humidity_percent": 72,
+      "pressure_hpa": 1013.7,
+      "wind_speed_kmh": 17.3,
+      "wind_direction_deg": 3,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.37,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-12",
+    "time": "10:25",
+    "common_name": "Indian Stingless Bee",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-12T10:25:01.854961+05:30",
+    "weather": {
+      "temp_max_c": 28.0,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0.4,
+      "conditions": "Slight rain showers",
+      "humidity_percent": 72,
+      "pressure_hpa": 1013.7,
+      "wind_speed_kmh": 17.3,
+      "wind_direction_deg": 3,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.37,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-12",
+    "time": "10:25",
+    "common_name": "Lynx Spider",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-12T10:25:01.854961+05:30",
+    "weather": {
+      "temp_max_c": 28.0,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0.4,
+      "conditions": "Slight rain showers",
+      "humidity_percent": 72,
+      "pressure_hpa": 1013.7,
+      "wind_speed_kmh": 17.3,
+      "wind_direction_deg": 3,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.37,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-12",
+    "time": "10:25",
+    "common_name": "Golden-backed Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-12T10:25:01.854961+05:30",
+    "weather": {
+      "temp_max_c": 28.0,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0.4,
+      "conditions": "Slight rain showers",
+      "humidity_percent": 72,
+      "pressure_hpa": 1013.7,
+      "wind_speed_kmh": 17.3,
+      "wind_direction_deg": 3,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.37,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-12",
+    "time": "10:25",
+    "common_name": "Ground Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-12T10:25:01.854961+05:30",
+    "weather": {
+      "temp_max_c": 28.0,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0.4,
+      "conditions": "Slight rain showers",
+      "humidity_percent": 72,
+      "pressure_hpa": 1013.7,
+      "wind_speed_kmh": 17.3,
+      "wind_direction_deg": 3,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.37,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    }
+  },
+  {
+    "date": "2026-01-13",
+    "time": "10:29",
+    "common_name": "Acrobat Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-13T10:29:47.861893+05:30",
+    "weather": {
+      "temp_max_c": 30.7,
+      "temp_min_c": 24.0,
+      "precipitation_mm": 1.7,
+      "conditions": "Moderate drizzle",
+      "humidity_percent": 78,
+      "pressure_hpa": 1015.0,
+      "wind_speed_kmh": 13.2,
+      "wind_direction_deg": 276,
+      "soil_temp_c": 28.8,
+      "uv_index": null
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.29,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-13",
+    "time": "10:29",
+    "common_name": "Carpenter Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-13T10:29:47.861893+05:30",
+    "weather": {
+      "temp_max_c": 30.7,
+      "temp_min_c": 24.0,
+      "precipitation_mm": 1.7,
+      "conditions": "Moderate drizzle",
+      "humidity_percent": 78,
+      "pressure_hpa": 1015.0,
+      "wind_speed_kmh": 13.2,
+      "wind_direction_deg": 276,
+      "soil_temp_c": 28.8,
+      "uv_index": null
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.29,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-13",
+    "time": "10:29",
+    "common_name": "Dusty Surface Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-13T10:29:47.861893+05:30",
+    "weather": {
+      "temp_max_c": 30.7,
+      "temp_min_c": 24.0,
+      "precipitation_mm": 1.7,
+      "conditions": "Moderate drizzle",
+      "humidity_percent": 78,
+      "pressure_hpa": 1015.0,
+      "wind_speed_kmh": 13.2,
+      "wind_direction_deg": 276,
+      "soil_temp_c": 28.8,
+      "uv_index": null
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.29,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-13",
+    "time": "10:29",
+    "common_name": "Tropical Fire Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-13T10:29:47.861893+05:30",
+    "weather": {
+      "temp_max_c": 30.7,
+      "temp_min_c": 24.0,
+      "precipitation_mm": 1.7,
+      "conditions": "Moderate drizzle",
+      "humidity_percent": 78,
+      "pressure_hpa": 1015.0,
+      "wind_speed_kmh": 13.2,
+      "wind_direction_deg": 276,
+      "soil_temp_c": 28.8,
+      "uv_index": null
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.29,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-13",
+    "time": "10:29",
+    "common_name": "Snout Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-13T10:29:47.861893+05:30",
+    "weather": {
+      "temp_max_c": 30.7,
+      "temp_min_c": 24.0,
+      "precipitation_mm": 1.7,
+      "conditions": "Moderate drizzle",
+      "humidity_percent": 78,
+      "pressure_hpa": 1015.0,
+      "wind_speed_kmh": 13.2,
+      "wind_direction_deg": 276,
+      "soil_temp_c": 28.8,
+      "uv_index": null
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.29,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-13",
+    "time": "10:29",
+    "common_name": "Lynx Spider",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-13T10:29:47.861893+05:30",
+    "weather": {
+      "temp_max_c": 30.7,
+      "temp_min_c": 24.0,
+      "precipitation_mm": 1.7,
+      "conditions": "Moderate drizzle",
+      "humidity_percent": 78,
+      "pressure_hpa": 1015.0,
+      "wind_speed_kmh": 13.2,
+      "wind_direction_deg": 276,
+      "soil_temp_c": 28.8,
+      "uv_index": null
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.29,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-13",
+    "time": "10:29",
+    "common_name": "Planthopper",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-13T10:29:47.861893+05:30",
+    "weather": {
+      "temp_max_c": 30.7,
+      "temp_min_c": 24.0,
+      "precipitation_mm": 1.7,
+      "conditions": "Moderate drizzle",
+      "humidity_percent": 78,
+      "pressure_hpa": 1015.0,
+      "wind_speed_kmh": 13.2,
+      "wind_direction_deg": 276,
+      "soil_temp_c": 28.8,
+      "uv_index": null
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.29,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-13",
+    "time": "10:31",
+    "common_name": "Grasshopper",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-13T10:31:16.216412+05:30",
+    "weather": {
+      "temp_max_c": 30.7,
+      "temp_min_c": 24.0,
+      "precipitation_mm": 1.7,
+      "conditions": "Moderate drizzle",
+      "humidity_percent": 78,
+      "pressure_hpa": 1015.0,
+      "wind_speed_kmh": 13.2,
+      "wind_direction_deg": 276,
+      "soil_temp_c": 28.8,
+      "uv_index": null
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.29,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-13",
+    "time": "10:31",
+    "common_name": "Ground Cricket",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-13T10:31:16.216412+05:30",
+    "weather": {
+      "temp_max_c": 30.7,
+      "temp_min_c": 24.0,
+      "precipitation_mm": 1.7,
+      "conditions": "Moderate drizzle",
+      "humidity_percent": 78,
+      "pressure_hpa": 1015.0,
+      "wind_speed_kmh": 13.2,
+      "wind_direction_deg": 276,
+      "soil_temp_c": 28.8,
+      "uv_index": null
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.29,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-13",
+    "time": "10:31",
+    "common_name": "Ground Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-13T10:31:16.216412+05:30",
+    "weather": {
+      "temp_max_c": 30.7,
+      "temp_min_c": 24.0,
+      "precipitation_mm": 1.7,
+      "conditions": "Moderate drizzle",
+      "humidity_percent": 78,
+      "pressure_hpa": 1015.0,
+      "wind_speed_kmh": 13.2,
+      "wind_direction_deg": 276,
+      "soil_temp_c": 28.8,
+      "uv_index": null
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.29,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-13",
+    "time": "10:32",
+    "common_name": "Snout Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-13T10:32:14.059496+05:30",
+    "weather": {
+      "temp_max_c": 30.7,
+      "temp_min_c": 24.0,
+      "precipitation_mm": 1.7,
+      "conditions": "Moderate drizzle",
+      "humidity_percent": 78,
+      "pressure_hpa": 1015.0,
+      "wind_speed_kmh": 13.2,
+      "wind_direction_deg": 276,
+      "soil_temp_c": 28.8,
+      "uv_index": null
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.29,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-13",
+    "time": "10:32",
+    "common_name": "Damselfly",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-13T10:32:29.913984+05:30",
+    "weather": {
+      "temp_max_c": 30.7,
+      "temp_min_c": 24.0,
+      "precipitation_mm": 1.7,
+      "conditions": "Moderate drizzle",
+      "humidity_percent": 78,
+      "pressure_hpa": 1015.0,
+      "wind_speed_kmh": 13.2,
+      "wind_direction_deg": 276,
+      "soil_temp_c": 28.8,
+      "uv_index": null
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.29,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-14",
+    "time": "12:20",
+    "common_name": "Fruit Fly",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-14T12:20:01.203467+05:30",
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-14",
+    "time": "12:20",
+    "common_name": "Ground Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-14T12:20:01.203467+05:30",
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-14",
+    "time": "12:20",
+    "common_name": "Ground Cricket",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-14T12:20:01.203467+05:30",
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-14",
+    "time": "12:20",
+    "common_name": "Tropical Fire Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-14T12:20:01.203467+05:30",
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-14",
+    "time": "12:20",
+    "common_name": "Golden-backed Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-14T12:20:01.203467+05:30",
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-14",
+    "time": "12:20",
+    "common_name": "Flea Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-14T12:20:01.203467+05:30",
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-14",
+    "time": "12:20",
+    "common_name": "Dusty Surface Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-14T12:20:01.203467+05:30",
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-14",
+    "time": "12:20",
+    "common_name": "Carpet Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-14T12:20:01.203467+05:30",
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-14",
+    "time": "18:01",
+    "common_name": "Rust Fly",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-14T18:01:21.805217+05:30",
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    }
+  },
+  {
+    "date": "2026-01-15",
+    "time": "09:26",
+    "common_name": "Carpenter Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-15T09:26:14.736137+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 26.9,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 85,
+      "pressure_hpa": 1011.5,
+      "wind_speed_kmh": 18.4,
+      "wind_direction_deg": 302,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.13,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-15",
+    "time": "09:26",
+    "common_name": "Carpet Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-15T09:26:14.736137+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 26.9,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 85,
+      "pressure_hpa": 1011.5,
+      "wind_speed_kmh": 18.4,
+      "wind_direction_deg": 302,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.13,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-15",
+    "time": "09:26",
+    "common_name": "Ground Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-15T09:26:14.736137+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 26.9,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 85,
+      "pressure_hpa": 1011.5,
+      "wind_speed_kmh": 18.4,
+      "wind_direction_deg": 302,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.13,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-15",
+    "time": "11:45",
+    "common_name": "Banded Pearl",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-15T11:45:27.194453+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 26.9,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 85,
+      "pressure_hpa": 1011.5,
+      "wind_speed_kmh": 18.4,
+      "wind_direction_deg": 302,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.13,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-15",
+    "time": "11:45",
+    "common_name": "Weaver Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-15T11:45:27.194453+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 26.9,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 85,
+      "pressure_hpa": 1011.5,
+      "wind_speed_kmh": 18.4,
+      "wind_direction_deg": 302,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.13,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-15",
+    "time": "18:27",
+    "common_name": "Grass Moth",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-15T18:27:02.284077+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 26.9,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 85,
+      "pressure_hpa": 1011.5,
+      "wind_speed_kmh": 18.4,
+      "wind_direction_deg": 302,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.13,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-15",
+    "time": "18:27",
+    "common_name": "Velvet Ant",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-15T18:27:02.284077+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 26.9,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 85,
+      "pressure_hpa": 1011.5,
+      "wind_speed_kmh": 18.4,
+      "wind_direction_deg": 302,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.13,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-15",
+    "time": "18:27",
+    "common_name": "Flea Beetle",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-15T18:27:02.284077+05:30",
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 26.9,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 85,
+      "pressure_hpa": 1011.5,
+      "wind_speed_kmh": 18.4,
+      "wind_direction_deg": 302,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.13,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "time": "11:55",
+    "common_name": "Banded Pearl",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-16T11:55:49.752723+05:30",
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "time": "11:55",
+    "common_name": "Carpenter Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-16T11:55:49.752723+05:30",
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "time": "11:55",
+    "common_name": "Carpet Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-16T11:55:49.752723+05:30",
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "time": "11:55",
+    "common_name": "Dusty Surface Beetle",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-16T11:55:49.752723+05:30",
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "time": "11:55",
+    "common_name": "Golden-backed Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-16T11:55:49.752723+05:30",
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "time": "11:55",
+    "common_name": "Hoverfly",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-16T11:55:49.752723+05:30",
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "time": "11:55",
+    "common_name": "Planthopper",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-16T11:55:49.752723+05:30",
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "time": "11:55",
+    "common_name": "Planthopper Nymph",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-16T11:55:49.752723+05:30",
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "time": "11:55",
+    "common_name": "Lynx Spider",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-16T11:55:49.752723+05:30",
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "time": "11:55",
+    "common_name": "Indian Stingless Bee",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-16T11:55:49.752723+05:30",
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "time": "11:55",
+    "common_name": "Grasshopper",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-16T11:55:49.752723+05:30",
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "time": "11:55",
+    "common_name": "Velvet Ant",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-16T11:55:49.752723+05:30",
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "time": "13:39",
+    "common_name": "Braconid Wasp",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-16T13:39:06.513707+05:30",
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "time": "17:52",
+    "common_name": "Transverse Ladybird",
+    "scientific_name": "",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-16T17:52:58.344395+05:30",
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "time": "17:53",
+    "common_name": "Lynx Spider",
+    "scientific_name": "",
+    "time_of_day": "afternoon",
+    "note": "",
+    "created_at": "2026-01-16T17:53:51.658339+05:30",
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "time": "17:58",
+    "common_name": "Braconid Wasp",
+    "scientific_name": "",
+    "time_of_day": "afternoon",
+    "note": "",
+    "created_at": "2026-01-16T17:58:19.518212+05:30",
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    }
+  },
+  {
+    "date": "2026-01-17",
+    "time": "08:46",
+    "common_name": "Carpenter Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-17T08:46:43.912769+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 315,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    }
+  },
+  {
+    "date": "2026-01-17",
+    "time": "08:46",
+    "common_name": "Dusty Surface Beetle",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-17T08:46:43.912769+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 315,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    }
+  },
+  {
+    "date": "2026-01-17",
+    "time": "08:46",
+    "common_name": "Ground Cricket",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-17T08:46:43.912769+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 315,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    }
+  },
+  {
+    "date": "2026-01-17",
+    "time": "08:46",
+    "common_name": "Green Lacewing Larva",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-17T08:46:43.912769+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 315,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    }
+  },
+  {
+    "date": "2026-01-17",
+    "time": "08:46",
+    "common_name": "Transverse Ladybird",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-17T08:46:43.912769+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 315,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    }
+  },
+  {
+    "date": "2026-01-17",
+    "time": "08:46",
+    "common_name": "Ghost Ants",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-17T08:46:43.912769+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 315,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    }
+  },
+  {
+    "date": "2026-01-17",
+    "time": "08:46",
+    "common_name": "Ground Cricket",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-17T08:46:43.912769+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 315,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    }
+  },
+  {
+    "date": "2026-01-17",
+    "time": "08:52",
+    "common_name": "Rust Fly",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-17T08:52:32.122519+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 315,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    }
+  },
+  {
+    "date": "2026-01-17",
+    "time": "08:52",
+    "common_name": "Picture-winged Fly",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-17T08:52:32.122519+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 315,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    }
+  },
+  {
+    "date": "2026-01-18",
+    "time": "11:53",
+    "common_name": "Carpenter Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-18T11:53:40.444754+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1010.0,
+      "wind_speed_kmh": 19.3,
+      "wind_direction_deg": 277,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-18",
+    "time": "11:53",
+    "common_name": "Ground Beetle",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-18T11:53:40.444754+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1010.0,
+      "wind_speed_kmh": 19.3,
+      "wind_direction_deg": 277,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-18",
+    "time": "11:53",
+    "common_name": "Ground Cricket",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-18T11:53:40.444754+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1010.0,
+      "wind_speed_kmh": 19.3,
+      "wind_direction_deg": 277,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-18",
+    "time": "11:53",
+    "common_name": "Planthopper Nymph",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-18T11:53:40.444754+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1010.0,
+      "wind_speed_kmh": 19.3,
+      "wind_direction_deg": 277,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-18",
+    "time": "11:53",
+    "common_name": "Lynx Spider",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-18T11:53:40.444754+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1010.0,
+      "wind_speed_kmh": 19.3,
+      "wind_direction_deg": 277,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-18",
+    "time": "11:53",
+    "common_name": "Velvet Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-18T11:53:40.444754+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1010.0,
+      "wind_speed_kmh": 19.3,
+      "wind_direction_deg": 277,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-18",
+    "time": "11:53",
+    "common_name": "Grasshopper",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-18T11:53:40.444754+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1010.0,
+      "wind_speed_kmh": 19.3,
+      "wind_direction_deg": 277,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-18",
+    "time": "11:53",
+    "common_name": "Golden-backed Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-18T11:53:40.444754+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1010.0,
+      "wind_speed_kmh": 19.3,
+      "wind_direction_deg": 277,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-18",
+    "time": "12:15",
+    "common_name": "Banded Pearl",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-18T12:15:57.557853+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1010.0,
+      "wind_speed_kmh": 19.3,
+      "wind_direction_deg": 277,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-18",
+    "time": "12:15",
+    "common_name": "Grass Fly",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-18T12:15:57.557853+05:30",
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1010.0,
+      "wind_speed_kmh": 19.3,
+      "wind_direction_deg": 277,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-19",
+    "time": "18:55",
+    "common_name": "Carpenter Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-19T18:55:14.448721+05:30",
+    "weather": {
+      "temp_max_c": 27.5,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 32.4,
+      "wind_direction_deg": 331,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.0,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-19",
+    "time": "18:55",
+    "common_name": "Ground Cricket",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-19T18:55:14.448721+05:30",
+    "weather": {
+      "temp_max_c": 27.5,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 32.4,
+      "wind_direction_deg": 331,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.0,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-19",
+    "time": "18:55",
+    "common_name": "Hoverfly",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-19T18:55:14.448721+05:30",
+    "weather": {
+      "temp_max_c": 27.5,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 32.4,
+      "wind_direction_deg": 331,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.0,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-19",
+    "time": "18:55",
+    "common_name": "Vegetable Grasshopper",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-19T18:55:14.448721+05:30",
+    "weather": {
+      "temp_max_c": 27.5,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 32.4,
+      "wind_direction_deg": 331,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.0,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-19",
+    "time": "18:55",
+    "common_name": "Weaver Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-19T18:55:14.448721+05:30",
+    "weather": {
+      "temp_max_c": 27.5,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 32.4,
+      "wind_direction_deg": 331,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.0,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-19",
+    "time": "18:55",
+    "common_name": "Fruit Flies",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-19T18:55:14.448721+05:30",
+    "weather": {
+      "temp_max_c": 27.5,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 32.4,
+      "wind_direction_deg": 331,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.0,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-19",
+    "time": "18:55",
+    "common_name": "Ground Cricket",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-19T18:55:14.448721+05:30",
+    "weather": {
+      "temp_max_c": 27.5,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 32.4,
+      "wind_direction_deg": 331,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.0,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-19",
+    "time": "18:55",
+    "common_name": "Ground Beetle",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-19T18:55:14.448721+05:30",
+    "weather": {
+      "temp_max_c": 27.5,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 32.4,
+      "wind_direction_deg": 331,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.0,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-19",
+    "time": "18:55",
+    "common_name": "Lynx Spider",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-19T18:55:14.448721+05:30",
+    "weather": {
+      "temp_max_c": 27.5,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 32.4,
+      "wind_direction_deg": 331,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.0,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-19",
+    "time": "18:55",
+    "common_name": "Rust Fly",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-19T18:55:14.448721+05:30",
+    "weather": {
+      "temp_max_c": 27.5,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 32.4,
+      "wind_direction_deg": 331,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.0,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-19",
+    "time": "18:55",
+    "common_name": "Tropical Fire Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-19T18:55:14.448721+05:30",
+    "weather": {
+      "temp_max_c": 27.5,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 32.4,
+      "wind_direction_deg": 331,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.0,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-19",
+    "time": "18:55",
+    "common_name": "Transverse Ladybird",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-19T18:55:14.448721+05:30",
+    "weather": {
+      "temp_max_c": 27.5,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 32.4,
+      "wind_direction_deg": 331,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.0,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    }
+  },
+  {
+    "date": "2026-01-20",
+    "time": "13:47",
+    "common_name": "Acrobat Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-20T13:47:16.758574+05:30",
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-20",
+    "time": "13:47",
+    "common_name": "Carpenter Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-20T13:47:16.758574+05:30",
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-20",
+    "time": "13:47",
+    "common_name": "Golden-backed Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-20T13:47:16.758574+05:30",
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-20",
+    "time": "13:47",
+    "common_name": "Fruit Flies",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-20T13:47:16.758574+05:30",
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-20",
+    "time": "13:47",
+    "common_name": "Armed Spiny Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-20T13:47:16.758574+05:30",
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-20",
+    "time": "13:47",
+    "common_name": "Carpet Beetle",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-20T13:47:16.758574+05:30",
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-20",
+    "time": "13:47",
+    "common_name": "Paper Wasp",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-20T13:47:16.758574+05:30",
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-20",
+    "time": "13:47",
+    "common_name": "Rust Fly",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-20T13:47:16.758574+05:30",
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-20",
+    "time": "16:41",
+    "common_name": "Stilt-legged Fly",
+    "scientific_name": "",
+    "time_of_day": "afternoon",
+    "note": "",
+    "created_at": "2026-01-20T16:41:51.272111+05:30",
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-20",
+    "time": "16:42",
+    "common_name": "Planthopper",
+    "scientific_name": "",
+    "time_of_day": "afternoon",
+    "note": "",
+    "created_at": "2026-01-20T16:42:23.664784+05:30",
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-20",
+    "time": "19:26",
+    "common_name": "Flea Beetle",
+    "scientific_name": "",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-01-20T19:26:22.471113+05:30",
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "time": "12:08",
+    "common_name": "Acrobat Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-21T12:08:45.374380+05:30",
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "time": "12:08",
+    "common_name": "Golden-backed Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-21T12:08:45.374380+05:30",
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "time": "12:08",
+    "common_name": "Hoverfly",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-21T12:08:45.374380+05:30",
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "time": "12:08",
+    "common_name": "Velvet Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-21T12:08:45.374380+05:30",
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "time": "12:08",
+    "common_name": "Weevil",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-21T12:08:45.374380+05:30",
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "time": "12:08",
+    "common_name": "Weaver Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-21T12:08:45.374380+05:30",
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "time": "12:08",
+    "common_name": "Vegetable Grasshopper",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-21T12:08:45.374380+05:30",
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "time": "12:08",
+    "common_name": "Ground Cricket",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-21T12:08:45.374380+05:30",
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "time": "12:08",
+    "common_name": "Carpenter Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-21T12:08:45.374380+05:30",
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "time": "12:08",
+    "common_name": "Tropical Fire Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-21T12:08:45.374380+05:30",
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "time": "12:10",
+    "common_name": "Banded Pearl",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-21T12:10:51.207616+05:30",
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "time": "16:01",
+    "common_name": "Nomad Bee",
+    "scientific_name": "",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-21T16:01:43.459484+05:30",
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "time": "16:01",
+    "common_name": "Black Scavenger Fly",
+    "scientific_name": "",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-21T16:01:43.459484+05:30",
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "time": "16:01",
+    "common_name": "Long-legged Fly",
+    "scientific_name": "",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-21T16:01:43.459484+05:30",
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "time": "18:41",
+    "common_name": "Soldier Fly",
+    "scientific_name": "",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-21T18:41:30.789127+05:30",
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "time": "18:41",
+    "common_name": "Ground Beetle",
+    "scientific_name": "",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-01-21T18:41:57.472972+05:30",
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    }
+  },
+  {
+    "date": "2026-01-22",
+    "time": "11:36",
+    "common_name": "Ant-mimicking Jumping Spider",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-22T11:36:45.585935+05:30",
+    "weather": {
+      "temp_max_c": 29.0,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1012.2,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 322,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.1,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-22",
+    "time": "11:36",
+    "common_name": "Carpenter Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-22T11:36:45.585935+05:30",
+    "weather": {
+      "temp_max_c": 29.0,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1012.2,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 322,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.1,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-22",
+    "time": "11:36",
+    "common_name": "Long-legged Fly",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-22T11:36:45.585935+05:30",
+    "weather": {
+      "temp_max_c": 29.0,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1012.2,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 322,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.1,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-22",
+    "time": "11:36",
+    "common_name": "Rust Fly",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-22T11:36:45.585935+05:30",
+    "weather": {
+      "temp_max_c": 29.0,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1012.2,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 322,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.1,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-22",
+    "time": "11:36",
+    "common_name": "Planthopper",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-22T11:36:45.585935+05:30",
+    "weather": {
+      "temp_max_c": 29.0,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1012.2,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 322,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.1,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-22",
+    "time": "11:36",
+    "common_name": "Tropical Fire Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-22T11:36:45.585935+05:30",
+    "weather": {
+      "temp_max_c": 29.0,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1012.2,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 322,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.1,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-22",
+    "time": "11:36",
+    "common_name": "Carpet Beetle",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-22T11:36:45.585935+05:30",
+    "weather": {
+      "temp_max_c": 29.0,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1012.2,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 322,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.1,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-22",
+    "time": "11:36",
+    "common_name": "Dusty Surface Beetle",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-22T11:36:45.585935+05:30",
+    "weather": {
+      "temp_max_c": 29.0,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1012.2,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 322,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.1,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-22",
+    "time": "11:36",
+    "common_name": "Golden-backed Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-22T11:36:45.585935+05:30",
+    "weather": {
+      "temp_max_c": 29.0,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1012.2,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 322,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.1,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-22",
+    "time": "11:36",
+    "common_name": "Sweat Bees",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-22T11:36:45.585935+05:30",
+    "weather": {
+      "temp_max_c": 29.0,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1012.2,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 322,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.1,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-22",
+    "time": "11:36",
+    "common_name": "Fruit Flies",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-22T11:36:45.585935+05:30",
+    "weather": {
+      "temp_max_c": 29.0,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1012.2,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 322,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.1,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-22",
+    "time": "10:07",
+    "common_name": "Bicolor-ant-mimicking Jumping Spider",
+    "scientific_name": "Myrmarachne melanocephala",
+    "time_of_day": "morning",
+    "note": "Converted from deleted sighting 20260122-001 (was misidentified as Tetraponera rufonigra)",
+    "created_at": "2026-01-23T10:54:20.468402+05:30",
+    "weather": {
+      "temp_max_c": 29.0,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1012.2,
+      "wind_speed_kmh": 20.3,
+      "wind_direction_deg": 322,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.1,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-23",
+    "time": "14:38",
+    "common_name": "Acrobat Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-23T14:38:27.075223+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 318,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-23",
+    "time": "14:38",
+    "common_name": "Carpenter Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-23T14:38:27.075223+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 318,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-23",
+    "time": "14:38",
+    "common_name": "Indian Stingless Bee",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-23T14:38:27.075223+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 318,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-23",
+    "time": "14:38",
+    "common_name": "Ground Beetle",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-23T14:38:27.075223+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 318,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-23",
+    "time": "14:38",
+    "common_name": "Long-legged Fly",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-23T14:38:27.075223+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 318,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-23",
+    "time": "14:38",
+    "common_name": "Rust Fly",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-23T14:38:27.075223+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 318,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-23",
+    "time": "14:38",
+    "common_name": "Sweat Bees",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-23T14:38:27.075223+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 318,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-23",
+    "time": "14:38",
+    "common_name": "Tropical Fire Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-23T14:38:27.075223+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 318,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-23",
+    "time": "14:38",
+    "common_name": "Banded Pearl",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-23T14:38:27.075223+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 318,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-23",
+    "time": "14:38",
+    "common_name": "Golden-backed Ant",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-23T14:38:27.075223+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 318,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-23",
+    "time": "14:38",
+    "common_name": "Carpet Beetle",
+    "scientific_name": "",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-01-23T14:38:27.075223+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 318,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-23",
+    "time": "14:40",
+    "common_name": "Common Paddy Field Frog",
+    "scientific_name": "",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-01-23T14:40:36.147761+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 66,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 318,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-23",
+    "time": "15:52",
+    "common_name": "White-backed Planthopper (sogatella Furcifera)",
+    "scientific_name": "",
+    "time_of_day": "afternoon",
+    "note": "",
+    "created_at": "2026-01-23T15:52:51.509011+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 68,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 18.8,
+      "wind_direction_deg": 355,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
+  },
+  {
+    "date": "2026-01-23",
+    "time": "15:52",
+    "common_name": "Flea Beetle (chaetocnema Sp.)",
+    "scientific_name": "",
+    "time_of_day": "afternoon",
+    "note": "",
+    "created_at": "2026-01-23T15:52:51.509011+05:30",
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 68,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 18.8,
+      "wind_direction_deg": 355,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    }
   }
 ]

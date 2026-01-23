@@ -29,10 +29,37 @@
     </main>
 
     <footer class="site-footer">
+        <img class="footer-illustration footer-illustration-left"
+             src="{{ image_url }}/footer/garden_bugs_1_transparent.png"
+             alt="" aria-hidden="true">
         <div class="container">
             <p>{{ config.site_title }} by {{ config.author }}</p>
             <p><a href="{{ base_url }}/feed.xml">Subscribe via RSS</a></p>
         </div>
+        <img class="footer-illustration footer-illustration-right"
+             src="{{ image_url }}/footer/garden_bugs_2_transparent.png"
+             alt="" aria-hidden="true">
     </footer>
+    <script>
+    (function() {
+        var images = [
+            '{{ image_url }}/footer/garden_bugs_1_transparent.png',
+            '{{ image_url }}/footer/garden_bugs_2_transparent.png',
+            '{{ image_url }}/footer/garden_bugs_3_transparent.png',
+            '{{ image_url }}/footer/garden_bugs_4_transparent.png'
+        ];
+        var leftImg = document.querySelector('.footer-illustration-left');
+        var rightImg = document.querySelector('.footer-illustration-right');
+        if (leftImg && rightImg) {
+            var leftIdx = Math.floor(Math.random() * images.length);
+            var rightIdx = Math.floor(Math.random() * images.length);
+            leftImg.src = images[leftIdx];
+            rightImg.src = images[rightIdx];
+            // Randomly flip each image
+            if (Math.random() > 0.5) leftImg.classList.add('flipped');
+            if (Math.random() > 0.5) rightImg.classList.add('flipped');
+        }
+    })();
+    </script>
 </body>
 </html>

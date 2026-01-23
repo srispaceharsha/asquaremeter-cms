@@ -13,7 +13,8 @@
     "captured_at": "2026-01-01T15:02:40+05:30",
     "time_of_day": "afternoon",
     "tags": [
-      "Common Bugs"
+      "First Sighting",
+      "Beetles"
     ],
     "weather": {
       "temp_max_c": 28.1,
@@ -35,7 +36,8 @@
     },
     "season": "winter",
     "notes": "Hides under the shades of leaves.",
-    "created_at": "2026-01-01T14:48:29.413704+05:30"
+    "created_at": "2026-01-01T14:48:29.413704+05:30",
+    "size_mm": 5.0
   },
   {
     "id": "20260101-002",
@@ -52,7 +54,7 @@
     "time_of_day": "afternoon",
     "tags": [
       "Ants",
-      "Common Bugs"
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 28.1,
@@ -94,7 +96,7 @@
     "captured_at": "2026-01-01T16:25:33+05:30",
     "time_of_day": "evening",
     "tags": [
-      "Common Bugs",
+      "First Sighting",
       "Beetles"
     ],
     "weather": {
@@ -133,7 +135,7 @@
     "captured_at": "2026-01-01T16:34:01+05:30",
     "time_of_day": "evening",
     "tags": [
-      "Common Bugs",
+      "First Sighting",
       "Ants"
     ],
     "weather": {
@@ -167,12 +169,13 @@
       }
     ],
     "common_name": "Ground Cricket",
-    "scientific_name": "Dianemobius Fascipes",
+    "scientific_name": "Dianemobius fascipes",
     "category": "insect",
     "captured_at": "2026-01-01T16:31:01+05:30",
     "time_of_day": "evening",
     "tags": [
-      "Scary Looking Bugs"
+      "First Sighting",
+      "Crickets"
     ],
     "weather": {
       "temp_max_c": 28.1,
@@ -210,7 +213,8 @@
     "captured_at": "2026-01-02T09:01:14+05:30",
     "time_of_day": "morning",
     "tags": [
-      "Common Bugs"
+      "First Sighting",
+      "Hoppers"
     ],
     "weather": {
       "temp_max_c": 27.6,
@@ -243,13 +247,13 @@
       }
     ],
     "common_name": "Acrobat Ant",
-    "scientific_name": "Crematogaster Sp.",
+    "scientific_name": "Crematogaster sp.",
     "category": "insect",
     "captured_at": "2026-01-02T10:18:27+05:30",
     "time_of_day": "morning",
     "tags": [
       "Ants",
-      "Unknown Species"
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 27.6,
@@ -287,7 +291,8 @@
     "captured_at": "2026-01-02T10:12:35+05:30",
     "time_of_day": "morning",
     "tags": [
-      "Common Bugs"
+      "First Sighting",
+      "Beetles"
     ],
     "weather": {
       "temp_max_c": 27.6,
@@ -326,7 +331,7 @@
     "time_of_day": "morning",
     "tags": [
       "Spiders",
-      "Common Bugs"
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 27.6,
@@ -359,12 +364,13 @@
       }
     ],
     "common_name": "Rust Fly",
-    "scientific_name": "Psilidae Sp.",
+    "scientific_name": "Psilidae sp.",
     "category": "insect",
     "captured_at": "2026-01-02T11:11:54+05:30",
     "time_of_day": "morning",
     "tags": [
-      "Unknown Species"
+      "First Sighting",
+      "Flies"
     ],
     "weather": {
       "temp_max_c": 27.6,
@@ -402,7 +408,8 @@
     "captured_at": "2026-01-02T13:22:38+05:30",
     "time_of_day": "afternoon",
     "tags": [
-      "Tiny Bugs"
+      "First Sighting",
+      "Flies"
     ],
     "weather": {
       "temp_max_c": 27.6,
@@ -441,7 +448,7 @@
     "time_of_day": "afternoon",
     "tags": [
       "Spiders",
-      "Common Bugs"
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 27.6,
@@ -479,7 +486,8 @@
     "captured_at": "2026-01-02T13:17:30+05:30",
     "time_of_day": "afternoon",
     "tags": [
-      "Common Bugs"
+      "First Sighting",
+      "Crickets"
     ],
     "weather": {
       "temp_max_c": 27.6,
@@ -512,12 +520,13 @@
       }
     ],
     "common_name": "Whitefly",
-    "scientific_name": "Aleyrodidae Sp.",
+    "scientific_name": "Aleyrodidae sp.",
     "category": "insect",
     "captured_at": "2026-01-02T13:05:03+05:30",
     "time_of_day": "afternoon",
     "tags": [
-      "Unknown Species"
+      "First Sighting",
+      "Flies"
     ],
     "weather": {
       "temp_max_c": 27.6,
@@ -555,7 +564,8 @@
     "captured_at": "2026-01-02T17:26:59+05:30",
     "time_of_day": "evening",
     "tags": [
-      "Common Bugs"
+      "First Sighting",
+      "Hoppers"
     ],
     "weather": {
       "temp_max_c": 27.6,
@@ -588,13 +598,13 @@
       }
     ],
     "common_name": "Flea Beetle",
-    "scientific_name": "Chaetocnema Sp.",
+    "scientific_name": "Chaetocnema sp.",
     "category": "insect",
     "captured_at": "2026-01-02T17:17:08+05:30",
     "time_of_day": "evening",
     "tags": [
-      "Tiny Bugs",
-      "Unknown Species"
+      "First Sighting",
+      "Beetles"
     ],
     "weather": {
       "temp_max_c": 27.6,
@@ -627,13 +637,13 @@
       }
     ],
     "common_name": "Flat-footed Fly",
-    "scientific_name": "Platypezidae Sp.",
+    "scientific_name": "Platypezidae sp.",
     "category": "insect",
     "captured_at": "2026-01-02T17:08:29+05:30",
     "time_of_day": "evening",
     "tags": [
-      "Unknown Species",
-      "Tiny Bugs"
+      "First Sighting",
+      "Flies"
     ],
     "weather": {
       "temp_max_c": 27.6,
@@ -666,12 +676,13 @@
       }
     ],
     "common_name": "Fruit Fly",
-    "scientific_name": "Tephritinae Sp.",
+    "scientific_name": "Tephritidae sp.",
     "category": "insect",
     "captured_at": "2026-01-02T17:13:48+05:30",
     "time_of_day": "evening",
     "tags": [
-      "Unknown Species"
+      "First Sighting",
+      "Flies"
     ],
     "weather": {
       "temp_max_c": 27.6,
@@ -709,6 +720,7 @@
     "captured_at": "2026-01-03T11:16:30+05:30",
     "time_of_day": "morning",
     "tags": [
+      "First Sighting",
       "Hoppers"
     ],
     "weather": {
@@ -747,6 +759,7 @@
     "captured_at": "2026-01-03T11:50:50+05:30",
     "time_of_day": "morning",
     "tags": [
+      "First Sighting",
       "Moths"
     ],
     "weather": {
@@ -779,12 +792,13 @@
         "caption": ""
       }
     ],
-    "common_name": "Fruit Flies",
-    "scientific_name": "Euaresta bella",
+    "common_name": "Fruit Fly",
+    "scientific_name": "Tephritidae sp.",
     "category": "insect",
     "captured_at": "2026-01-03T08:37:06+05:30",
     "time_of_day": "morning",
     "tags": [
+      "First Sighting",
       "Flies"
     ],
     "weather": {
@@ -823,8 +837,8 @@
     "captured_at": "2026-01-03T14:47:18+05:30",
     "time_of_day": "afternoon",
     "tags": [
-      "Spiders",
-      "Common Bugs"
+      "First Sighting",
+      "Spiders"
     ],
     "weather": {
       "temp_max_c": 27.6,
@@ -863,7 +877,7 @@
     "time_of_day": "afternoon",
     "tags": [
       "Spiders",
-      "Common Bugs"
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 27.6,
@@ -896,12 +910,12 @@
       }
     ],
     "common_name": "Flea Beetle",
-    "scientific_name": "Chaetocnema Sp.",
+    "scientific_name": "Chaetocnema sp.",
     "category": "insect",
     "captured_at": "2026-01-04T10:41:42+05:30",
     "time_of_day": "morning",
     "tags": [
-      "Tiny Bugs",
+      "First Sighting",
       "Beetles"
     ],
     "weather": {
@@ -935,13 +949,13 @@
       }
     ],
     "common_name": "Rust Fly",
-    "scientific_name": "Psilidae Sp.",
+    "scientific_name": "Psilidae sp.",
     "category": "insect",
     "captured_at": "2026-01-04T10:53:22+05:30",
     "time_of_day": "morning",
     "tags": [
       "Flies",
-      "Tiny Bugs"
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 29.4,
@@ -980,7 +994,7 @@
     "time_of_day": "morning",
     "tags": [
       "Hoppers",
-      "Tiny Bugs"
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 29.4,
@@ -1013,13 +1027,13 @@
       }
     ],
     "common_name": "Leafhopper",
-    "scientific_name": "Orosius Sp.",
+    "scientific_name": "Orosius sp.",
     "category": "insect",
     "captured_at": "2026-01-04T10:55:45+05:30",
     "time_of_day": "morning",
     "tags": [
       "Hoppers",
-      "Tiny Bugs"
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 29.4,
@@ -1061,7 +1075,8 @@
     "captured_at": "2026-01-04T10:38:34+05:30",
     "time_of_day": "morning",
     "tags": [
-      "Moths"
+      "Moths",
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 29.4,
@@ -1094,12 +1109,12 @@
       }
     ],
     "common_name": "Thrips",
-    "scientific_name": "Thysanoptera Sp.",
+    "scientific_name": "Thysanoptera sp.",
     "category": "insect",
     "captured_at": "2026-01-04T16:59:41+05:30",
     "time_of_day": "evening",
     "tags": [
-      "Babies"
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 29.3,
@@ -1137,7 +1152,8 @@
     "captured_at": "2026-01-04T13:32:12+05:30",
     "time_of_day": "afternoon",
     "tags": [
-      "Flies"
+      "Flies",
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 28.9,
@@ -1174,12 +1190,12 @@
       }
     ],
     "common_name": "Green Lacewing Larva",
-    "scientific_name": "Chrysopidae Sp.",
+    "scientific_name": "Chrysopidae sp.",
     "category": "insect",
     "captured_at": "2026-01-05T11:28:55+05:30",
     "time_of_day": "morning",
     "tags": [
-      "Cool Bugs"
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 29.1,
@@ -1211,14 +1227,14 @@
         "caption": ""
       }
     ],
-    "common_name": "Greenfly",
+    "common_name": "Green Peach Aphid",
     "scientific_name": "Myzus persicae",
     "category": "insect",
     "captured_at": "2026-01-05T10:27:38+05:30",
     "time_of_day": "morning",
     "tags": [
-      "Flies",
-      "Common Bugs"
+      "Aphids",
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 29.1,
@@ -1239,8 +1255,9 @@
       "sunset": "18:17"
     },
     "season": "winter",
-    "notes": "This is a new one. Never seent these before.",
-    "created_at": "2026-01-05T19:38:10.287135+05:30"
+    "notes": "This is a new one. Never seen these before. Come to think of it, never paid attention to aphids as much.",
+    "created_at": "2026-01-05T19:38:10.287135+05:30",
+    "size_mm": 5.0
   },
   {
     "id": "20260105-003",
@@ -1251,15 +1268,13 @@
       }
     ],
     "common_name": "Jumping Spider",
-    "scientific_name": "Salticidae Sp.",
+    "scientific_name": "Salticidae sp.",
     "category": "arachnid",
     "captured_at": "2026-01-05T14:19:25+05:30",
     "time_of_day": "afternoon",
     "tags": [
       "Spiders",
-      "Tiny Bugs",
-      "Common Bugs",
-      "Cool Bugs"
+      "First Sightings"
     ],
     "weather": {
       "temp_max_c": 29.1,
@@ -1297,7 +1312,8 @@
     "captured_at": "2026-01-05T10:14:03+05:30",
     "time_of_day": "morning",
     "tags": [
-      "Flies"
+      "Flies",
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 29.1,
@@ -1339,7 +1355,8 @@
     "captured_at": "2026-01-05T10:20:55+05:30",
     "time_of_day": "morning",
     "tags": [
-      "Flies"
+      "Spiders",
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 29.1,
@@ -1372,12 +1389,12 @@
       }
     ],
     "common_name": "Green Lacewing Larva",
-    "scientific_name": "Chrysopidae Sp.",
+    "scientific_name": "Chrysopidae sp.",
     "category": "insect",
     "captured_at": "2026-01-06T09:57:08+05:30",
     "time_of_day": "morning",
     "tags": [
-      "Larva"
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 29.6,
@@ -1419,7 +1436,8 @@
     "captured_at": "2026-01-06T11:00:40+05:30",
     "time_of_day": "morning",
     "tags": [
-      "Hoppers"
+      "Hoppers",
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 29.6,
@@ -1457,7 +1475,8 @@
     "captured_at": "2026-01-06T11:02:59+05:30",
     "time_of_day": "morning",
     "tags": [
-      "Crickets"
+      "Crickets",
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 29.6,
@@ -1490,12 +1509,13 @@
       }
     ],
     "common_name": "Bee Fly",
-    "scientific_name": "Bombyliidae Sp.",
+    "scientific_name": "Bombyliidae sp.",
     "category": "insect",
     "captured_at": "2026-01-06T11:06:32+05:30",
     "time_of_day": "afternoon",
     "tags": [
-      "Unknown Species"
+      "Flies",
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 29.8,
@@ -1528,12 +1548,13 @@
       }
     ],
     "common_name": "Darkling Beetle",
-    "scientific_name": "Tenebrionidae Sp.",
+    "scientific_name": "Tenebrionidae sp.",
     "category": "insect",
     "captured_at": "2026-01-06T16:11:53+05:30",
     "time_of_day": "evening",
     "tags": [
-      "Beetles"
+      "Beetles",
+      "First Sighting"
     ],
     "weather": {
       "temp_max_c": 29.8,
@@ -1566,7 +1587,7 @@
       }
     ],
     "common_name": "Long Legged Fly",
-    "scientific_name": "Dolichopodidae Sp.",
+    "scientific_name": "Dolichopodidae sp.",
     "category": "insect",
     "captured_at": "2026-01-06T16:39:53+05:30",
     "time_of_day": "evening",
@@ -1606,7 +1627,7 @@
       }
     ],
     "common_name": "Nomad Bee",
-    "scientific_name": "Nomada Sp.",
+    "scientific_name": "Nomada sp.",
     "category": "insect",
     "captured_at": "2026-01-06T12:02:14+05:30",
     "time_of_day": "afternoon",
@@ -1644,7 +1665,7 @@
       }
     ],
     "common_name": "Parasitoid Wasp",
-    "scientific_name": "Braconidae Sp.",
+    "scientific_name": "Braconidae sp.",
     "category": "insect",
     "captured_at": "2026-01-06T16:41:28+05:30",
     "time_of_day": "evening",
@@ -1681,8 +1702,8 @@
         "caption": ""
       }
     ],
-    "common_name": "Rainbow Bee",
-    "scientific_name": "Nomia Sp.",
+    "common_name": "Micro bee",
+    "scientific_name": "Mythicomyiidae sp.",
     "category": "insect",
     "captured_at": "2026-01-06T12:13:29+05:30",
     "time_of_day": "afternoon",
@@ -1724,7 +1745,7 @@
       }
     ],
     "common_name": "Ant-mimicking Jumping Spider",
-    "scientific_name": "Myrmarachne Sp.",
+    "scientific_name": "Myrmarachne sp.",
     "category": "arachnid",
     "captured_at": "2026-01-07T09:02:22+05:30",
     "time_of_day": "morning",
@@ -1764,7 +1785,7 @@
       }
     ],
     "common_name": "Black Scavenger Fly",
-    "scientific_name": "Sepsidae Sp.",
+    "scientific_name": "Sepsidae sp.",
     "category": "insect",
     "captured_at": "2026-01-07T07:47:12+05:30",
     "time_of_day": "morning",
@@ -1886,7 +1907,7 @@
       }
     ],
     "common_name": "Weevil",
-    "scientific_name": "Curculionidae Sp.",
+    "scientific_name": "Curculionidae sp.",
     "category": "insect",
     "captured_at": "2026-01-07T10:13:19+05:30",
     "time_of_day": "morning",
@@ -1964,7 +1985,7 @@
       }
     ],
     "common_name": "Grass Moth",
-    "scientific_name": "Crambidae Sp.",
+    "scientific_name": "Crambidae sp.",
     "category": "insect",
     "captured_at": "2026-01-07T16:29:47+05:30",
     "time_of_day": "evening",
@@ -2040,7 +2061,7 @@
       }
     ],
     "common_name": "Parasitoid Wasp",
-    "scientific_name": "Platygastridae Sp.",
+    "scientific_name": "Platygastridae sp.",
     "category": "insect",
     "captured_at": "2026-01-07T15:51:16+05:30",
     "time_of_day": "afternoon",
@@ -2068,5 +2089,2915 @@
     "season": "winter",
     "notes": "These are very small. Takes a lot of patience.",
     "created_at": "2026-01-07T17:45:19.060309+05:30"
+  },
+  {
+    "id": "20260108-001",
+    "images": [
+      {
+        "filename": "20260108-001-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260108-001-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260108-001-c.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Carpet Beetle",
+    "scientific_name": "Anthrenus verbasci",
+    "category": "insect",
+    "captured_at": "2026-01-08T10:34:10+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 52,
+      "pressure_hpa": 1013.1,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 14,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.75,
+      "sunrise": "06:56",
+      "sunset": "18:19"
+    },
+    "season": "winter",
+    "notes": "This one has fuzzy texture. For a while I thought picture is getting out of focus. Nope!",
+    "created_at": "2026-01-08T18:21:48.645951+05:30"
+  },
+  {
+    "id": "20260108-002",
+    "images": [
+      {
+        "filename": "20260108-002-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Flesh Fly",
+    "scientific_name": "Sarcophagidae sp.",
+    "category": "insect",
+    "captured_at": "2026-01-08T11:57:04+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 52,
+      "pressure_hpa": 1013.1,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 14,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.75,
+      "sunrise": "06:56",
+      "sunset": "18:19"
+    },
+    "season": "winter",
+    "notes": "Big for a fly. Looks quite intimidating!",
+    "created_at": "2026-01-08T18:22:41.645040+05:30"
+  },
+  {
+    "id": "20260108-003",
+    "images": [
+      {
+        "filename": "20260108-003-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Indian Stingless Bee",
+    "scientific_name": "Tetragonula iridipennis",
+    "category": "insect",
+    "captured_at": "2026-01-08T12:06:07+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 52,
+      "pressure_hpa": 1013.1,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 14,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.75,
+      "sunrise": "06:56",
+      "sunset": "18:19"
+    },
+    "season": "winter",
+    "notes": "This one just collected as much pollen as possible! Tiny though, perhaps 3-4 mm in length.",
+    "created_at": "2026-01-08T18:23:28.093193+05:30"
+  },
+  {
+    "id": "20260108-004",
+    "images": [
+      {
+        "filename": "20260108-004-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Pepper Weevil",
+    "scientific_name": "Anthonomus eugenii",
+    "category": "insect",
+    "captured_at": "2026-01-08T11:52:39+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 29.1,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 52,
+      "pressure_hpa": 1013.1,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 14,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.75,
+      "sunrise": "06:56",
+      "sunset": "18:19"
+    },
+    "season": "winter",
+    "notes": "It is a weevil!",
+    "created_at": "2026-01-08T18:25:00.529724+05:30"
+  },
+  {
+    "id": "20260109-001",
+    "images": [
+      {
+        "filename": "20260109-001-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Ghost Ants",
+    "scientific_name": "Tapinoma melanocephalum",
+    "category": "insect",
+    "captured_at": "2026-01-09T08:59:26+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.5,
+      "wind_direction_deg": 6,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.66,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    },
+    "season": "winter",
+    "notes": "These are small, but can you give you a neat bite.",
+    "created_at": "2026-01-09T11:07:21.279216+05:30"
+  },
+  {
+    "id": "20260109-002",
+    "images": [
+      {
+        "filename": "20260109-002-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260109-002-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260109-002-c.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Armed Spiny Ant",
+    "scientific_name": "Polyrhachis armata sp.",
+    "category": "insect",
+    "captured_at": "2026-01-09T09:51:43+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.5,
+      "wind_direction_deg": 6,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.66,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    },
+    "season": "winter",
+    "notes": "Good looking ant! It stood still for a while, allowing me some good photos.",
+    "created_at": "2026-01-09T11:09:08.020372+05:30"
+  },
+  {
+    "id": "20260109-003",
+    "images": [
+      {
+        "filename": "20260109-003-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Mung Moth",
+    "scientific_name": "Maruca vitrata",
+    "category": "insect",
+    "captured_at": "2026-01-09T09:10:36+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.5,
+      "wind_direction_deg": 6,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.66,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    },
+    "season": "winter",
+    "notes": "They are always upside down for some reason.",
+    "created_at": "2026-01-09T11:09:36.520522+05:30"
+  },
+  {
+    "id": "20260109-004",
+    "images": [
+      {
+        "filename": "20260109-004-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260109-004-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Stilt-legged Fly",
+    "scientific_name": "Micropezidae sp.",
+    "category": "insect",
+    "captured_at": "2026-01-09T09:55:56+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 20.5,
+      "wind_direction_deg": 6,
+      "soil_temp_c": null,
+      "uv_index": 7.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.66,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    },
+    "season": "winter",
+    "notes": "It can not stand still! Keeps moving its hands every second!",
+    "created_at": "2026-01-09T11:10:40.457527+05:30"
+  },
+  {
+    "id": "20260109-005",
+    "images": [
+      {
+        "filename": "20260109-005-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260109-005-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Asian Tiger Mosquito",
+    "scientific_name": "Aedes albopictus",
+    "category": "insect",
+    "captured_at": "2026-01-09T16:22:05+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 21.7,
+      "wind_direction_deg": 4,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.66,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    },
+    "season": "winter",
+    "notes": "I was wondering when will a mosquito appear. Here it is.",
+    "created_at": "2026-01-09T18:02:18.095809+05:30"
+  },
+  {
+    "id": "20260109-006",
+    "images": [
+      {
+        "filename": "20260109-006-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Weaver Ant",
+    "scientific_name": "Oecophylla smaragdina",
+    "category": "insect",
+    "captured_at": "2026-01-09T16:51:39+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 60,
+      "pressure_hpa": 1012.7,
+      "wind_speed_kmh": 21.7,
+      "wind_direction_deg": 4,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.66,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    },
+    "season": "winter",
+    "notes": "I wonder what it is doing in the patch.",
+    "created_at": "2026-01-09T18:03:19.884538+05:30"
+  },
+  {
+    "id": "20260110-001",
+    "images": [
+      {
+        "filename": "20260110-001-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260110-001-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Ant-like Flower Beetle",
+    "scientific_name": "Anthicidae sp.",
+    "category": "insect",
+    "captured_at": "2026-01-10T09:17:47+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    },
+    "season": "winter",
+    "notes": "Is it an ant? Is it a beetle? Oh man.",
+    "created_at": "2026-01-10T17:51:41.929297+05:30"
+  },
+  {
+    "id": "20260110-002",
+    "images": [
+      {
+        "filename": "20260110-002-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260110-002-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Common Drone Fly",
+    "scientific_name": "Eristalis tenax",
+    "category": "insect",
+    "captured_at": "2026-01-10T11:02:59+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    },
+    "season": "winter",
+    "notes": "It just wouldn't sit on the flower. Just kept moving up and down, nonstop.",
+    "created_at": "2026-01-10T17:52:56.094995+05:30"
+  },
+  {
+    "id": "20260110-003",
+    "images": [
+      {
+        "filename": "20260110-003-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260110-003-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Hoverfly",
+    "scientific_name": "Syrphidae sp.",
+    "category": "insect",
+    "captured_at": "2026-01-10T09:14:56+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    },
+    "season": "winter",
+    "notes": "Just a fly.",
+    "created_at": "2026-01-10T17:55:56.671425+05:30"
+  },
+  {
+    "id": "20260110-004",
+    "images": [
+      {
+        "filename": "20260110-004-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260110-004-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Leaf Miner Fly",
+    "scientific_name": "Liriomyza pusilla",
+    "category": "insect",
+    "captured_at": "2026-01-10T08:50:33+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    },
+    "season": "winter",
+    "notes": "Tiny, but shiny!",
+    "created_at": "2026-01-10T17:56:32.844914+05:30"
+  },
+  {
+    "id": "20260110-005",
+    "images": [
+      {
+        "filename": "20260110-005-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Maize Leafhopper",
+    "scientific_name": "Cicadulina mbila",
+    "category": "insect",
+    "captured_at": "2026-01-10T17:21:40+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    },
+    "season": "winter",
+    "notes": "Looks like a leafhopper alright!",
+    "created_at": "2026-01-10T17:57:01.357470+05:30"
+  },
+  {
+    "id": "20260110-006",
+    "images": [
+      {
+        "filename": "20260110-006-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260110-006-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Snout Beetle",
+    "scientific_name": "Curculionidae sp.",
+    "category": "insect",
+    "captured_at": "2026-01-10T10:47:08+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 57,
+      "pressure_hpa": 1011.8,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 10,
+      "soil_temp_c": null,
+      "uv_index": 6.7
+    },
+    "celestial": {
+      "moon_phase": "Waning Gibbous",
+      "moon_illumination": 0.57,
+      "sunrise": "06:56",
+      "sunset": "18:20"
+    },
+    "season": "winter",
+    "notes": "Just wouldn't step in to the sun, kept hiding under the leaves. Took a lot of moving around to take a pic.",
+    "created_at": "2026-01-10T17:58:08.280975+05:30"
+  },
+  {
+    "id": "20260111-001",
+    "images": [
+      {
+        "filename": "20260111-001-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Braconid Wasp",
+    "scientific_name": "Braconidae sp.",
+    "category": "insect",
+    "captured_at": "2026-01-11T13:15:44+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    },
+    "season": "winter",
+    "notes": "About 3mm long, it sat still, but I couldn't get a neat picture because of my skill issues.",
+    "created_at": "2026-01-11T14:11:41.458736+05:30"
+  },
+  {
+    "id": "20260111-002",
+    "images": [
+      {
+        "filename": "20260111-002-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260111-002-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Chalcid Wasp",
+    "scientific_name": "Eurytomidae sp.",
+    "category": "insect",
+    "captured_at": "2026-01-11T09:39:04+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    },
+    "season": "winter",
+    "notes": "It has some patterns on its back, should try to get a clear pic next time.",
+    "created_at": "2026-01-11T14:13:31.722870+05:30"
+  },
+  {
+    "id": "20260111-003",
+    "images": [
+      {
+        "filename": "20260111-003-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260111-003-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260111-003-c.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Golden-backed Ant",
+    "scientific_name": "Polyrhachis sp.",
+    "category": "insect",
+    "captured_at": "2026-01-11T10:17:28+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 63,
+      "pressure_hpa": 1012.8,
+      "wind_speed_kmh": 16.2,
+      "wind_direction_deg": 25,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Last Quarter",
+      "moon_illumination": 0.47,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    },
+    "season": "winter",
+    "notes": "Such a neat ant! It has golden butt!",
+    "created_at": "2026-01-11T14:14:39.328874+05:30"
+  },
+  {
+    "id": "20260112-001",
+    "images": [
+      {
+        "filename": "20260112-001-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260112-001-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Green Lynx Spider",
+    "scientific_name": "Peucetia viridans",
+    "category": "arachnid",
+    "captured_at": "2026-01-12T09:06:57+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Cool Bugs"
+    ],
+    "weather": {
+      "temp_max_c": 28.0,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0.4,
+      "conditions": "Slight rain showers",
+      "humidity_percent": 72,
+      "pressure_hpa": 1013.7,
+      "wind_speed_kmh": 17.3,
+      "wind_direction_deg": 3,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.37,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    },
+    "season": "winter",
+    "notes": "Very small spider with fairly large kill!",
+    "created_at": "2026-01-12T17:33:34.978524+05:30"
+  },
+  {
+    "id": "20260114-001",
+    "images": [
+      {
+        "filename": "20260114-001-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Carpenter Ant",
+    "scientific_name": "Camponotus Parius",
+    "category": "insect",
+    "captured_at": "2026-01-14T10:06:56+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Ants"
+    ],
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    },
+    "season": "winter",
+    "notes": "I didn't get a lot of time to get a better pic. Pretty big kill!",
+    "created_at": "2026-01-14T17:53:12.739556+05:30"
+  },
+  {
+    "id": "20260114-002",
+    "images": [
+      {
+        "filename": "20260114-002-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260114-002-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Ghost Ant",
+    "scientific_name": "Tapinoma melanocephalum",
+    "category": "insect",
+    "captured_at": "2026-01-14T16:52:21+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "Ants"
+    ],
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    },
+    "season": "winter",
+    "notes": "Very small, very small. Just wouldn't stop moving!",
+    "created_at": "2026-01-14T17:54:21.608908+05:30"
+  },
+  {
+    "id": "20260114-003",
+    "images": [
+      {
+        "filename": "20260114-003-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260114-003-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Hoverfly",
+    "scientific_name": "Syrphidae sp.",
+    "category": "insect",
+    "captured_at": "2026-01-14T15:40:17+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Flies"
+    ],
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    },
+    "season": "winter",
+    "notes": "Haha, I get it now! It can hover at a fixed point really well.",
+    "created_at": "2026-01-14T17:55:29.177672+05:30"
+  },
+  {
+    "id": "20260114-004",
+    "images": [
+      {
+        "filename": "20260114-004-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260114-004-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Stable Fly",
+    "scientific_name": "Stomoxys calcitrans",
+    "category": "insect",
+    "captured_at": "2026-01-14T09:28:22+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Flies"
+    ],
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    },
+    "season": "winter",
+    "notes": "Guess what, it did stay quite stable. Did not move for a long time!",
+    "created_at": "2026-01-14T17:56:24.538351+05:30"
+  },
+  {
+    "id": "20260114-005",
+    "images": [
+      {
+        "filename": "20260114-005-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Fruit Flies",
+    "scientific_name": "Tephritidae sp.",
+    "category": "insect",
+    "captured_at": "2026-01-14T08:32:18+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Behaviour"
+    ],
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    },
+    "season": "winter",
+    "notes": "It is their courting dance. They dance, do the tango then do little smooch!",
+    "created_at": "2026-01-14T17:58:06.597592+05:30"
+  },
+  {
+    "id": "20260114-006",
+    "images": [
+      {
+        "filename": "20260114-006-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260114-006-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Grass Fly",
+    "scientific_name": "Chloropidae sp.",
+    "category": "insect",
+    "captured_at": "2026-01-14T16:50:12+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "Flies"
+    ],
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    },
+    "season": "winter",
+    "notes": "About 3 mm. Light was fading quite fast, I couldn't get better pics.",
+    "created_at": "2026-01-14T17:59:09.732757+05:30"
+  },
+  {
+    "id": "20260114-007",
+    "images": [
+      {
+        "filename": "20260114-007-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Green Lacewing Larva",
+    "scientific_name": "Chrysopidae sp.",
+    "category": "insect",
+    "captured_at": "2026-01-14T10:41:17+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Larva"
+    ],
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    },
+    "season": "winter",
+    "notes": "They haul quite a lot of trash, as such!",
+    "created_at": "2026-01-14T17:59:49.476295+05:30"
+  },
+  {
+    "id": "20260114-008",
+    "images": [
+      {
+        "filename": "20260114-008-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260114-008-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260114-008-c.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Transverse Ladybird",
+    "scientific_name": "Coccinella transversalis",
+    "category": "insect",
+    "captured_at": "2026-01-14T09:45:51+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Beetles",
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 26.4,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 83,
+      "pressure_hpa": 1013.0,
+      "wind_speed_kmh": 17.0,
+      "wind_direction_deg": 319,
+      "soil_temp_c": null,
+      "uv_index": 7.2
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.21,
+      "sunrise": "06:57",
+      "sunset": "18:22"
+    },
+    "season": "winter",
+    "notes": "Lady is here, people! Ain't it pretty!",
+    "created_at": "2026-01-14T18:00:57.167761+05:30"
+  },
+  {
+    "id": "20260115-001",
+    "images": [
+      {
+        "filename": "20260115-001-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260115-001-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260115-001-c.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Rainbow Jumping Spider",
+    "scientific_name": "Chrysilla volupe",
+    "category": "arachnid",
+    "captured_at": "2026-01-15T09:58:40+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Spiders"
+    ],
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 26.9,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 85,
+      "pressure_hpa": 1011.5,
+      "wind_speed_kmh": 18.4,
+      "wind_direction_deg": 302,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.13,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    },
+    "season": "winter",
+    "notes": "What a little jewel, gave some sufficient time to take photos.",
+    "created_at": "2026-01-15T11:49:38.021386+05:30"
+  },
+  {
+    "id": "20260115-002",
+    "images": [
+      {
+        "filename": "20260115-002-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260115-002-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Planthopper Nymph",
+    "scientific_name": "Metadelphax propinqua",
+    "category": "insect",
+    "captured_at": "2026-01-15T09:01:20+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Nymphs"
+    ],
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 26.9,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 85,
+      "pressure_hpa": 1011.5,
+      "wind_speed_kmh": 18.4,
+      "wind_direction_deg": 302,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.13,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    },
+    "season": "winter",
+    "notes": "Very tiny being. Camera just refused to auto-focus.",
+    "created_at": "2026-01-15T11:50:34.350933+05:30"
+  },
+  {
+    "id": "20260116-001",
+    "images": [
+      {
+        "filename": "20260116-001-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Face Fly",
+    "scientific_name": "Musca sp.",
+    "category": "insect",
+    "captured_at": "2026-01-16T13:54:51+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Flies"
+    ],
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    },
+    "season": "winter",
+    "notes": "Looks very similar to common housefly. But the AI says it ain't. Hail the algorithms!",
+    "created_at": "2026-01-16T17:47:09.970725+05:30"
+  },
+  {
+    "id": "20260116-002",
+    "images": [
+      {
+        "filename": "20260116-002-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Orange-headed Rice Leafhopper",
+    "scientific_name": "Thaia oryzivora",
+    "category": "insect",
+    "captured_at": "2026-01-16T16:20:04+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    },
+    "season": "winter",
+    "notes": "For a tiny bug, we definitely gave a really long name.",
+    "created_at": "2026-01-16T17:47:56.112226+05:30"
+  },
+  {
+    "id": "20260116-003",
+    "images": [
+      {
+        "filename": "20260116-003-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260116-003-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Picture-winged Fly",
+    "scientific_name": "Tephritidae sp.",
+    "category": "insect",
+    "captured_at": "2026-01-16T09:15:24+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Flies"
+    ],
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    },
+    "season": "winter",
+    "notes": "Another type of fruitfly, that does not eat any fruits.",
+    "created_at": "2026-01-16T17:49:09.182181+05:30"
+  },
+  {
+    "id": "20260116-004",
+    "images": [
+      {
+        "filename": "20260116-004-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260116-004-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Snail-killing Fly",
+    "scientific_name": "Sciomyzidae sp.",
+    "category": "insect",
+    "captured_at": "2026-01-16T16:09:52+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 28.3,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 209,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    },
+    "season": "winter",
+    "notes": "They and snails are not good friends. Infact they might be enemies.",
+    "created_at": "2026-01-16T17:51:21.084342+05:30"
+  },
+  {
+    "id": "20260117-001",
+    "images": [
+      {
+        "filename": "20260117-001-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260117-001-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Common Green Bottle Fly",
+    "scientific_name": "Lucilia sericata",
+    "category": "insect",
+    "captured_at": "2026-01-17T10:13:49+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Flies"
+    ],
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 315,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    },
+    "season": "winter",
+    "notes": "Shiny, big and happy to sit still!",
+    "created_at": "2026-01-17T11:21:29.469615+05:30"
+  },
+  {
+    "id": "20260117-002",
+    "images": [
+      {
+        "filename": "20260117-002-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Lesser Grass Blue",
+    "scientific_name": "Zizina otis",
+    "category": "insect",
+    "captured_at": "2026-01-17T10:17:09+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Butterflies"
+    ],
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 315,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    },
+    "season": "winter",
+    "notes": "First butterfly to spot on the patch!",
+    "created_at": "2026-01-17T13:52:44.906129+05:30"
+  },
+  {
+    "id": "20260117-003",
+    "images": [
+      {
+        "filename": "20260117-003-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260117-003-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Striped Jumping Spider",
+    "scientific_name": "Salticidae sp.",
+    "category": "arachnid",
+    "captured_at": "2026-01-17T10:30:00+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Spiders"
+    ],
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.2,
+      "wind_direction_deg": 315,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    },
+    "season": "winter",
+    "notes": "Very curious animal!",
+    "created_at": "2026-01-17T13:53:51.646386+05:30"
+  },
+  {
+    "id": "20260117-004",
+    "images": [
+      {
+        "filename": "20260117-004-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260117-004-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Braconid Wasp",
+    "scientific_name": "Braconidae sp.",
+    "category": "insect",
+    "captured_at": "2026-01-17T15:14:11+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Wasps"
+    ],
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 25.0,
+      "wind_direction_deg": 326,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    },
+    "season": "winter",
+    "notes": "Very shiny, can sit still! I like bugs that have good contrast colors, they are easy to photograph!",
+    "created_at": "2026-01-17T15:50:43.359831+05:30"
+  },
+  {
+    "id": "20260117-005",
+    "images": [
+      {
+        "filename": "20260117-005-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260117-005-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Paper Wasp",
+    "scientific_name": "Vespidae sp.",
+    "category": "insect",
+    "captured_at": "2026-01-17T12:36:46+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Wasps"
+    ],
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 25.0,
+      "wind_direction_deg": 326,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    },
+    "season": "winter",
+    "notes": "Had only few seconds to shoot pics before it flew away, better pics next time!",
+    "created_at": "2026-01-17T15:51:51.245315+05:30"
+  },
+  {
+    "id": "20260117-006",
+    "images": [
+      {
+        "filename": "20260117-006-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260117-006-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Sweet Potato Weevil",
+    "scientific_name": "Cylas formicarius",
+    "category": "insect",
+    "captured_at": "2026-01-17T15:01:42+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Weevils"
+    ],
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 25.0,
+      "wind_direction_deg": 326,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    },
+    "season": "winter",
+    "notes": "What a weevil!",
+    "created_at": "2026-01-17T15:52:40.525782+05:30"
+  },
+  {
+    "id": "20260117-007",
+    "images": [
+      {
+        "filename": "20260117-007-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260117-007-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Bristle Fly",
+    "scientific_name": "Clausicella sp.",
+    "category": "insect",
+    "captured_at": "2026-01-17T16:28:34+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "Flies"
+    ],
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 25.0,
+      "wind_direction_deg": 326,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    },
+    "season": "winter",
+    "notes": "Yet another type of fly!",
+    "created_at": "2026-01-17T17:12:50.507438+05:30"
+  },
+  {
+    "id": "20260112-002",
+    "images": [
+      {
+        "filename": "20260112-002-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260112-002-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Long-legged Fly",
+    "scientific_name": "Achradocera barbata",
+    "category": "insect",
+    "captured_at": "2026-01-12T16:45:46+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "Flies"
+    ],
+    "weather": {
+      "temp_max_c": 28.1,
+      "temp_min_c": 26.3,
+      "precipitation_mm": 0.4,
+      "conditions": "Slight rain showers",
+      "humidity_percent": 71,
+      "pressure_hpa": 1013.7,
+      "wind_speed_kmh": 17.3,
+      "wind_direction_deg": 357,
+      "soil_temp_c": null,
+      "uv_index": 7.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.37,
+      "sunrise": "06:57",
+      "sunset": "18:21"
+    },
+    "season": "winter",
+    "notes": "Yet antother fly! Man. One too many around here.",
+    "created_at": "2026-01-17T17:22:37.161972+05:30"
+  },
+  {
+    "id": "20260117-008",
+    "images": [
+      {
+        "filename": "20260117-008-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260117-008-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260117-008-c.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260117-008-d.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Transverse Ladybird Beetle Larva",
+    "scientific_name": "Coccinella transversalis",
+    "category": "insect",
+    "captured_at": "2026-01-17T17:40:07+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "Larva"
+    ],
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0.3,
+      "conditions": "Foggy",
+      "humidity_percent": 77,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 25.0,
+      "wind_direction_deg": 326,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.03,
+      "sunrise": "06:58",
+      "sunset": "18:24"
+    },
+    "season": "winter",
+    "notes": "Wow! I learnt new today! The cute ladybird larva is not so cute! It looks like it can sting!",
+    "created_at": "2026-01-17T18:08:24.336512+05:30"
+  },
+  {
+    "id": "20260118-001",
+    "images": [
+      {
+        "filename": "20260118-001-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260118-001-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260118-001-c.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Braconid Wasp",
+    "scientific_name": "Ichneumonoidea sp.",
+    "category": "insect",
+    "captured_at": "2026-01-18T09:06:16+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Wasps"
+    ],
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1010.0,
+      "wind_speed_kmh": 19.3,
+      "wind_direction_deg": 277,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    },
+    "season": "winter",
+    "notes": "Small, shiny. Many such around here.",
+    "created_at": "2026-01-18T12:34:45.297191+05:30"
+  },
+  {
+    "id": "20260118-002",
+    "images": [
+      {
+        "filename": "20260118-002-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260118-002-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Chalcidoid Wasp",
+    "scientific_name": "Chalcidoidea sp.",
+    "category": "insect",
+    "captured_at": "2026-01-18T10:25:04+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Wasps"
+    ],
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1010.0,
+      "wind_speed_kmh": 19.3,
+      "wind_direction_deg": 277,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    },
+    "season": "winter",
+    "notes": "Shiny! Finally, I got a decent-ish shot of this one.",
+    "created_at": "2026-01-18T12:36:02.422091+05:30"
+  },
+  {
+    "id": "20260118-003",
+    "images": [
+      {
+        "filename": "20260118-003-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260118-003-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Molehopper",
+    "scientific_name": "Xya variegata",
+    "category": "insect",
+    "captured_at": "2026-01-18T11:51:28+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 28.2,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1010.0,
+      "wind_speed_kmh": 19.3,
+      "wind_direction_deg": 277,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    },
+    "season": "winter",
+    "notes": "It looks like an inspiration for the alien design. It looks very well built!",
+    "created_at": "2026-01-18T12:37:17.749193+05:30"
+  },
+  {
+    "id": "20260118-004",
+    "images": [
+      {
+        "filename": "20260118-004-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Nomad Bee",
+    "scientific_name": "Nomada sp.",
+    "category": "insect",
+    "captured_at": "2026-01-18T13:38:33+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Bees"
+    ],
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1010.0,
+      "wind_speed_kmh": 20.0,
+      "wind_direction_deg": 251,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    },
+    "season": "winter",
+    "notes": "Cool bug. Gave me about 30 seconds to click few decent pics.",
+    "created_at": "2026-01-18T17:44:08.313850+05:30"
+  },
+  {
+    "id": "20260119-001",
+    "images": [
+      {
+        "filename": "20260119-001-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Jewel Beetle",
+    "scientific_name": "Aphanisticus sp.",
+    "category": "insect",
+    "captured_at": "2026-01-19T17:24:38+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "Beetles"
+    ],
+    "weather": {
+      "temp_max_c": 27.5,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 32.4,
+      "wind_direction_deg": 331,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.0,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    },
+    "season": "winter",
+    "notes": "Very small, looked just like a small black thing. Hard to see features unless looked closer.",
+    "created_at": "2026-01-19T18:54:09.212420+05:30"
+  },
+  {
+    "id": "20260119-002",
+    "images": [
+      {
+        "filename": "20260119-002-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Snout Beetle",
+    "scientific_name": "Curculionoidea sp.",
+    "category": "insect",
+    "captured_at": "2026-01-19T10:41:52+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Beetles"
+    ],
+    "weather": {
+      "temp_max_c": 27.5,
+      "temp_min_c": 25.0,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 32.4,
+      "wind_direction_deg": 331,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.0,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    },
+    "season": "winter",
+    "notes": "This one is really good at hide and seek game. Every time I moved, it hid under the leaves.",
+    "created_at": "2026-01-19T18:54:59.858483+05:30"
+  },
+  {
+    "id": "20260120-001",
+    "images": [
+      {
+        "filename": "20260120-001-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260120-001-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Bornean Queenless Ant",
+    "scientific_name": "Diacamma rugosum",
+    "category": "insect",
+    "captured_at": "2026-01-20T15:36:04+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Ants"
+    ],
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    },
+    "season": "winter",
+    "notes": "I had the camera in wrong set up / mode and didn't notice until the bug moved away. Rookie mistake.",
+    "created_at": "2026-01-20T16:38:04.207995+05:30"
+  },
+  {
+    "id": "20260120-002",
+    "images": [
+      {
+        "filename": "20260120-002-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260120-002-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Carinate Locust",
+    "scientific_name": "Trilophidia annulata",
+    "category": "insect",
+    "captured_at": "2026-01-20T11:51:29+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    },
+    "season": "winter",
+    "notes": "Cool bug, with eyes that match the body!",
+    "created_at": "2026-01-20T16:39:09.351061+05:30"
+  },
+  {
+    "id": "20260120-003",
+    "images": [
+      {
+        "filename": "20260120-003-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260120-003-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Sweat Bees",
+    "scientific_name": "Halictidae sp.",
+    "category": "insect",
+    "captured_at": "2026-01-20T12:08:46+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Bees"
+    ],
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    },
+    "season": "winter",
+    "notes": "They simply won't sit still. This one gave me exact 1.5 seconds to take pics.",
+    "created_at": "2026-01-20T16:40:13.432087+05:30"
+  },
+  {
+    "id": "20260120-004",
+    "images": [
+      {
+        "filename": "20260120-004-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260120-004-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Tropical Paper Wasp",
+    "scientific_name": "Polistes stigma",
+    "category": "insect",
+    "captured_at": "2026-01-20T13:42:11+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Wasps"
+    ],
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    },
+    "season": "winter",
+    "notes": "Cool bug. They seem fairly common around here.",
+    "created_at": "2026-01-20T16:41:45.585700+05:30"
+  },
+  {
+    "id": "20260120-005",
+    "images": [
+      {
+        "filename": "20260120-005-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260120-005-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Common Paddy Field Frog",
+    "scientific_name": "Minervarya agricola",
+    "category": "amphibian",
+    "captured_at": "2026-01-20T19:04:00+05:30",
+    "time_of_day": "night",
+    "tags": [
+      "Frogs"
+    ],
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    },
+    "season": "winter",
+    "notes": "Woohoo! First frog on the patch!! I love frogs.",
+    "created_at": "2026-01-20T19:27:47.799942+05:30"
+  },
+  {
+    "id": "20260120-006",
+    "images": [
+      {
+        "filename": "20260120-006-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Lynx Spider",
+    "scientific_name": "Oxyopes salticus",
+    "category": "arachnid",
+    "captured_at": "2026-01-20T18:16:25+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "Spiders"
+    ],
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    },
+    "season": "winter",
+    "notes": "Night photography. I have a long way to go to learn this art.",
+    "created_at": "2026-01-20T19:29:02.548709+05:30"
+  },
+  {
+    "id": "20260120-007",
+    "images": [
+      {
+        "filename": "20260120-007-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Transverse Ladybird",
+    "scientific_name": "Coccinella transversalis",
+    "category": "insect",
+    "captured_at": "2026-01-20T14:17:24+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Beetles"
+    ],
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    },
+    "season": "winter",
+    "notes": "I really like this shot. A spot of red amongst the sea of green.",
+    "created_at": "2026-01-20T19:39:41.030233+05:30"
+  },
+  {
+    "id": "20260120-008",
+    "images": [
+      {
+        "filename": "20260120-008-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Leopard Spider",
+    "scientific_name": "Pardosa laura",
+    "category": "arachnid",
+    "captured_at": "2026-01-20T19:58:32+05:30",
+    "time_of_day": "night",
+    "tags": [
+      "Spiders"
+    ],
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    },
+    "season": "winter",
+    "notes": "I am not sure of the species though. It is a wolf spider family, but can't be sure of the exact species.",
+    "created_at": "2026-01-20T20:25:42.333004+05:30"
+  },
+  {
+    "id": "20260120-009",
+    "images": [
+      {
+        "filename": "20260120-009-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260120-009-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Seed Bug",
+    "scientific_name": "Dieuches armatipes",
+    "category": "insect",
+    "captured_at": "2026-01-20T19:53:36+05:30",
+    "time_of_day": "night",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 71,
+      "pressure_hpa": 1011.2,
+      "wind_speed_kmh": 27.7,
+      "wind_direction_deg": 332,
+      "soil_temp_c": null,
+      "uv_index": 7.35
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    },
+    "season": "winter",
+    "notes": "This one is new for me. I have seen similar on with red and black color during the day.",
+    "created_at": "2026-01-20T20:26:49.693799+05:30"
+  },
+  {
+    "id": "20260121-001",
+    "images": [
+      {
+        "filename": "20260121-001-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260121-001-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Black Ant Mimicking Jumper",
+    "scientific_name": "Toxeus magnus",
+    "category": "arachnid",
+    "captured_at": "2026-01-21T09:01:51+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Spiders"
+    ],
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    },
+    "season": "winter",
+    "notes": "This one took a lot of effort to take any decent picture. It kept moving in and around the undergrowth, never surfaced onto clear area.",
+    "created_at": "2026-01-21T12:07:21.703025+05:30"
+  },
+  {
+    "id": "20260121-002",
+    "images": [
+      {
+        "filename": "20260121-002-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260121-002-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Mayfly",
+    "scientific_name": "Ephemeroptera sp.",
+    "category": "insect",
+    "captured_at": "2026-01-21T07:39:45+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 27.2,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.9,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    },
+    "season": "winter",
+    "notes": "Shot early-ish morning, not enough light to capture the details of this tiny fellow.",
+    "created_at": "2026-01-21T12:08:28.515330+05:30"
+  },
+  {
+    "id": "20260121-003",
+    "images": [
+      {
+        "filename": "20260121-003-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260121-003-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260121-003-c.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Bicolor-ant-mimicking Jumping Spider",
+    "scientific_name": "Myrmarachne melanocephala",
+    "category": "arachnid",
+    "captured_at": "2026-01-21T15:27:38+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "First Sighting",
+      "Spiders"
+    ],
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 74,
+      "pressure_hpa": 1012.0,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 312,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    },
+    "season": "winter",
+    "notes": "Very funky spider. This one is mimicing Tetraponera rufonigra, a very similar colored ant with a very painful bite. I actually fell for it. Only after the first few  pictures, did I notice the spider features.",
+    "created_at": "2026-01-21T16:05:54.610570+05:30"
+  },
+  {
+    "id": "20260121-004",
+    "images": [
+      {
+        "filename": "20260121-004-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260121-004-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260121-004-c.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "White-backed Planthopper",
+    "scientific_name": "Sogatella furcifera",
+    "category": "insect",
+    "captured_at": "2026-01-21T15:20:23+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Hoppers"
+    ],
+    "weather": {
+      "temp_max_c": 27.1,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Overcast",
+      "humidity_percent": 74,
+      "pressure_hpa": 1012.0,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 312,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    },
+    "season": "winter",
+    "notes": "Argh. Not enough light even at 4 PM. Grainy images, and horrible photography skills.",
+    "created_at": "2026-01-21T16:07:14.707642+05:30"
+  },
+  {
+    "id": "20260123-001",
+    "images": [
+      {
+        "filename": "20260123-001-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260123-001-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260123-001-c.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Bot Fly",
+    "scientific_name": "Chetogena sp.",
+    "category": "insect",
+    "captured_at": "2026-01-23T14:09:24+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Flies"
+    ],
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 68,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 18.8,
+      "wind_direction_deg": 355,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    },
+    "season": "winter",
+    "notes": "Bot fly. What eles can I say?",
+    "size_mm": 5.0,
+    "created_at": "2026-01-23T16:36:15.560377+05:30"
+  },
+  {
+    "id": "20260123-002",
+    "images": [
+      {
+        "filename": "20260123-002-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260123-002-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Dance Fly",
+    "scientific_name": "Asyndetus sp.",
+    "category": "insect",
+    "captured_at": "2026-01-23T14:19:46+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Flies"
+    ],
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 68,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 18.8,
+      "wind_direction_deg": 355,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    },
+    "season": "winter",
+    "notes": "Dance fly, dance!",
+    "size_mm": 5.0,
+    "created_at": "2026-01-23T16:37:23.827661+05:30"
+  },
+  {
+    "id": "20260123-003",
+    "images": [
+      {
+        "filename": "20260123-003-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260123-003-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Dirt Colored Seed Bug",
+    "scientific_name": "Pseudopachybrachius guttus",
+    "category": "insect",
+    "captured_at": "2026-01-23T14:29:20+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "First Sighting"
+    ],
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 68,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 18.8,
+      "wind_direction_deg": 355,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    },
+    "season": "winter",
+    "notes": "Nice one, I like the patterns on it.",
+    "size_mm": 4.0,
+    "created_at": "2026-01-23T16:39:03.784268+05:30"
+  },
+  {
+    "id": "20260123-004",
+    "images": [
+      {
+        "filename": "20260123-004-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260123-004-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260123-004-c.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Leaf Beetle",
+    "scientific_name": "Altica cyanea",
+    "category": "insect",
+    "captured_at": "2026-01-23T09:52:03+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Beetles"
+    ],
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 68,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 18.8,
+      "wind_direction_deg": 355,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    },
+    "season": "winter",
+    "notes": "Blue-ish black and very shiny. I had to use all my photography tricks in the bag to get these pics. I need to learn more tricks.",
+    "size_mm": 6.0,
+    "created_at": "2026-01-23T16:40:44.616901+05:30"
+  },
+  {
+    "id": "20260121-005",
+    "images": [
+      {
+        "filename": "20260121-005-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Sugar Ant",
+    "scientific_name": "Camponotus carin",
+    "category": "insect",
+    "captured_at": "2026-01-21T19:12:25+05:30",
+    "time_of_day": "night",
+    "tags": [
+      "Ants"
+    ],
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 24.8,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1011.9,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 308,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.05,
+      "sunrise": "06:58",
+      "sunset": "18:26"
+    },
+    "season": "winter",
+    "notes": "Late night bug hunting. No fun.",
+    "size_mm": 3.0,
+    "created_at": "2026-01-23T16:41:23.555375+05:30"
+  },
+  {
+    "id": "20260123-005",
+    "images": [
+      {
+        "filename": "20260123-005-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260123-005-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "White Rice Leafhopper",
+    "scientific_name": "Cofana spectra",
+    "category": "insect",
+    "captured_at": "2026-01-23T15:25:20+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Hoppers"
+    ],
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 25.3,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 68,
+      "pressure_hpa": 1013.3,
+      "wind_speed_kmh": 18.8,
+      "wind_direction_deg": 355,
+      "soil_temp_c": null,
+      "uv_index": 7.4
+    },
+    "celestial": {
+      "moon_phase": "Waxing Crescent",
+      "moon_illumination": 0.18,
+      "sunrise": "06:58",
+      "sunset": "18:27"
+    },
+    "season": "winter",
+    "notes": "Woah. Tiny. I think I was this close to a complete blank mind when I noticed this. This is true meditation.",
+    "size_mm": 4.0,
+    "created_at": "2026-01-23T16:43:01.533612+05:30"
+  },
+  {
+    "id": "20260116-005",
+    "images": [
+      {
+        "filename": "20260116-005-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260116-005-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Leafhopper",
+    "scientific_name": "Batracomorphus sp.",
+    "category": "insect",
+    "captured_at": "2026-01-16T10:40:42+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Hoppers"
+    ],
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.5,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 84,
+      "pressure_hpa": 1011.3,
+      "wind_speed_kmh": 20.7,
+      "wind_direction_deg": 208,
+      "soil_temp_c": null,
+      "uv_index": 7.25
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.08,
+      "sunrise": "06:57",
+      "sunset": "18:23"
+    },
+    "season": "winter",
+    "notes": "A very small thing, was hard to get sharper pics.",
+    "size_mm": 2.0,
+    "created_at": "2026-01-23T17:17:57.085580+05:30"
+  },
+  {
+    "id": "20260118-005",
+    "images": [
+      {
+        "filename": "20260118-005-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Shore Fly",
+    "scientific_name": "Athyroglossa sp.",
+    "category": "insect",
+    "captured_at": "2026-01-18T11:21:55+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Flies"
+    ],
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 25.6,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 73,
+      "pressure_hpa": 1009.9,
+      "wind_speed_kmh": 20.0,
+      "wind_direction_deg": 258,
+      "soil_temp_c": null,
+      "uv_index": 7.3
+    },
+    "celestial": {
+      "moon_phase": "New Moon",
+      "moon_illumination": 0.01,
+      "sunrise": "06:58",
+      "sunset": "18:25"
+    },
+    "season": "winter",
+    "notes": "Tiny black fly. I do not know how to photograph tiny things. Ugh.",
+    "size_mm": 3.0,
+    "created_at": "2026-01-23T17:18:50.489675+05:30"
   }
 ]

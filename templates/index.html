@@ -3,7 +3,7 @@
 {% block title %}{{ config.site_title }} - Home{% endblock %}
 
 {% block content %}
-<section class="hero" style="background-image: url('{{ base_url }}/images/hero.jpeg');">
+<section class="hero" style="background-image: url('{{ image_url }}/static/hero.jpeg');">
     <div class="container">
         <h1>{{ config.site_title }}</h1>
         <p class="hero-blurb">{{ config.site_description }}</p>
@@ -12,9 +12,19 @@
 
 <section class="status-banner">
     <div class="container">
-        <p>Day <strong>{{ days_elapsed }}</strong> of 365 — <strong>{{ unique_species }}</strong> species documented so far!</p>
+        <p>Day <strong id="days-elapsed">{{ days_elapsed }}</strong> of 365 — <strong>{{ unique_species }}</strong> species documented since 1st January 2026!</p>
     </div>
 </section>
+<script>
+(function() {
+    var start = new Date('2026-01-01T00:00:00+05:30');
+    var now = new Date();
+    var days = Math.floor((now - start) / (1000 * 60 * 60 * 24)) + 1;
+    if (days > 0 && days <= 365) {
+        document.getElementById('days-elapsed').textContent = days;
+    }
+})();
+</script>
 
 <section class="nav-cards">
     <div class="container">
@@ -51,7 +61,7 @@
             {% for sighting in featured_sightings %}
             <a href="{{ base_url }}/sightings/{{ sighting.id }}.html" class="featured-item">
                 {% if sighting.images %}
-                <img src="{{ base_url }}/images/web/{{ sighting.images[0].filename }}" alt="{{ sighting.common_name }}">
+                <img src="{{ image_url }}/web/{{ sighting.images[0].filename }}" alt="{{ sighting.common_name }}">
                 {% endif %}
                 <div class="featured-info">
                     <span class="featured-common">{{ sighting.common_name }}</span>
@@ -72,7 +82,7 @@
             {% for sighting in latest_sightings %}
             <a href="{{ base_url }}/sightings/{{ sighting.id }}.html" class="latest-item">
                 {% if sighting.images %}
-                <img src="{{ base_url }}/images/thumb/{{ sighting.images[0].filename }}" alt="{{ sighting.common_name }}">
+                <img src="{{ image_url }}/thumb/{{ sighting.images[0].filename }}" alt="{{ sighting.common_name }}">
                 {% endif %}
                 <span class="latest-name">{{ sighting.common_name }}</span>
                 <span class="latest-date">{{ sighting.captured_at | short_date }}</span>

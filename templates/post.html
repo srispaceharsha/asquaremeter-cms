@@ -27,7 +27,7 @@
                 {% for sighting in linked_sightings %}
                 <a href="{{ base_url }}/sightings/{{ sighting.id }}.html" class="sighting-thumb">
                     {% if sighting.images %}
-                    <img src="{{ base_url }}/images/thumb/{{ sighting.images[0].filename }}"
+                    <img src="{{ image_url }}/thumb/{{ sighting.images[0].filename }}"
                          alt="{{ sighting.common_name }}">
                     {% endif %}
                     <span>{{ sighting.common_name }}</span>

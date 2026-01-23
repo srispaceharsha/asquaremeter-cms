@@ -6,25 +6,39 @@
 <div class="container">
     <article class="sighting-detail">
         <header class="sighting-header">
-            <h1>{{ sighting.common_name }}</h1>
-            {% if sighting.scientific_name %}
-            <p class="scientific-name"><em>{{ sighting.scientific_name }}</em></p>
-            {% endif %}
+            <h1>{{ sighting.common_name }}{% if sighting.scientific_name %} <span class="scientific-name">(<em>{{ sighting.scientific_name }}</em>)</span>{% endif %}</h1>
         </header>
 
         {% if sighting.images %}
-        <div class="sighting-images">
-            {% for image in sighting.images %}
-            <figure class="sighting-figure">
-                <img src="{{ base_url }}/images/web/{{ image.filename }}"
-                     alt="{{ sighting.common_name }}{% if image.caption %} - {{ image.caption }}{% endif %}"
+        <div class="sighting-gallery">
+            <!-- Main image display -->
+            <figure class="gallery-main">
+                <img id="main-image"
+                     src="{{ image_url }}/web/{{ sighting.images[0].filename }}"
+                     alt="{{ sighting.common_name }}{% if sighting.images[0].caption %} - {{ sighting.images[0].caption }}{% endif %}"
                      class="lightbox-trigger"
-                     data-full="{{ base_url }}/images/full/{{ image.filename }}">
-                {% if image.caption %}
-                <figcaption>{{ image.caption }}</figcaption>
+                     data-full="{{ image_url }}/full/{{ sighting.images[0].filename }}">
+                {% if sighting.images[0].caption %}
+                <figcaption id="main-caption">{{ sighting.images[0].caption }}</figcaption>
+                {% else %}
+                <figcaption id="main-caption"></figcaption>
                 {% endif %}
             </figure>
-            {% endfor %}
+
+            <!-- Thumbnail strip (only if more than 1 image) -->
+            {% if sighting.images | length > 1 %}
+            <div class="gallery-thumbs">
+                {% for image in sighting.images %}
+                <button class="gallery-thumb{% if loop.first %} active{% endif %}"
+                        data-web="{{ image_url }}/web/{{ image.filename }}"
+                        data-full="{{ image_url }}/full/{{ image.filename }}"
+                        data-caption="{{ image.caption or '' }}">
+                    <img src="{{ image_url }}/thumb/{{ image.filename }}"
+                         alt="{{ sighting.common_name }} - image {{ loop.index }}">
+                </button>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
 
         <!-- Lightbox Modal -->
@@ -43,6 +57,11 @@
 
                     <dt>Category</dt>
                     <dd>{{ sighting.category | title }}</dd>
+
+                    {% if sighting.size_mm %}
+                    <dt>Size</dt>
+                    <dd>~{{ sighting.size_mm }}mm <span class="size-badge size-{{ sighting.size_mm | size_category | lower }}">{{ sighting.size_mm | size_category }}</span></dd>
+                    {% endif %}
 
                     <dt>Season</dt>
                     <dd>{{ sighting.season | title }}</dd>
@@ -157,26 +176,72 @@
 
 <script>
 (function() {
+    // Gallery thumbnail switching
+    const mainImage = document.getElementById('main-image');
+    const mainCaption = document.getElementById('main-caption');
+    const thumbs = document.querySelectorAll('.gallery-thumb');
+
+    thumbs.forEach(thumb => {
+        thumb.addEventListener('click', () => {
+            // Update main image
+            mainImage.src = thumb.dataset.web;
+            mainImage.dataset.full = thumb.dataset.full;
+            mainCaption.textContent = thumb.dataset.caption;
+
+            // Update active state
+            thumbs.forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+        });
+    });
+
+    // Lightbox
     const lightbox = document.getElementById('lightbox');
     if (!lightbox) return;
 
     const lightboxImg = lightbox.querySelector('.lightbox-image');
     const closeBtn = lightbox.querySelector('.lightbox-close');
-    const triggers = document.querySelectorAll('.lightbox-trigger');
+    let isZoomed = false;
 
-    triggers.forEach(img => {
-        img.style.cursor = 'pointer';
-        img.addEventListener('click', () => {
-            lightboxImg.src = img.dataset.full;
-            lightboxImg.alt = img.alt;
+    if (mainImage) {
+        mainImage.style.cursor = 'pointer';
+        mainImage.addEventListener('click', () => {
+            lightboxImg.src = mainImage.dataset.full;
+            lightboxImg.alt = mainImage.alt;
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden';
+            isZoomed = false;
+            lightboxImg.style.transform = '';
+            lightboxImg.style.maxWidth = '98vw';
+            lightboxImg.style.maxHeight = '98vh';
         });
+    }
+
+    // Double-tap to zoom
+    let lastTap = 0;
+    lightboxImg.addEventListener('click', (e) => {
+        const now = Date.now();
+        if (now - lastTap < 300) {
+            // Double tap
+            if (isZoomed) {
+                lightboxImg.style.transform = '';
+                lightboxImg.style.maxWidth = '98vw';
+                lightboxImg.style.maxHeight = '98vh';
+                lightboxImg.style.cursor = 'zoom-in';
+            } else {
+                lightboxImg.style.maxWidth = 'none';
+                lightboxImg.style.maxHeight = 'none';
+                lightboxImg.style.cursor = 'zoom-out';
+            }
+            isZoomed = !isZoomed;
+            e.stopPropagation();
+        }
+        lastTap = now;
     });
 
     function closeLightbox() {
         lightbox.classList.remove('active');
         document.body.style.overflow = '';
+        isZoomed = false;
     }
 
     closeBtn.addEventListener('click', closeLightbox);

@@ -1,4 +1,28 @@
 {
+  "aedes albopictus": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Culicidae",
+    "genus": "Aedes",
+    "species": "Aedes albopictus",
+    "gbif_key": 1651430,
+    "canonical_name": "Aedes albopictus",
+    "match_type": "EXACT"
+  },
+  "agriocnemis pygmaea": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Odonata",
+    "family": "Coenagrionidae",
+    "genus": "Agriocnemis",
+    "species": "Agriocnemis pygmaea",
+    "gbif_key": 1423162,
+    "canonical_name": "Agriocnemis pygmaea",
+    "match_type": "EXACT"
+  },
   "aleyrodidae sp.": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
@@ -10,6 +34,42 @@
     "gbif_key": 4304,
     "canonical_name": "Aleyrodidae",
     "match_type": "HIGHERRANK"
+  },
+  "anthicidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Coleoptera",
+    "family": "Anthicidae",
+    "genus": null,
+    "species": "Anthicidae",
+    "gbif_key": 7771,
+    "canonical_name": "Anthicidae",
+    "match_type": "HIGHERRANK"
+  },
+  "anthonomus eugenii": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Coleoptera",
+    "family": "Curculionidae",
+    "genus": "Anthonomus",
+    "species": "Anthonomus eugenii",
+    "gbif_key": 5013699,
+    "canonical_name": "Anthonomus eugenii",
+    "match_type": "EXACT"
+  },
+  "anthrenus verbasci": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Coleoptera",
+    "family": "Dermestidae",
+    "genus": "Anthrenus",
+    "species": "Anthrenus verbasci",
+    "gbif_key": 1095895,
+    "canonical_name": "Anthrenus verbasci",
+    "match_type": "EXACT"
   },
   "atractomorpha crenulata": {
     "kingdom": "Animalia",
@@ -47,6 +107,30 @@
     "canonical_name": "Beris schaposchnikowi",
     "match_type": "EXACT"
   },
+  "bombyliidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Bombyliidae",
+    "genus": null,
+    "species": "Bombyliidae",
+    "gbif_key": 7285,
+    "canonical_name": "Bombyliidae",
+    "match_type": "HIGHERRANK"
+  },
+  "braconidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Braconidae",
+    "genus": null,
+    "species": "Braconidae",
+    "gbif_key": 6910,
+    "canonical_name": "Braconidae",
+    "match_type": "HIGHERRANK"
+  },
   "camponotus parius": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
@@ -71,7 +155,7 @@
     "canonical_name": "Chaetocnema",
     "match_type": "HIGHERRANK"
   },
-  "chrysopidae sp": {
+  "chrysopidae sp.": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
     "class": "Insecta",
@@ -82,6 +166,18 @@
     "gbif_key": 9265,
     "canonical_name": "Chrysopidae",
     "match_type": "HIGHERRANK"
+  },
+  "cicadulina mbila": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hemiptera",
+    "family": "Cicadellidae",
+    "genus": "Cicadulina",
+    "species": "Cicadulina mbila",
+    "gbif_key": 5154838,
+    "canonical_name": "Cicadulina mbila",
+    "match_type": "EXACT"
   },
   "condylostylus sipho": {
     "kingdom": "Animalia",
@@ -107,6 +203,18 @@
     "canonical_name": "Conomelus anceps",
     "match_type": "EXACT"
   },
+  "crambidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Crambidae",
+    "genus": null,
+    "species": "Crambidae",
+    "gbif_key": 8841,
+    "canonical_name": "Crambidae",
+    "match_type": "HIGHERRANK"
+  },
   "crematogaster sp.": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
@@ -119,7 +227,54 @@
     "canonical_name": "Crematogaster",
     "match_type": "HIGHERRANK"
   },
-  "dianemobius fascipes": null,
+  "curculionidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Coleoptera",
+    "family": "Curculionidae",
+    "genus": null,
+    "species": "Curculionidae",
+    "gbif_key": 4239,
+    "canonical_name": "Curculionidae",
+    "match_type": "HIGHERRANK"
+  },
+  "dasymutilla quadriguttata": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Mutillidae",
+    "genus": "Dasymutilla",
+    "species": "Dasymutilla",
+    "gbif_key": 1312355,
+    "canonical_name": "Dasymutilla",
+    "match_type": "HIGHERRANK"
+  },
+  "dianemobius fascipes": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Orthoptera",
+    "family": "Trigonidiidae",
+    "genus": "Dianemobius",
+    "species": "Dianemobius fascipes",
+    "gbif_key": 1722867,
+    "canonical_name": "Dianemobius fascipes",
+    "match_type": "EXACT"
+  },
+  "dolichopodidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Dolichopodidae",
+    "genus": null,
+    "species": "Dolichopodidae",
+    "gbif_key": 7305,
+    "canonical_name": "Dolichopodidae",
+    "match_type": "HIGHERRANK"
+  },
   "eretmocera impactella": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
@@ -132,17 +287,29 @@
     "canonical_name": "Eretmocera impactella",
     "match_type": "EXACT"
   },
-  "euaresta bella": {
+  "eristalis tenax": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
     "class": "Insecta",
     "order": "Diptera",
-    "family": "Tephritidae",
-    "genus": "Euaresta",
-    "species": "Euaresta bella",
-    "gbif_key": 1624916,
-    "canonical_name": "Euaresta bella",
+    "family": "Syrphidae",
+    "genus": "Eristalis",
+    "species": "Eristalis tenax",
+    "gbif_key": 1541217,
+    "canonical_name": "Eristalis tenax",
     "match_type": "EXACT"
+  },
+  "eurytomidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Eurytomidae",
+    "genus": null,
+    "species": "Eurytomidae",
+    "gbif_key": 5507,
+    "canonical_name": "Eurytomidae",
+    "match_type": "HIGHERRANK"
   },
   "gonocephalum adpressiforme": {
     "kingdom": "Animalia",
@@ -156,6 +323,18 @@
     "canonical_name": "Gonocephalum adpressiforme",
     "match_type": "EXACT"
   },
+  "halictidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Halictidae",
+    "genus": null,
+    "species": "Halictidae",
+    "gbif_key": 7908,
+    "canonical_name": "Halictidae",
+    "match_type": "HIGHERRANK"
+  },
   "hydrotaea aenescens": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
@@ -166,6 +345,42 @@
     "species": "Hydrotaea aenescens",
     "gbif_key": 1528980,
     "canonical_name": "Hydrotaea aenescens",
+    "match_type": "EXACT"
+  },
+  "lepidoptera": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Lepidoptera",
+    "family": null,
+    "genus": null,
+    "species": "Lepidoptera",
+    "gbif_key": 797,
+    "canonical_name": "Lepidoptera",
+    "match_type": "HIGHERRANK"
+  },
+  "liriomyza pusilla": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Agromyzidae",
+    "genus": "Liriomyza",
+    "species": "Liriomyza pusilla",
+    "gbif_key": 1553661,
+    "canonical_name": "Liriomyza pusilla",
+    "match_type": "EXACT"
+  },
+  "maruca vitrata": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Crambidae",
+    "genus": "Maruca",
+    "species": "Maruca vitrata",
+    "gbif_key": 1886729,
+    "canonical_name": "Maruca vitrata",
     "match_type": "EXACT"
   },
   "metadelphax propinqua": {
@@ -180,6 +395,18 @@
     "canonical_name": "Metadelphax propinqua",
     "match_type": "EXACT"
   },
+  "micropezidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Micropezidae",
+    "genus": null,
+    "species": "Micropezidae",
+    "gbif_key": 9495,
+    "canonical_name": "Micropezidae",
+    "match_type": "HIGHERRANK"
+  },
   "myllocerus undecimpustulatus": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
@@ -192,6 +419,18 @@
     "canonical_name": "Myllocerus undecimpustulatus",
     "match_type": "EXACT"
   },
+  "myrmarachne sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Arachnida",
+    "order": "Araneae",
+    "family": "Salticidae",
+    "genus": "Myrmarachne",
+    "species": "Myrmarachne",
+    "gbif_key": 10307955,
+    "canonical_name": "Myrmarachne",
+    "match_type": "HIGHERRANK"
+  },
   "myzus persicae": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
@@ -202,6 +441,30 @@
     "species": "Myzus persicae",
     "gbif_key": 2076179,
     "canonical_name": "Myzus persicae",
+    "match_type": "EXACT"
+  },
+  "nomada sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Apidae",
+    "genus": "Nomada",
+    "species": "Nomada",
+    "gbif_key": 1343230,
+    "canonical_name": "Nomada",
+    "match_type": "HIGHERRANK"
+  },
+  "oecophylla smaragdina": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Formicidae",
+    "genus": "Oecophylla",
+    "species": "Oecophylla smaragdina",
+    "gbif_key": 1317388,
+    "canonical_name": "Oecophylla smaragdina",
     "match_type": "EXACT"
   },
   "orosius sp.": {
@@ -264,6 +527,30 @@
     "canonical_name": "Pardosa pseudoannulata",
     "match_type": "EXACT"
   },
+  "peucetia viridans": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Arachnida",
+    "order": "Araneae",
+    "family": "Oxyopidae",
+    "genus": "Peucetia",
+    "species": "Peucetia viridans",
+    "gbif_key": 2178540,
+    "canonical_name": "Peucetia viridans",
+    "match_type": "EXACT"
+  },
+  "platygastridae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Platygastridae",
+    "genus": null,
+    "species": "Platygastridae",
+    "gbif_key": 4348,
+    "canonical_name": "Platygastridae",
+    "match_type": "HIGHERRANK"
+  },
   "platypezidae sp.": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
@@ -288,6 +575,30 @@
     "canonical_name": "Polionemobius taprobanensis",
     "match_type": "EXACT"
   },
+  "polyrhachis sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Formicidae",
+    "genus": "Polyrhachis",
+    "species": "Polyrhachis",
+    "gbif_key": 1317959,
+    "canonical_name": "Polyrhachis",
+    "match_type": "HIGHERRANK"
+  },
+  "polyrhachis tibialis": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Formicidae",
+    "genus": "Polyrhachis",
+    "species": "Polyrhachis tibialis",
+    "gbif_key": 1317991,
+    "canonical_name": "Polyrhachis tibialis",
+    "match_type": "EXACT"
+  },
   "psilidae sp.": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
@@ -300,7 +611,7 @@
     "canonical_name": "Psilidae",
     "match_type": "HIGHERRANK"
   },
-  "salticidae sp": {
+  "salticidae sp.": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
     "class": "Arachnida",
@@ -323,6 +634,30 @@
     "gbif_key": 1887054,
     "canonical_name": "Sameodes cancellalis",
     "match_type": "EXACT"
+  },
+  "sarcophagidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Sarcophagidae",
+    "genus": null,
+    "species": "Sarcophagidae",
+    "gbif_key": 9508,
+    "canonical_name": "Sarcophagidae",
+    "match_type": "HIGHERRANK"
+  },
+  "sepsidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Sepsidae",
+    "genus": null,
+    "species": "Sepsidae",
+    "gbif_key": 3523,
+    "canonical_name": "Sepsidae",
+    "match_type": "HIGHERRANK"
   },
   "solenopsis geminata": {
     "kingdom": "Animalia",
@@ -348,17 +683,77 @@
     "canonical_name": "Spathosternum prasiniferum",
     "match_type": "EXACT"
   },
-  "tephritinae sp.": null,
-  "chrysopidae sp.": {
+  "syrphidae sp.": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
     "class": "Insecta",
-    "order": "Neuroptera",
-    "family": "Chrysopidae",
+    "order": "Diptera",
+    "family": "Syrphidae",
     "genus": null,
-    "species": "Chrysopidae",
-    "gbif_key": 9265,
-    "canonical_name": "Chrysopidae",
+    "species": "Syrphidae",
+    "gbif_key": 6920,
+    "canonical_name": "Syrphidae",
+    "match_type": "HIGHERRANK"
+  },
+  "tapinoma melanocephalum": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Formicidae",
+    "genus": "Tapinoma",
+    "species": "Tapinoma melanocephalum",
+    "gbif_key": 1316805,
+    "canonical_name": "Tapinoma melanocephalum",
+    "match_type": "EXACT"
+  },
+  "tenebrionidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Coleoptera",
+    "family": "Tenebrionidae",
+    "genus": null,
+    "species": "Tenebrionidae",
+    "gbif_key": 7857,
+    "canonical_name": "Tenebrionidae",
+    "match_type": "HIGHERRANK"
+  },
+  "tephritidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Tephritidae",
+    "genus": null,
+    "species": "Tephritidae",
+    "gbif_key": 3520,
+    "canonical_name": "Tephritidae",
+    "match_type": "HIGHERRANK"
+  },
+  "tephritinae sp.": null,
+  "tetragonula iridipennis": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Apidae",
+    "genus": "Tetragonula",
+    "species": "Tetragonula iridipennis",
+    "gbif_key": 1344541,
+    "canonical_name": "Tetragonula iridipennis",
+    "match_type": "EXACT"
+  },
+  "thysanoptera sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Thysanoptera",
+    "family": null,
+    "genus": null,
+    "species": "Thysanoptera",
+    "gbif_key": 1228,
+    "canonical_name": "Thysanoptera",
     "match_type": "HIGHERRANK"
   },
   "trigonidium cicindeloides": {
@@ -373,174 +768,464 @@
     "canonical_name": "Trigonidium cicindeloides",
     "match_type": "EXACT"
   },
-  "bombyliidae sp.": {
-    "kingdom": "Animalia",
-    "phylum": "Arthropoda",
-    "class": "Insecta",
-    "order": "Diptera",
-    "family": "Bombyliidae",
-    "genus": null,
-    "species": "Bombyliidae",
-    "gbif_key": 7285,
-    "canonical_name": "Bombyliidae",
-    "match_type": "HIGHERRANK"
-  },
-  "braconidae sp.": {
+  "camponotus sp.": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
     "class": "Insecta",
     "order": "Hymenoptera",
-    "family": "Braconidae",
-    "genus": null,
-    "species": "Braconidae",
-    "gbif_key": 6910,
-    "canonical_name": "Braconidae",
+    "family": "Formicidae",
+    "genus": "Camponotus",
+    "species": "Camponotus",
+    "gbif_key": 1312361,
+    "canonical_name": "Camponotus",
     "match_type": "HIGHERRANK"
   },
-  "dolichopodidae sp.": {
+  "chloropidae sp.": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
     "class": "Insecta",
     "order": "Diptera",
-    "family": "Dolichopodidae",
+    "family": "Chloropidae",
     "genus": null,
-    "species": "Dolichopodidae",
-    "gbif_key": 7305,
-    "canonical_name": "Dolichopodidae",
+    "species": "Chloropidae",
+    "gbif_key": 3344,
+    "canonical_name": "Chloropidae",
     "match_type": "HIGHERRANK"
   },
-  "nomada sp.": {
-    "kingdom": "Animalia",
-    "phylum": "Arthropoda",
-    "class": "Insecta",
-    "order": "Hymenoptera",
-    "family": "Apidae",
-    "genus": "Nomada",
-    "species": "Nomada",
-    "gbif_key": 11937213,
-    "canonical_name": "Nomada",
-    "match_type": "HIGHERRANK"
-  },
-  "nomia sp.": null,
-  "tenebrionidae sp.": {
+  "coccinella transversalis": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
     "class": "Insecta",
     "order": "Coleoptera",
-    "family": "Tenebrionidae",
-    "genus": null,
-    "species": "Tenebrionidae",
-    "gbif_key": 7857,
-    "canonical_name": "Tenebrionidae",
-    "match_type": "HIGHERRANK"
-  },
-  "agriocnemis pygmaea": {
-    "kingdom": "Animalia",
-    "phylum": "Arthropoda",
-    "class": "Insecta",
-    "order": "Odonata",
-    "family": "Coenagrionidae",
-    "genus": "Agriocnemis",
-    "species": "Agriocnemis pygmaea",
-    "gbif_key": 1423162,
-    "canonical_name": "Agriocnemis pygmaea",
+    "family": "Coccinellidae",
+    "genus": "Coccinella",
+    "species": "Coccinella transversalis",
+    "gbif_key": 5809749,
+    "canonical_name": "Coccinella transversalis",
     "match_type": "EXACT"
   },
-  "curculionidae sp.": {
-    "kingdom": "Animalia",
-    "phylum": "Arthropoda",
-    "class": "Insecta",
-    "order": "Coleoptera",
-    "family": "Curculionidae",
-    "genus": null,
-    "species": "Curculionidae",
-    "gbif_key": 4239,
-    "canonical_name": "Curculionidae",
-    "match_type": "HIGHERRANK"
-  },
-  "dasymutilla quadriguttata": {
-    "kingdom": "Animalia",
-    "phylum": "Arthropoda",
-    "class": "Insecta",
-    "order": "Hymenoptera",
-    "family": "Mutillidae",
-    "genus": "Dasymutilla",
-    "species": "Dasymutilla",
-    "gbif_key": 1312355,
-    "canonical_name": "Dasymutilla",
-    "match_type": "HIGHERRANK"
-  },
-  "myrmarachne sp.": null,
-  "sepsidae sp.": {
+  "stomoxys calcitrans": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
     "class": "Insecta",
     "order": "Diptera",
-    "family": "Sepsidae",
-    "genus": null,
-    "species": "Sepsidae",
-    "gbif_key": 3523,
-    "canonical_name": "Sepsidae",
-    "match_type": "HIGHERRANK"
+    "family": "Muscidae",
+    "genus": "Stomoxys",
+    "species": "Stomoxys calcitrans",
+    "gbif_key": 1526081,
+    "canonical_name": "Stomoxys calcitrans",
+    "match_type": "EXACT"
   },
-  "crambidae sp.": {
-    "kingdom": "Animalia",
-    "phylum": "Arthropoda",
-    "class": "Insecta",
-    "order": "Lepidoptera",
-    "family": "Crambidae",
-    "genus": null,
-    "species": "Crambidae",
-    "gbif_key": 8841,
-    "canonical_name": "Crambidae",
-    "match_type": "HIGHERRANK"
-  },
-  "lepidoptera": {
-    "kingdom": "Animalia",
-    "phylum": "Arthropoda",
-    "class": "Insecta",
-    "order": "Lepidoptera",
-    "family": null,
-    "genus": null,
-    "species": "Lepidoptera",
-    "gbif_key": 797,
-    "canonical_name": "Lepidoptera",
-    "match_type": "HIGHERRANK"
-  },
-  "platygastridae sp.": {
-    "kingdom": "Animalia",
-    "phylum": "Arthropoda",
-    "class": "Insecta",
-    "order": "Hymenoptera",
-    "family": "Platygastridae",
-    "genus": null,
-    "species": "Platygastridae",
-    "gbif_key": 4348,
-    "canonical_name": "Platygastridae",
-    "match_type": "HIGHERRANK"
-  },
-  "salticidae sp.": {
+  "cosmophasis sp.": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
     "class": "Arachnida",
     "order": "Araneae",
     "family": "Salticidae",
-    "genus": null,
-    "species": "Salticidae",
-    "gbif_key": 5644,
-    "canonical_name": "Salticidae",
+    "genus": "Cosmophasis",
+    "species": "Cosmophasis",
+    "gbif_key": 2168370,
+    "canonical_name": "Cosmophasis",
     "match_type": "HIGHERRANK"
   },
-  "thysanoptera sp.": {
+  "musca sp.": {
     "kingdom": "Animalia",
     "phylum": "Arthropoda",
     "class": "Insecta",
-    "order": "Thysanoptera",
+    "order": "Diptera",
+    "family": "Muscidae",
+    "genus": "Musca",
+    "species": "Musca",
+    "gbif_key": 1444063,
+    "canonical_name": "Musca",
+    "match_type": "HIGHERRANK"
+  },
+  "sciomyzidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Sciomyzidae",
+    "genus": null,
+    "species": "Sciomyzidae",
+    "gbif_key": 3524,
+    "canonical_name": "Sciomyzidae",
+    "match_type": "HIGHERRANK"
+  },
+  "tephritinae sp": null,
+  "thaia oryzivora": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hemiptera",
+    "family": "Cicadellidae",
+    "genus": "Thaia",
+    "species": "Thaia oryzivora",
+    "gbif_key": 5155693,
+    "canonical_name": "Thaia oryzivora",
+    "match_type": "EXACT"
+  },
+  "chrysilla volupe": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Arachnida",
+    "order": "Araneae",
+    "family": "Salticidae",
+    "genus": "Chrysilla",
+    "species": "Chrysilla volupe",
+    "gbif_key": 9602021,
+    "canonical_name": "Chrysilla volupe",
+    "match_type": "EXACT"
+  },
+  "mythicomyiidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Mythicomyiidae",
+    "genus": null,
+    "species": "Mythicomyiidae",
+    "gbif_key": 9498,
+    "canonical_name": "Mythicomyiidae",
+    "match_type": "HIGHERRANK"
+  },
+  "lucilia sericata": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Calliphoridae",
+    "genus": "Lucilia",
+    "species": "Lucilia sericata",
+    "gbif_key": 5063973,
+    "canonical_name": "Lucilia sericata",
+    "match_type": "EXACT"
+  },
+  "zizina otis": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Lycaenidae",
+    "genus": "Zizina",
+    "species": "Zizina otis",
+    "gbif_key": 7346444,
+    "canonical_name": "Zizina otis",
+    "match_type": "EXACT"
+  },
+  "cylas formicarius": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Coleoptera",
+    "family": "Brentidae",
+    "genus": "Cylas",
+    "species": "Cylas formicarius",
+    "gbif_key": 1171601,
+    "canonical_name": "Cylas formicarius",
+    "match_type": "EXACT"
+  },
+  "vespidae sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Vespidae",
+    "genus": null,
+    "species": "Vespidae",
+    "gbif_key": 4490,
+    "canonical_name": "Vespidae",
+    "match_type": "HIGHERRANK"
+  },
+  "achradocera barbata": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Dolichopodidae",
+    "genus": "Achradocera",
+    "species": "Achradocera barbata",
+    "gbif_key": 1607038,
+    "canonical_name": "Achradocera barbata",
+    "match_type": "EXACT"
+  },
+  "clausicella sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Tachinidae",
+    "genus": "Clausicella",
+    "species": "Clausicella",
+    "gbif_key": 1460765,
+    "canonical_name": "Clausicella",
+    "match_type": "HIGHERRANK"
+  },
+  "chalcidoidea sp.": null,
+  "ichneumonoidea sp.": null,
+  "xya variegata": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Orthoptera",
+    "family": "Tridactylidae",
+    "genus": "Xya",
+    "species": "Xya variegata",
+    "gbif_key": 5100752,
+    "canonical_name": "Xya variegata",
+    "match_type": "EXACT"
+  },
+  "polyrhachis armata sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Formicidae",
+    "genus": "Polyrhachis",
+    "species": "Polyrhachis armata",
+    "gbif_key": 1318536,
+    "canonical_name": "Polyrhachis armata",
+    "match_type": "EXACT"
+  },
+  "aphanisticus sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Coleoptera",
+    "family": "Buprestidae",
+    "genus": "Aphanisticus",
+    "species": "Aphanisticus",
+    "gbif_key": 1049525,
+    "canonical_name": "Aphanisticus",
+    "match_type": "HIGHERRANK"
+  },
+  "curculionoidea sp.": null,
+  "diacamma rugosum": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Formicidae",
+    "genus": "Diacamma",
+    "species": "Diacamma rugosum",
+    "gbif_key": 1319092,
+    "canonical_name": "Diacamma rugosum",
+    "match_type": "EXACT"
+  },
+  "polistes stigma": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Eumenidae",
+    "genus": "Polistes",
+    "species": "Polistes stigma",
+    "gbif_key": 1310970,
+    "canonical_name": "Polistes stigma",
+    "match_type": "EXACT"
+  },
+  "trilophidia annulata": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Orthoptera",
+    "family": "Acrididae",
+    "genus": "Trilophidia",
+    "species": "Trilophidia annulata",
+    "gbif_key": 1704439,
+    "canonical_name": "Trilophidia annulata",
+    "match_type": "EXACT"
+  },
+  "minervarya agricola": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Amphibia",
+    "order": "Anura",
+    "family": "Dicroglossidae",
+    "genus": "Minervarya",
+    "species": "Minervarya agricola",
+    "gbif_key": 10849155,
+    "canonical_name": "Minervarya agricola",
+    "match_type": "EXACT"
+  },
+  "dieuches armatipes": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hemiptera",
+    "family": "Rhyparochromidae",
+    "genus": "Dieuches",
+    "species": "Dieuches armatipes",
+    "gbif_key": 4486432,
+    "canonical_name": "Dieuches armatipes",
+    "match_type": "EXACT"
+  },
+  "pardosa laura": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Arachnida",
+    "order": "Araneae",
+    "family": "Lycosidae",
+    "genus": "Pardosa",
+    "species": "Pardosa laura",
+    "gbif_key": 2145962,
+    "canonical_name": "Pardosa laura",
+    "match_type": "EXACT"
+  },
+  "ephemeroptera sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Ephemeroptera",
     "family": null,
     "genus": null,
-    "species": "Thysanoptera",
-    "gbif_key": 1228,
-    "canonical_name": "Thysanoptera",
+    "species": "Ephemeroptera",
+    "gbif_key": 1225,
+    "canonical_name": "Ephemeroptera",
+    "match_type": "HIGHERRANK"
+  },
+  "toxeus magnus": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Arachnida",
+    "order": "Araneae",
+    "family": "Salticidae",
+    "genus": "Toxeus",
+    "species": "Toxeus magnus",
+    "gbif_key": 9397837,
+    "canonical_name": "Toxeus magnus",
+    "match_type": "EXACT"
+  },
+  "myrmarachne melanocephala": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Arachnida",
+    "order": "Araneae",
+    "family": "Salticidae",
+    "genus": "Myrmarachne",
+    "species": "Myrmarachne melanocephala",
+    "gbif_key": 8165409,
+    "canonical_name": "Myrmarachne melanocephala",
+    "match_type": "EXACT"
+  },
+  "sogatella furcifera": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hemiptera",
+    "family": "Delphacidae",
+    "genus": "Sogatella",
+    "species": "Sogatella furcifera",
+    "gbif_key": 4777382,
+    "canonical_name": "Sogatella furcifera",
+    "match_type": "EXACT"
+  },
+  "tetraponera rufonigra": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Formicidae",
+    "genus": "Tetraponera",
+    "species": "Tetraponera rufonigra",
+    "gbif_key": 1319321,
+    "canonical_name": "Tetraponera rufonigra",
+    "match_type": "EXACT"
+  },
+  "altica cyanea": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Coleoptera",
+    "family": "Chrysomelidae",
+    "genus": "Altica",
+    "species": "Altica aenea",
+    "gbif_key": 6132097,
+    "canonical_name": "Altica cyanea",
+    "match_type": "EXACT"
+  },
+  "asyndetus sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Dolichopodidae",
+    "genus": "Asyndetus",
+    "species": "Asyndetus",
+    "gbif_key": 1610741,
+    "canonical_name": "Asyndetus",
+    "match_type": "HIGHERRANK"
+  },
+  "camponotus carin": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Formicidae",
+    "genus": "Camponotus",
+    "species": "Camponotus carin",
+    "gbif_key": 5034724,
+    "canonical_name": "Camponotus carin",
+    "match_type": "EXACT"
+  },
+  "chetogena sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Tachinidae",
+    "genus": "Chetogena",
+    "species": "Chetogena",
+    "gbif_key": 1468578,
+    "canonical_name": "Chetogena",
+    "match_type": "HIGHERRANK"
+  },
+  "cofana spectra": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hemiptera",
+    "family": "Cicadellidae",
+    "genus": "Cofana",
+    "species": "Cofana spectra",
+    "gbif_key": 2035465,
+    "canonical_name": "Cofana spectra",
+    "match_type": "EXACT"
+  },
+  "pseudopachybrachius guttus": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hemiptera",
+    "family": "Rhyparochromidae",
+    "genus": "Pseudopachybrachius",
+    "species": "Pseudopachybrachius guttus",
+    "gbif_key": 2007907,
+    "canonical_name": "Pseudopachybrachius guttus",
+    "match_type": "EXACT"
+  },
+  "athyroglossa sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Ephydridae",
+    "genus": "Athyroglossa",
+    "species": "Athyroglossa",
+    "gbif_key": 1618867,
+    "canonical_name": "Athyroglossa",
+    "match_type": "HIGHERRANK"
+  },
+  "batracomorphus sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hemiptera",
+    "family": "Cicadellidae",
+    "genus": "Batracomorphus",
+    "species": "Batracomorphus",
+    "gbif_key": 2040599,
+    "canonical_name": "Batracomorphus",
     "match_type": "HIGHERRANK"
   }
 }

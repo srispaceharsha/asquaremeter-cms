@@ -57,7 +57,7 @@
            data-time="{{ sighting.time_of_day|default('') }}"
            data-tags="{{ sighting.tags|default([])|join(',') }}">
             {% if sighting.images %}
-            <img src="{{ base_url }}/images/thumb/{{ sighting.images[0].filename }}"
+            <img src="{{ image_url }}/thumb/{{ sighting.images[0].filename }}"
                  alt="{{ sighting.common_name }}"
                  loading="lazy">
             {% else %}

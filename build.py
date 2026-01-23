@@ -18,9 +18,16 @@ from datetime import datetime
 from pathlib import Path
 
 import markdown
+from dotenv import load_dotenv
 from jinja2 import Environment, FileSystemLoader
 
 from taxonomy import fetch_all_taxonomy, build_species_tree, get_species_stats
+
+# Load environment variables
+load_dotenv()
+
+# R2 configuration
+R2_PUBLIC_URL = os.getenv("R2_PUBLIC_URL", "")
 
 # Project paths
 PROJECT_ROOT = Path(__file__).parent
@@ -122,6 +129,24 @@ def format_short_date(date_str: str) -> str:
         return date_str[:10] if len(date_str) >= 10 else date_str
 
 
+def size_category(size_mm) -> str:
+    """Return size category label based on size in mm"""
+    if size_mm is None:
+        return ""
+    try:
+        size = float(size_mm)
+        if size < 2:
+            return "Tiny"
+        elif size < 5:
+            return "Small"
+        elif size < 15:
+            return "Medium"
+        else:
+            return "Large"
+    except (ValueError, TypeError):
+        return ""
+
+
 def compute_stats(sightings: list, observations: list, config: dict) -> dict:
     """Compute all statistics from sightings and observations data"""
     from collections import Counter, OrderedDict
@@ -165,18 +190,23 @@ def compute_stats(sightings: list, observations: list, config: dict) -> dict:
     # Days elapsed since project start
     stats["days_elapsed"] = max(1, (now - project_start).days + 1)
 
-    # Days with sightings
-    sighting_dates = set()
+    # Days with sightings or observations (documented days)
+    documented_dates = set()
     for s in sightings:
         try:
             dt = datetime.fromisoformat(s["captured_at"].replace("Z", "+00:00"))
-            sighting_dates.add(dt.date())
+            documented_dates.add(dt.date())
         except:
             pass
-    stats["days_with_sightings"] = len(sighting_dates)
-    stats["days_documented"] = len(sighting_dates)
-    stats["days_without_sightings"] = stats["days_elapsed"] - len(sighting_dates)
-    stats["coverage_percent"] = round(len(sighting_dates) / stats["days_elapsed"] * 100)
+    for o in observations:
+        try:
+            documented_dates.add(datetime.strptime(o["date"], "%Y-%m-%d").date())
+        except:
+            pass
+    stats["days_with_sightings"] = len(documented_dates)
+    stats["days_documented"] = len(documented_dates)
+    stats["days_without_sightings"] = stats["days_elapsed"] - len(documented_dates)
+    stats["coverage_percent"] = round(len(documented_dates) / stats["days_elapsed"] * 100)
 
     # Unique species by category (using scientific name)
     species_by_category = {}
@@ -269,21 +299,31 @@ def compute_stats(sightings: list, observations: list, config: dict) -> dict:
     stats["discovery_curve"] = discovery_curve
     stats["max_discovery"] = max(discovery_curve.values()) if discovery_curve else 1
 
-    # By weather condition
+    # By weather condition (sightings + observations)
     by_weather = Counter()
     for s in sightings:
         weather = s.get("weather", {})
         condition = weather.get("conditions", "Unknown")
         if condition:
             by_weather[condition] += 1
+    for o in observations:
+        weather = o.get("weather", {})
+        condition = weather.get("conditions")
+        if condition:
+            by_weather[condition] += 1
     stats["by_weather"] = dict(sorted(by_weather.items(), key=lambda x: -x[1]))
     stats["max_weather"] = max(by_weather.values()) if by_weather else 1
 
-    # By moon phase
+    # By moon phase (sightings + observations)
     by_moon = Counter()
     for s in sightings:
         celestial = s.get("celestial", {})
         phase = celestial.get("moon_phase", "Unknown")
+        if phase:
+            by_moon[phase] += 1
+    for o in observations:
+        celestial = o.get("celestial", {})
+        phase = celestial.get("moon_phase")
         if phase:
             by_moon[phase] += 1
     stats["by_moon_phase"] = dict(sorted(by_moon.items(), key=lambda x: -x[1]))
@@ -336,6 +376,7 @@ def build_site(output_path: Path):
     env = Environment(loader=FileSystemLoader(TEMPLATES_PATH))
     env.filters["date"] = format_date
     env.filters["short_date"] = format_short_date
+    env.filters["size_category"] = size_category
 
     # Clean and create output directories
     if output_path.exists():
@@ -364,6 +405,12 @@ def build_site(output_path: Path):
             if img_file.is_file():
                 shutil.copy(img_file, output_path / "images" / img_file.name)
 
+    # Copy footer images
+    if (STATIC_PATH / "images" / "footer").exists():
+        (output_path / "images" / "footer").mkdir(exist_ok=True)
+        for img_file in (STATIC_PATH / "images" / "footer").glob("*.png"):
+            shutil.copy(img_file, output_path / "images" / "footer" / img_file.name)
+
     # Copy CNAME if exists (for GitHub Pages custom domain)
     if (STATIC_PATH / "CNAME").exists():
         shutil.copy(STATIC_PATH / "CNAME", output_path / "CNAME")
@@ -380,11 +427,15 @@ def build_site(output_path: Path):
                 shutil.copy(img_file, output_path / "images" / size / img_file.name)
 
     # Common template context
+    # Use R2 for images if configured, otherwise local paths
+    image_base_url = R2_PUBLIC_URL.rstrip("/") if R2_PUBLIC_URL else ""
+
     base_context = {
         "config": config,
         "sightings": sightings,
         "posts": posts,
         "base_url": "",
+        "image_url": image_base_url,
         "now": datetime.now().isoformat(),
     }
 
@@ -421,6 +472,11 @@ def build_site(output_path: Path):
     template = env.get_template("about.html")
     html = template.render(**base_context)
     (output_path / "about.html").write_text(html)
+
+    # Generate colophon.html
+    template = env.get_template("colophon.html")
+    html = template.render(**base_context)
+    (output_path / "colophon.html").write_text(html)
 
     # Generate browse.html
     template = env.get_template("browse.html")

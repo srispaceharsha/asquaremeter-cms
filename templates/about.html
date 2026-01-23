@@ -14,11 +14,12 @@
             1 meter × 1 meter plot of land over the course of one year. By observing this tiny patch
             of earth through all seasons, we may discover the remarkable biodiversity that exists in even
             the smallest spaces.
+            Project began on 1st of January, 2026. 
         </p>
     </section>
 
     <figure class="about-image">
-        <img src="{{ base_url }}/images/about.jpeg" alt="The one square meter plot">
+        <img src="{{ image_url }}/static/about.jpeg" alt="The one square meter plot">
     </figure>
 
     <section class="about-section">
@@ -64,7 +65,8 @@
 
     <section class="about-section">
         <h2>About the Author</h2>
-        <p>This project is maintained by <strong>{{ config.author }}</strong>.</p>
+        <p>This project is maintained by {{ config.author }}.</p>
+        <p>If you'd like to say hi, <a href="mailto:onesquaremeterproject@gmail.com">send an email</a>!</p>
     </section>
 
     <section class="about-section">
@@ -72,6 +74,15 @@
         <p>
             Follow along with new sightings and posts via the
             <a href="{{ base_url }}/feed.xml">RSS feed</a>.
+        </p>
+    </section>
+
+    <section class="about-section">
+        <h2>Made With</h2>
+        <p>
+            Curious about how this site was built? Check out the
+            <a href="{{ base_url }}/colophon.html">colophon</a> for a full list of
+            tools, technologies, and credits.
         </p>
     </section>
 </div>

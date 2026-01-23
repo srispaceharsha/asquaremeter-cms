@@ -3,12 +3,14 @@
 pipeline.py - CLI tool for processing new sightings
 
 Commands:
-    add     Process all images in inbox/ or a specific file
-    log     Quick log a sighting without images (for common species)
-    list    List recent sightings
-    edit    Edit an existing sighting
-    delete  Delete a sighting and its images
-    stats   Show project statistics
+    add       Process all images in inbox/ or a specific file
+    log       Quick log a sighting without images (for common species)
+    list      List recent sightings
+    edit      Edit an existing sighting
+    delete    Delete a sighting and its images
+    stats     Show project statistics
+    status    Show what's been logged today
+    addimage  Add additional images to an existing sighting
 """
 
 import argparse
@@ -322,7 +324,9 @@ def generate_id(date: datetime, sightings: list) -> str:
 
 
 def process_image(input_path: Path, output_id: str, letter: str) -> str:
-    """Process image into three sizes, return filename"""
+    """Process image into three sizes, upload to R2, return filename"""
+    from r2_upload import is_r2_configured, upload_to_r2
+
     img = Image.open(input_path)
 
     # Convert RGBA to RGB if necessary
@@ -334,15 +338,24 @@ def process_image(input_path: Path, output_id: str, letter: str) -> str:
     # Thumbnail (300px wide, higher quality)
     thumb = img.copy()
     thumb.thumbnail((300, 10000), Image.LANCZOS)
-    thumb.save(CATALOG_PATH / "thumb" / filename, "JPEG", quality=90)
+    thumb_path = CATALOG_PATH / "thumb" / filename
+    thumb.save(thumb_path, "JPEG", quality=90)
 
     # Web (1200px wide, high quality)
     web = img.copy()
     web.thumbnail((1200, 10000), Image.LANCZOS)
-    web.save(CATALOG_PATH / "web" / filename, "JPEG", quality=92)
+    web_path = CATALOG_PATH / "web" / filename
+    web.save(web_path, "JPEG", quality=92)
 
     # Full (original size as JPG)
-    img.save(CATALOG_PATH / "full" / filename, "JPEG", quality=95)
+    full_path = CATALOG_PATH / "full" / filename
+    img.save(full_path, "JPEG", quality=95)
+
+    # Upload to R2 if configured
+    if is_r2_configured():
+        upload_to_r2(thumb_path, f"thumb/{filename}")
+        upload_to_r2(web_path, f"web/{filename}")
+        upload_to_r2(full_path, f"full/{filename}")
 
     return filename
 
@@ -407,6 +420,15 @@ def cmd_add(args):
             print(f"Invalid category. Choose from: {cat_str}")
 
         notes = input("Notes: ").strip()
+
+        # Size in mm (optional)
+        size_input = input("Size in mm (optional): ").strip()
+        size_mm = None
+        if size_input:
+            try:
+                size_mm = float(size_input)
+            except ValueError:
+                print("Invalid size, skipping.")
 
         # Time of day - infer from capture time
         inferred_tod = get_time_of_day(captured_at)
@@ -503,6 +525,7 @@ def cmd_add(args):
             "celestial": celestial,
             "season": season,
             "notes": notes,
+            "size_mm": size_mm,
             "created_at": datetime.now(local_tz).isoformat(),
         }
 
@@ -528,6 +551,18 @@ def cmd_log(args):
     observations = load_observations()
     sightings = load_sightings()
 
+    # Build species lookup: common_name -> list of (common_name, scientific_name) tuples
+    # This handles cases where same common name has multiple scientific names
+    species_lookup = {}
+    for s in sightings:
+        cn = s["common_name"].lower()
+        sn = s.get("scientific_name", "")
+        if cn not in species_lookup:
+            species_lookup[cn] = []
+        entry = (s["common_name"], sn)
+        if entry not in species_lookup[cn]:
+            species_lookup[cn].append(entry)
+
     # Build set of existing species names for normalization
     existing_species = set(s["common_name"] for s in sightings)
     existing_species.update(o["common_name"] for o in observations)
@@ -540,11 +575,24 @@ def cmd_log(args):
     if args.species:
         species_input = args.species
     else:
-        # Show recent species for quick selection
-        if existing_species:
+        # Show known species in 3 columns with scientific names
+        if species_lookup:
             print("Known species:")
-            for name in sorted(existing_species):
-                print(f"  {name}")
+            # Build list of "Common Name (Scientific Name)" strings
+            species_list_display = []
+            for cn_lower in sorted(species_lookup.keys()):
+                for common_name, sci_name in species_lookup[cn_lower]:
+                    if sci_name:
+                        species_list_display.append(f"{common_name} ({sci_name})")
+                    else:
+                        species_list_display.append(common_name)
+
+            # Print in 2 columns
+            col_width = max(len(s) for s in species_list_display) + 2
+            cols = 2
+            for i in range(0, len(species_list_display), cols):
+                row = species_list_display[i:i + cols]
+                print("  " + "".join(s.ljust(col_width) for s in row))
             print()
         species_input = input("Species (comma-separated): ").strip()
 
@@ -569,29 +617,99 @@ def cmd_log(args):
             break
         print(f"Invalid. Choose from: {tod_str}")
 
+    # Fetch weather and celestial data for today (shared for all observations)
+    print("Fetching weather data...")
+    weather = fetch_weather(
+        config["location"]["latitude"],
+        config["location"]["longitude"],
+        now,
+        config["location"]["timezone"],
+    )
+    moon_data = get_moon_phase(now)
+    sun_data = get_sun_times(
+        config["location"]["latitude"],
+        config["location"]["longitude"],
+        now,
+        config["location"]["timezone"],
+    )
+    celestial = {**moon_data, **sun_data}
+
+    # Build lookup of species with sightings today (to avoid duplicates)
+    today_str = now.strftime("%Y-%m-%d")
+    sightings_today = set()
+    for s in sightings:
+        if s["captured_at"][:10] == today_str:
+            sightings_today.add(s["common_name"].lower())
+
     # Log each species
     print()
+    logged_count = 0
     for common_name in species_list:
+        # Check if there's already a sighting for this species today
+        if common_name.lower() in sightings_today:
+            print(f"⚠ {common_name} - skipped (already has sighting today)")
+            continue
+
+        # Check if there are multiple species with this common name
+        cn_lower = common_name.lower()
+        scientific_name = ""
+
+        if cn_lower in species_lookup and len(species_lookup[cn_lower]) > 1:
+            # Multiple species with same common name - ask user to choose
+            print(f"\nMultiple species found for \"{common_name}\":")
+            options = species_lookup[cn_lower]
+            for i, (cn, sn) in enumerate(options, 1):
+                print(f"  {i}. {cn} ({sn})")
+
+            while True:
+                choice = input(f"Which one? [1-{len(options)}]: ").strip()
+                try:
+                    idx = int(choice) - 1
+                    if 0 <= idx < len(options):
+                        common_name, scientific_name = options[idx]
+                        break
+                except ValueError:
+                    pass
+                print(f"Invalid. Enter 1-{len(options)}")
+        elif cn_lower in species_lookup:
+            # Single species - use its scientific name
+            common_name, scientific_name = species_lookup[cn_lower][0]
+
         observation = {
             "date": now.strftime("%Y-%m-%d"),
             "time": now.strftime("%H:%M"),
             "common_name": common_name,
+            "scientific_name": scientific_name,
             "time_of_day": time_of_day,
             "note": "",
             "created_at": now.isoformat(),
+            "weather": weather,
+            "celestial": celestial,
         }
 
         observations.append(observation)
+        logged_count += 1
 
-        # Count total for this species (sightings + observations)
-        sighting_count = sum(1 for s in sightings if s["common_name"].lower() == common_name.lower())
-        observation_count = sum(1 for o in observations if o["common_name"].lower() == common_name.lower())
+        # Count total for this species (by scientific name if available, else common name)
+        if scientific_name:
+            sighting_count = sum(1 for s in sightings if s.get("scientific_name", "").lower() == scientific_name.lower())
+            observation_count = sum(1 for o in observations if o.get("scientific_name", "").lower() == scientific_name.lower())
+        else:
+            sighting_count = sum(1 for s in sightings if s["common_name"].lower() == common_name.lower())
+            observation_count = sum(1 for o in observations if o["common_name"].lower() == common_name.lower())
         total_count = sighting_count + observation_count
 
-        print(f"✓ {common_name} (total: {total_count})")
+        if scientific_name:
+            print(f"✓ {common_name} ({scientific_name}) - total: {total_count}")
+        else:
+            print(f"✓ {common_name} (total: {total_count})")
 
     save_observations(observations)
-    print(f"\nLogged {len(species_list)} observation(s)")
+    skipped = len(species_list) - logged_count
+    if skipped:
+        print(f"\nLogged {logged_count} observation(s), skipped {skipped} (already had sighting today)")
+    else:
+        print(f"\nLogged {logged_count} observation(s)")
 
 
 def cmd_list(args):
@@ -665,6 +783,16 @@ def cmd_edit(args):
     if new_notes:
         sighting["notes"] = new_notes
 
+    # Size in mm
+    current_size = sighting.get('size_mm', '')
+    size_display = current_size if current_size else 'not set'
+    new_size = input(f"Size in mm [{size_display}]: ").strip()
+    if new_size:
+        try:
+            sighting["size_mm"] = float(new_size)
+        except ValueError:
+            print("Invalid size, keeping current value.")
+
     # Time of day
     current_tod = sighting.get('time_of_day', '')
     times_of_day = ["morning", "afternoon", "evening", "night"]
@@ -720,22 +848,72 @@ def cmd_delete(args):
             print("Cancelled.")
             return
 
-    # Delete image files
+    # Delete image files (local and R2)
     deleted_images = []
+    deleted_r2 = []
+
+    # Check if R2 is configured
+    try:
+        from r2_upload import is_r2_configured, delete_from_r2
+        r2_enabled = is_r2_configured()
+    except ImportError:
+        r2_enabled = False
+
     for img in sighting['images']:
         filename = img['filename']
         for size in ["thumb", "web", "full"]:
+            # Delete local file
             img_path = CATALOG_PATH / size / filename
             if img_path.exists():
                 img_path.unlink()
                 deleted_images.append(f"{size}/{filename}")
+
+            # Delete from R2
+            if r2_enabled:
+                r2_key = f"{size}/{filename}"
+                if delete_from_r2(r2_key):
+                    deleted_r2.append(r2_key)
+
+    # Add as observation before deleting (to preserve the record)
+    from datetime import datetime
+    from dateutil import tz as dateutil_tz
+
+    config = load_config()
+    local_tz = dateutil_tz.gettz(config["location"]["timezone"])
+
+    # Extract date/time from sighting
+    captured_at = sighting["captured_at"]
+    sighting_date = captured_at[:10]  # YYYY-MM-DD
+    sighting_time = captured_at[11:16]  # HH:MM
+
+    observation = {
+        "date": sighting_date,
+        "time": sighting_time,
+        "common_name": sighting["common_name"],
+        "time_of_day": sighting.get("time_of_day", ""),
+        "note": f"Converted from deleted sighting {sighting['id']}",
+        "created_at": datetime.now(local_tz).isoformat(),
+    }
+
+    # Copy weather/celestial from sighting if available
+    if sighting.get("weather"):
+        observation["weather"] = sighting["weather"]
+    if sighting.get("celestial"):
+        observation["celestial"] = sighting["celestial"]
+
+    observations = load_observations()
+    observations.append(observation)
+    save_observations(observations)
 
     # Remove from sightings list
     sightings.pop(sighting_idx)
     save_sightings(sightings)
 
     print(f"\n✓ Deleted: {sighting['id']} - {sighting['common_name']}")
-    print(f"  Removed {len(deleted_images)} image files")
+    print(f"  Added as observation for {sighting_date}")
+    print(f"  Removed {len(deleted_images)} local image files")
+    if deleted_r2:
+        print(f"  Removed {len(deleted_r2)} images from R2")
 
 
 def cmd_status(args):
@@ -834,6 +1012,65 @@ def cmd_stats(args):
         print(f"  {season}: {by_season[season]}")
 
 
+def cmd_addimage(args):
+    """Add additional images to an existing sighting"""
+    sightings = load_sightings()
+
+    # Find the sighting
+    sighting = None
+    for s in sightings:
+        if s["id"] == args.id:
+            sighting = s
+            break
+
+    if not sighting:
+        print(f"Sighting not found: {args.id}")
+        return
+
+    # Check image path exists
+    image_path = Path(args.image)
+    if not image_path.exists():
+        print(f"Image not found: {args.image}")
+        return
+
+    if image_path.suffix.lower() not in (".jpg", ".jpeg", ".png"):
+        print("Only .jpg, .jpeg, and .png files are supported")
+        return
+
+    # Determine the next letter for the image
+    existing_images = sighting.get("images", [])
+    if existing_images:
+        # Find the highest letter used
+        last_letter = max(img["filename"].split("-")[-1].split(".")[0] for img in existing_images)
+        next_letter = chr(ord(last_letter) + 1)
+    else:
+        next_letter = "a"
+
+    print(f"Adding image to: {sighting['common_name']} ({args.id})")
+    print(f"  Current images: {len(existing_images)}")
+    print(f"  New image will be: {args.id}-{next_letter}.jpg")
+
+    # Process the image
+    filename = process_image(image_path, args.id, next_letter)
+
+    # Add to sighting
+    sighting["images"].append({
+        "filename": filename,
+        "caption": ""
+    })
+
+    save_sightings(sightings)
+
+    print(f"  Added: {filename}")
+
+    # Optionally delete source file
+    if not args.keep:
+        image_path.unlink()
+        print(f"  Deleted source: {image_path.name}")
+
+    print("Done!")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Pipeline CLI for One Square Meter biodiversity project"
@@ -869,6 +1106,12 @@ def main():
     # status command
     subparsers.add_parser("status", help="Show what's been logged today")
 
+    # addimage command
+    addimage_parser = subparsers.add_parser("addimage", help="Add image to existing sighting")
+    addimage_parser.add_argument("id", help="Sighting ID (e.g., 20260101-001)")
+    addimage_parser.add_argument("image", help="Path to image file")
+    addimage_parser.add_argument("--keep", "-k", action="store_true", help="Keep source file (don't delete)")
+
     args = parser.parse_args()
 
     if args.command == "add":
@@ -885,6 +1128,8 @@ def main():
         cmd_stats(args)
     elif args.command == "status":
         cmd_status(args)
+    elif args.command == "addimage":
+        cmd_addimage(args)
     else:
         parser.print_help()
 
