@@ -4,18 +4,18 @@
 
 {% block content %}
 <div class="container page-content">
-    <h1>About This Project</h1>
+    
+    <h2>What can you find in a square meter if you observe it for a year?</h2>
 
     <section class="about-section">
-        <h2>The Concept</h2>
-        <p>{{ config.site_description }}</p>
-        <p>
-            This project documents every insect, fungus, and other creatures found within a fixed
-            1 meter × 1 meter plot of land over the course of one year. By observing this tiny patch
-            of earth through all seasons, we may discover the remarkable biodiversity that exists in even
-            the smallest spaces.
-            Project began on 1st of January, 2026. 
-        </p>
+        <p></p>
+        <p>A very natural question to wonder about, of course. So, at the beginning of this year (2026), I set out to find the answer.</p>
+        
+    </section>
+
+    <section class="about-section">
+        <h2>Hello!</h2>
+        <p>I am Sri Harsha, the human behind this project. I spend about 2–3 hours every day on this square plot, right in my backyard in <a href="https://wildgundmi.com/">Gundmi village</a>.</p>
     </section>
 
     <figure class="about-image">
@@ -23,67 +23,37 @@
     </figure>
 
     <section class="about-section">
-        <h2>Methodology</h2>
-        <ul>
-            <li>A fixed 1m × 1m plot has been marked in {{ config.location.place_name }}</li>
-            <li>The plot is visited regularly, (almost) everyday throughout the year</li>
-            <li>All visible life forms are photographed and documented</li>
-            <li>Weather conditions and moon phases are recorded for each sighting</li>
-            <li>Identifications are made to the best of ability, with scientific names when known</li>
-            <li>The patch will not be intentionally disturbed</li>
-        </ul>
-    </section>
-
-    <section class="about-section">
-        <h2>Location</h2>
+        <p>I pick up my camera, crouch near the plot, and stare hard at the square meter plot. After a while, usually, time and space split open and a bug appears! Then I end up kneeling, lying flat on the ground, or somehow standing in a way that hurts my knees a lot, just to take pictures of this bug.</p>
+        <p>Then I spend another hour or so staring hard at my computer screen, skimming through these photos, usually shaking my head in disappointment.</p>
+        <p>Then it takes about an hour more to figure out what exactly this bug is. As usually happens, I end up 11 links deep into Wikipedia or iNaturalist listings, then wonder why it is night already. Such is the nature of this job. And then I do it all again the next day.</p>
         <p>
-            The study plot is located in <strong>{{ config.location.place_name }}</strong>.
-            
+        Well, I am a <a href="https://srispaceharsha.com/chapters/sisyphus.html">happy Sisyphus.</a>   
         </p>
-        <p>Timezone: {{ config.location.timezone }}</p>
+
+        <p>Even though the temptation is high to move a leaf around or gently scoot the bug toward better-lit areas to get a good shot, I have chosen the noble path of restraint so far. <a href="{{ base_url }}/rules.html">Here are the rules I follow</a>.</p>
+        <p>I like bugs. I like the struggle of taking a good picture. And I like constraints.</p>
+        <p> This project is very similar to that of <a href="https://prairieecologist.com/square-meter-photography-project/"> by Chris Helzer,</a> which I learnt about much later after starting this. He is an inspiration. 
+
     </section>
 
     <section class="about-section">
-        <h2>Seasons</h2>
-        <p>The local seasons are defined as:</p>
-        <ul>
-            {% for season, months in config.season_definitions.items() %}
-            <li><strong>{{ season | title }}:</strong> Months {{ months | join(', ') }}</li>
-            {% endfor %}
-        </ul>
+        <p>If you'd like to say hi or send bug reports (heh!), especially about misidentifications, please <a href="mailto:onesquaremeterproject@gmail.com">send me an email</a>.</p>
+        <p>If you're curious about how this site was built, check out the <a href="{{ base_url }}/colophon.html">colophon</a> for a full list of tools, technologies, and credits.</p>
     </section>
 
     <section class="about-section">
-        <h2>Categories</h2>
-        <p>Sightings are organized into these categories:</p>
-        <ul>
-            {% for category in config.categories %}
-            <li>{{ category | title }}</li>
-            {% endfor %}
-        </ul>
+        <h2>Say Hello!</h2>
+        <p>Browse the bugs, come back, and tell me what you think. I'd love to know your thoughts.</p>
+        <form class="contact-form" action="https://formspree.io/f/mzdabydq" method="POST">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email (optional)">
+            <textarea name="message" placeholder="Your thoughts..." rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <section class="about-section">
-        <h2>About the Author</h2>
-        <p>This project is maintained by {{ config.author }}.</p>
-        <p>If you'd like to say hi, <a href="mailto:onesquaremeterproject@gmail.com">send an email</a>!</p>
-    </section>
-
-    <section class="about-section">
-        <h2>Subscribe</h2>
-        <p>
-            Follow along with new sightings and posts via the
-            <a href="{{ base_url }}/feed.xml">RSS feed</a>.
-        </p>
-    </section>
-
-    <section class="about-section">
-        <h2>Made With</h2>
-        <p>
-            Curious about how this site was built? Check out the
-            <a href="{{ base_url }}/colophon.html">colophon</a> for a full list of
-            tools, technologies, and credits.
-        </p>
+        <p>Thank you!</p>
     </section>
 </div>
 {% endblock %}

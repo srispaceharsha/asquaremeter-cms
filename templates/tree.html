@@ -6,7 +6,8 @@
 <div class="tree-page">
     <div class="tree-panel">
         <h1>Species Tree</h1>
-        <p class="tree-intro">Browse {{ tree_stats.total_species }} species across {{ tree_stats.classes }} classes, {{ tree_stats.orders }} orders, and {{ tree_stats.families }} families.</p>
+        <p class="page-intro">All the species documented so far, organised by their scientific classification. Click the arrows to expand each group. Select any species to see its photo and details on the right.</p>
+        <p class="tree-intro">{{ tree_stats.total_species }} species across {{ tree_stats.classes }} classes, {{ tree_stats.orders }} orders, and {{ tree_stats.families }} families.</p>
 
         <nav class="species-tree" aria-label="Species taxonomy tree">
             {% for class_name, orders in tree.items() | sort %}

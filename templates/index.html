@@ -56,7 +56,10 @@
 {% if featured_sightings %}
 <section class="featured">
     <div class="container">
-        <h2>Featured</h2>
+        <div class="featured-header">
+            <h2>Featured</h2>
+            <a href="{{ base_url }}/highlights.html" class="featured-link">See all highlights &rarr;</a>
+        </div>
         <div class="featured-grid">
             {% for sighting in featured_sightings %}
             <a href="{{ base_url }}/sightings/{{ sighting.id }}.html" class="featured-item">

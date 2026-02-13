@@ -14,14 +14,16 @@ import json
 import os
 import shutil
 import socketserver
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
+import ephem
 import markdown
 from dotenv import load_dotenv
 from jinja2 import Environment, FileSystemLoader
 
 from taxonomy import fetch_all_taxonomy, build_species_tree, get_species_stats
+from collections import defaultdict
 
 # Load environment variables
 load_dotenv()
@@ -108,7 +110,87 @@ def load_posts() -> list:
             "content": html_content,
         })
 
+    # Sort by date descending (newest first)
+    posts.sort(key=lambda p: p["date"], reverse=True)
+
     return posts
+
+
+def build_species_timelines(sightings: list, observations: list) -> dict:
+    """
+    Build weekly observation counts for each species.
+
+    Returns dict: scientific_name -> list of 52 weekly counts
+    """
+    PROJECT_START = datetime(2026, 1, 1)
+
+    # Collect all observation dates by species
+    species_dates = defaultdict(list)
+
+    # Add sightings
+    for s in sightings:
+        sci_name = s.get("scientific_name", "").strip().lower()
+        if sci_name:
+            date_str = s.get("captured_at", "")[:10]
+            if date_str:
+                species_dates[sci_name].append(date_str)
+
+    # Add observations
+    for o in observations:
+        sci_name = o.get("scientific_name", "").strip().lower()
+        if sci_name:
+            date_str = o.get("date", "")
+            if date_str:
+                species_dates[sci_name].append(date_str)
+
+    # Convert to weekly counts
+    timelines = {}
+    for sci_name, dates in species_dates.items():
+        # Initialize 52 weeks
+        weekly_counts = [0] * 52
+
+        for date_str in dates:
+            try:
+                dt = datetime.strptime(date_str, "%Y-%m-%d")
+                # Calculate week number (0-indexed from project start)
+                days_since_start = (dt - PROJECT_START).days
+                if days_since_start >= 0:
+                    week_num = days_since_start // 7
+                    if 0 <= week_num < 52:
+                        weekly_counts[week_num] += 1
+            except ValueError:
+                continue
+
+        timelines[sci_name] = weekly_counts
+
+    return timelines
+
+
+def get_timeline_months() -> list:
+    """
+    Get month labels for timeline x-axis.
+    Returns list of (week_index, month_abbrev) for first week of each month.
+    """
+    PROJECT_START = datetime(2026, 1, 1)
+    months = []
+
+    for month in range(1, 13):
+        # First day of each month
+        if month == 1:
+            first_day = PROJECT_START
+        else:
+            first_day = datetime(2026, month, 1)
+
+        days_since_start = (first_day - PROJECT_START).days
+        week_num = days_since_start // 7
+
+        if 0 <= week_num < 52:
+            months.append({
+                "week": week_num,
+                "label": first_day.strftime("%b")
+            })
+
+    return months
 
 
 def format_date(date_str: str) -> str:
@@ -145,6 +227,64 @@ def size_category(size_mm) -> str:
             return "Large"
     except (ValueError, TypeError):
         return ""
+
+
+def get_moon_phase_for_date(date: datetime) -> str:
+    """Calculate moon phase name for a given date.
+
+    Uses the same logic as pipeline.py to ensure consistency with recorded data.
+    """
+    observer = ephem.Observer()
+    date_str = date.strftime("%Y/%m/%d")
+    observer.date = date_str
+
+    moon = ephem.Moon(observer)
+    illumination = moon.phase / 100.0  # 0 to 1
+
+    # Calculate days to/from key phases
+    next_full = ephem.next_full_moon(date_str)
+    prev_full = ephem.previous_full_moon(date_str)
+    next_new = ephem.next_new_moon(date_str)
+    prev_new = ephem.previous_new_moon(date_str)
+
+    days_since_new = float(ephem.Date(date_str) - prev_new)
+    days_to_full = float(next_full - ephem.Date(date_str))
+    days_since_full = float(ephem.Date(date_str) - prev_full)
+    days_to_new = float(next_new - ephem.Date(date_str))
+
+    # Determine phase based on position in lunar cycle
+    if days_to_full < 1.0 or days_since_full < 1.0:
+        return "Full Moon"
+    elif days_to_new < 1.0 or days_since_new < 1.0:
+        return "New Moon"
+    elif days_since_new < days_since_full:
+        # Waxing - between new and full
+        if illumination < 0.50:
+            return "Waxing Crescent"
+        elif illumination < 0.55:
+            return "First Quarter"
+        else:
+            return "Waxing Gibbous"
+    else:
+        # Waning - between full and new
+        if illumination > 0.55:
+            return "Waning Gibbous"
+        elif illumination > 0.45:
+            return "Last Quarter"
+        else:
+            return "Waning Crescent"
+
+
+def count_moon_phase_days(start_date: datetime, end_date: datetime) -> dict:
+    """Count total days for each moon phase between two dates"""
+    from collections import Counter
+    phase_days = Counter()
+    current = start_date
+    while current <= end_date:
+        phase = get_moon_phase_for_date(current)
+        phase_days[phase] += 1
+        current += timedelta(days=1)
+    return dict(phase_days)
 
 
 def compute_stats(sightings: list, observations: list, config: dict) -> dict:
@@ -266,10 +406,31 @@ def compute_stats(sightings: list, observations: list, config: dict) -> dict:
     stats["by_month"] = OrderedDict((m, month_counts[m]) for m in sorted_months)
     stats["max_month"] = max(month_counts.values()) if month_counts else 1
 
-    # This month stats (using scientific name from sightings only)
+    # This month stats - NEW species discovered this month (not seen before)
     current_month = now.strftime("%Y-%m")
-    species_this_month = set()
 
+    # First, collect all species seen before this month
+    species_before_this_month = set()
+    for s in sightings:
+        try:
+            dt = datetime.fromisoformat(s["captured_at"].replace("Z", "+00:00"))
+            if dt.strftime("%Y-%m") < current_month:
+                sci_name = s.get("scientific_name", "").lower()
+                if sci_name:
+                    species_before_this_month.add(sci_name)
+        except:
+            pass
+    for o in observations:
+        try:
+            if o["date"][:7] < current_month:
+                sci_name = o.get("scientific_name", "").lower()
+                if sci_name:
+                    species_before_this_month.add(sci_name)
+        except:
+            pass
+
+    # Now find species seen this month that are NEW
+    species_this_month = set()
     for s in sightings:
         try:
             dt = datetime.fromisoformat(s["captured_at"].replace("Z", "+00:00"))
@@ -279,8 +440,17 @@ def compute_stats(sightings: list, observations: list, config: dict) -> dict:
                     species_this_month.add(sci_name)
         except:
             pass
+    for o in observations:
+        try:
+            if o["date"][:7] == current_month:
+                sci_name = o.get("scientific_name", "").lower()
+                if sci_name:
+                    species_this_month.add(sci_name)
+        except:
+            pass
 
-    stats["unique_species_this_month"] = len(species_this_month)
+    new_species_this_month = species_this_month - species_before_this_month
+    stats["unique_species_this_month"] = len(new_species_this_month)
 
     # Discovery curve (cumulative unique species by month - using scientific name)
     seen_species = set()
@@ -329,11 +499,27 @@ def compute_stats(sightings: list, observations: list, config: dict) -> dict:
     stats["by_moon_phase"] = dict(sorted(by_moon.items(), key=lambda x: -x[1]))
     stats["max_moon"] = max(by_moon.values()) if by_moon else 1
 
+    # Count total days per moon phase since project start
+    moon_phase_days = count_moon_phase_days(project_start, now)
+    stats["moon_phase_days"] = moon_phase_days
+
     # Top species (most frequently seen) - combine sightings + observations
-    species_counts = Counter(s["common_name"] for s in sightings)
+    # Use lowercase for counting, but preserve display name
+    name_display = {}  # lowercase -> display name
+    species_counts = Counter()
+    for s in sightings:
+        name = s["common_name"]
+        key = name.lower()
+        name_display[key] = name  # prefer sighting names (title case)
+        species_counts[key] += 1
     for o in observations:
-        species_counts[o["common_name"]] += 1
-    stats["top_species"] = species_counts.most_common(5)
+        name = o["common_name"]
+        key = name.lower()
+        if key not in name_display:
+            name_display[key] = name
+        species_counts[key] += 1
+    # Convert back to display names
+    stats["top_species"] = [(name_display[k], count) for k, count in species_counts.most_common(5)]
 
     # Single-sighting species (rare finds) - species seen only once total
     stats["single_sighting_species"] = [
@@ -478,6 +664,23 @@ def build_site(output_path: Path):
     html = template.render(**base_context)
     (output_path / "colophon.html").write_text(html)
 
+    # Generate rules.html
+    template = env.get_template("rules.html")
+    html = template.render(**base_context)
+    (output_path / "rules.html").write_text(html)
+
+    # Generate moon-phases.html
+    template = env.get_template("moon-phases.html")
+    html = template.render(**base_context)
+    (output_path / "moon-phases.html").write_text(html)
+
+    # Generate highlights.html
+    highlight_ids = config.get("highlight_sightings", [])
+    highlight_sightings = [sightings_by_id[sid] for sid in highlight_ids if sid in sightings_by_id]
+    template = env.get_template("highlights.html")
+    html = template.render(**base_context, highlight_sightings=highlight_sightings)
+    (output_path / "highlights.html").write_text(html)
+
     # Generate browse.html
     template = env.get_template("browse.html")
     html = template.render(**base_context)
@@ -542,15 +745,29 @@ def build_site(output_path: Path):
 
     # Generate individual sighting pages
     template = env.get_template("sighting.html")
+
+    # Build observation timelines for all species
+    species_timelines = build_species_timelines(sightings, observations)
+    timeline_months = get_timeline_months()
+
     for idx, sighting in enumerate(sightings):
         # Prev/next navigation (sightings sorted newest first)
         prev_sighting = sightings[idx - 1] if idx > 0 else None
         next_sighting = sightings[idx + 1] if idx < len(sightings) - 1 else None
+
+        # Get timeline for this species
+        sci_name = sighting.get("scientific_name", "").strip().lower()
+        timeline = species_timelines.get(sci_name, [0] * 52)
+        timeline_max = max(timeline) if timeline else 0
+
         html = template.render(
             **base_context,
             sighting=sighting,
             prev_sighting=prev_sighting,
             next_sighting=next_sighting,
+            timeline=timeline,
+            timeline_months=timeline_months,
+            timeline_max=timeline_max,
         )
         (output_path / "sightings" / f"{sighting['id']}.html").write_text(html)
 

@@ -5,8 +5,10 @@
 {% block content %}
 <div class="container">
     <h1>Browse Sightings</h1>
+    <p class="page-intro">Every creature photographed in the square meter, all in one place. Click any image to see details. Use the dropdowns below to filter by category, season, or time of day.</p>
 
     <div class="filters">
+        <label for="filter-category" class="visually-hidden">Filter by category</label>
         <select id="filter-category">
             <option value="">All Categories</option>
             {% for cat in config.categories %}
@@ -14,6 +16,7 @@
             {% endfor %}
         </select>
 
+        <label for="filter-season" class="visually-hidden">Filter by season</label>
         <select id="filter-season">
             <option value="">All Seasons</option>
             {% for season in config.season_definitions.keys() %}
@@ -21,6 +24,7 @@
             {% endfor %}
         </select>
 
+        <label for="filter-time" class="visually-hidden">Filter by time of day</label>
         <select id="filter-time">
             <option value="">All Times</option>
             <option value="morning">Morning</option>
@@ -29,6 +33,7 @@
             <option value="night">Night</option>
         </select>
 
+        <label for="filter-tag" class="visually-hidden">Filter by tag</label>
         <select id="filter-tag">
             <option value="">All Tags</option>
             {% set all_tags = [] %}
@@ -44,7 +49,7 @@
             {% endfor %}
         </select>
 
-        <span class="filter-count"><span id="visible-count">{{ sightings | length }}</span> sightings</span>
+        <span class="filter-count" aria-live="polite"><span id="visible-count">{{ sightings | length }}</span> sightings</span>
     </div>
 
     {% if sightings %}
@@ -73,6 +78,14 @@
         </a>
         {% endfor %}
     </div>
+
+    <nav class="pagination" id="pagination" aria-label="Sightings pagination">
+        <button id="prev-page" aria-label="Go to previous page">← Previous</button>
+        <span class="pagination-info">
+            Page <span id="current-page">1</span> of <span id="total-pages">1</span>
+        </span>
+        <button id="next-page" aria-label="Go to next page">Next →</button>
+    </nav>
     {% else %}
     <p class="no-data">No sightings yet. Check back soon!</p>
     {% endif %}
@@ -80,6 +93,9 @@
 
 <script>
 (function() {
+    const ITEMS_PER_PAGE = 100;
+    let currentPage = 1;
+
     const categoryFilter = document.getElementById('filter-category');
     const seasonFilter = document.getElementById('filter-season');
     const timeFilter = document.getElementById('filter-time');
@@ -87,31 +103,80 @@
     const visibleCount = document.getElementById('visible-count');
     const cards = document.querySelectorAll('.sighting-card');
 
-    function filterSightings() {
+    const pagination = document.getElementById('pagination');
+    const prevBtn = document.getElementById('prev-page');
+    const nextBtn = document.getElementById('next-page');
+    const currentPageSpan = document.getElementById('current-page');
+    const totalPagesSpan = document.getElementById('total-pages');
+
+    function updateDisplay() {
         const category = categoryFilter.value;
         const season = seasonFilter.value;
         const time = timeFilter.value;
         const tag = tagFilter.value;
-        let count = 0;
 
-        cards.forEach(card => {
+        // Filter all cards
+        const visibleCards = Array.from(cards).filter(card => {
             const matchCategory = !category || card.dataset.category === category;
             const matchSeason = !season || card.dataset.season === season;
             const matchTime = !time || card.dataset.time === time;
             const cardTags = card.dataset.tags ? card.dataset.tags.split(',') : [];
             const matchTag = !tag || cardTags.includes(tag);
-            const visible = matchCategory && matchSeason && matchTime && matchTag;
-            card.style.display = visible ? '' : 'none';
-            if (visible) count++;
+            return matchCategory && matchSeason && matchTime && matchTag;
         });
 
-        visibleCount.textContent = count;
+        // Calculate pagination
+        const totalPages = Math.ceil(visibleCards.length / ITEMS_PER_PAGE) || 1;
+        currentPage = Math.min(currentPage, totalPages);
+
+        const startIdx = (currentPage - 1) * ITEMS_PER_PAGE;
+        const endIdx = startIdx + ITEMS_PER_PAGE;
+
+        // Hide all cards first
+        cards.forEach(card => card.style.display = 'none');
+
+        // Show only current page of filtered cards
+        visibleCards.slice(startIdx, endIdx).forEach(card => {
+            card.style.display = '';
+        });
+
+        // Update UI
+        visibleCount.textContent = visibleCards.length;
+        currentPageSpan.textContent = currentPage;
+        totalPagesSpan.textContent = totalPages;
+        prevBtn.disabled = currentPage <= 1;
+        nextBtn.disabled = currentPage >= totalPages;
+
+        // Hide pagination if only one page
+        pagination.style.display = totalPages <= 1 ? 'none' : 'flex';
     }
 
-    categoryFilter.addEventListener('change', filterSightings);
-    seasonFilter.addEventListener('change', filterSightings);
-    timeFilter.addEventListener('change', filterSightings);
-    tagFilter.addEventListener('change', filterSightings);
+    function onFilterChange() {
+        currentPage = 1;
+        updateDisplay();
+    }
+
+    prevBtn.addEventListener('click', function() {
+        if (currentPage > 1) {
+            currentPage--;
+            updateDisplay();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    });
+
+    nextBtn.addEventListener('click', function() {
+        currentPage++;
+        updateDisplay();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    categoryFilter.addEventListener('change', onFilterChange);
+    seasonFilter.addEventListener('change', onFilterChange);
+    timeFilter.addEventListener('change', onFilterChange);
+    tagFilter.addEventListener('change', onFilterChange);
+
+    // Initial display
+    updateDisplay();
 })();
 </script>
 {% endblock %}

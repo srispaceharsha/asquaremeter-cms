@@ -110,6 +110,91 @@ def normalize_name(name: str, existing_names: set) -> str:
     return title_name
 
 
+def validate_scientific_name(name: str) -> tuple[bool, str, str]:
+    """
+    Validate and normalize scientific name format.
+    Returns (is_valid, normalized_name, error_message)
+
+    Rules:
+    - Genus species (two words): Genus capitalized, species lowercase
+    - Genus sp. (unknown species): ends with "sp."
+    - Family/Order sp. also allowed
+    """
+    if not name or not name.strip():
+        return True, "", ""  # Empty is allowed
+
+    name = name.strip()
+    words = name.split()
+
+    if len(words) < 2:
+        return False, name, "Scientific name needs at least two parts (e.g., 'Genus species' or 'Genus sp.')"
+
+    # Normalize: First word capitalized, rest lowercase
+    normalized = words[0].capitalize()
+    for word in words[1:]:
+        normalized += " " + word.lower()
+
+    # Check for "sp" without period
+    if normalized.endswith(" sp"):
+        return False, normalized, "Did you mean 'sp.' with a period? (e.g., 'Camponotus sp.')"
+
+    # Warn if more than 2 words and not ending in sp.
+    if len(words) > 2 and not normalized.endswith(" sp."):
+        print(f"  Note: '{normalized}' has more than 2 words. Is this correct?")
+
+    return True, normalized, ""
+
+
+def validate_common_name(name: str) -> tuple[bool, str, str]:
+    """
+    Validate common name format.
+    Returns (is_valid, normalized_name, error_message)
+    """
+    if not name or not name.strip():
+        return False, "", "Common name is required"
+
+    name = name.strip()
+
+    # Check for obvious issues
+    if "(" in name and ")" in name:
+        return False, name, "Common name should not contain scientific name in parentheses. Enter them separately."
+
+    # Check minimum length
+    if len(name) < 2:
+        return False, name, "Common name too short"
+
+    # Normalize to title case
+    normalized = to_title_case(name)
+
+    return True, normalized, ""
+
+
+def validate_category(category: str, valid_categories: list) -> tuple[bool, str, str]:
+    """Validate category against allowed values."""
+    category = category.strip().lower()
+    if category not in valid_categories:
+        return False, category, f"Invalid category. Choose from: {', '.join(valid_categories)}"
+    return True, category, ""
+
+
+def prompt_with_validation(prompt_text: str, validator_fn, *validator_args, allow_empty: bool = False) -> str:
+    """Generic prompt that keeps asking until valid input is provided."""
+    while True:
+        value = input(prompt_text).strip()
+
+        if not value and allow_empty:
+            return ""
+
+        is_valid, normalized, error = validator_fn(value, *validator_args)
+
+        if is_valid:
+            if normalized != value and normalized:
+                print(f"  → Normalized to: {normalized}")
+            return normalized
+        else:
+            print(f"  ✗ {error}")
+
+
 def get_exif_date(image_path: Path) -> Optional[datetime]:
     """Extract DateTimeOriginal from image EXIF data"""
     try:
@@ -402,22 +487,39 @@ def cmd_add(args):
         existing_species = set(s["common_name"] for s in sightings)
         existing_species.update(o["common_name"] for o in observations)
 
-        # Collect metadata
-        common_name_input = input("Common name: ").strip()
-        common_name = normalize_name(common_name_input, existing_species)
-        if common_name != common_name_input:
-            print(f"  → Normalized to: {common_name}")
+        # Collect metadata with validation
+        while True:
+            common_name_input = input("Common name: ").strip()
+            is_valid, common_name, error = validate_common_name(common_name_input)
+            if is_valid:
+                # Also check against existing names for normalization
+                common_name = normalize_name(common_name, existing_species)
+                if common_name != common_name_input:
+                    print(f"  → Normalized to: {common_name}")
+                break
+            print(f"  ✗ {error}")
 
-        scientific_name = input("Scientific name (blank if unknown): ").strip()
+        while True:
+            scientific_name_input = input("Scientific name (blank if unknown): ").strip()
+            if not scientific_name_input:
+                scientific_name = ""
+                break
+            is_valid, scientific_name, error = validate_scientific_name(scientific_name_input)
+            if is_valid:
+                if scientific_name != scientific_name_input:
+                    print(f"  → Normalized to: {scientific_name}")
+                break
+            print(f"  ✗ {error}")
 
-        # Category selection
+        # Category selection with validation
         categories = config["categories"]
         cat_str = "/".join(categories)
         while True:
-            category = input(f"Category [{cat_str}]: ").strip().lower()
-            if category in categories:
+            category_input = input(f"Category [{cat_str}]: ").strip()
+            is_valid, category, error = validate_category(category_input, categories)
+            if is_valid:
                 break
-            print(f"Invalid category. Choose from: {cat_str}")
+            print(f"  ✗ {error}")
 
         notes = input("Notes: ").strip()
 
@@ -429,6 +531,17 @@ def cmd_add(args):
                 size_mm = float(size_input)
             except ValueError:
                 print("Invalid size, skipping.")
+
+        # ID Certainty (optional)
+        print("ID Certainty: [H]igh, [M]edium, [L]ow, or skip")
+        certainty_input = input("ID Certainty: ").strip().lower()
+        id_certainty = None
+        if certainty_input in ["h", "high"]:
+            id_certainty = "high"
+        elif certainty_input in ["m", "medium"]:
+            id_certainty = "medium"
+        elif certainty_input in ["l", "low"]:
+            id_certainty = "low"
 
         # Time of day - infer from capture time
         inferred_tod = get_time_of_day(captured_at)
@@ -526,6 +639,7 @@ def cmd_add(args):
             "season": season,
             "notes": notes,
             "size_mm": size_mm,
+            "id_certainty": id_certainty,
             "created_at": datetime.now(local_tz).isoformat(),
         }
 
@@ -764,20 +878,45 @@ def cmd_edit(args):
     print(f"Editing: {sighting['id']} - {sighting['common_name']}")
     print("Press Enter to keep current value.\n")
 
-    # Edit fields
-    new_name = input(f"Common name [{sighting['common_name']}]: ").strip()
-    if new_name:
-        sighting["common_name"] = new_name
-
-    new_sci = input(f"Scientific name [{sighting['scientific_name']}]: ").strip()
-    if new_sci:
-        sighting["scientific_name"] = new_sci
-
     config = load_config()
+
+    # Edit common name with validation
+    while True:
+        new_name = input(f"Common name [{sighting['common_name']}]: ").strip()
+        if not new_name:
+            break  # Keep current
+        is_valid, normalized, error = validate_common_name(new_name)
+        if is_valid:
+            sighting["common_name"] = normalized
+            if normalized != new_name:
+                print(f"  → Normalized to: {normalized}")
+            break
+        print(f"  ✗ {error}")
+
+    # Edit scientific name with validation
+    while True:
+        new_sci = input(f"Scientific name [{sighting['scientific_name']}]: ").strip()
+        if not new_sci:
+            break  # Keep current
+        is_valid, normalized, error = validate_scientific_name(new_sci)
+        if is_valid:
+            sighting["scientific_name"] = normalized
+            if normalized != new_sci:
+                print(f"  → Normalized to: {normalized}")
+            break
+        print(f"  ✗ {error}")
+
+    # Edit category with validation
     cat_str = "/".join(config["categories"])
-    new_cat = input(f"Category [{sighting['category']}] ({cat_str}): ").strip().lower()
-    if new_cat and new_cat in config["categories"]:
-        sighting["category"] = new_cat
+    while True:
+        new_cat = input(f"Category [{sighting['category']}] ({cat_str}): ").strip()
+        if not new_cat:
+            break  # Keep current
+        is_valid, normalized, error = validate_category(new_cat, config["categories"])
+        if is_valid:
+            sighting["category"] = normalized
+            break
+        print(f"  ✗ {error}")
 
     new_notes = input(f"Notes [{sighting['notes']}]: ").strip()
     if new_notes:
@@ -792,6 +931,18 @@ def cmd_edit(args):
             sighting["size_mm"] = float(new_size)
         except ValueError:
             print("Invalid size, keeping current value.")
+
+    # ID Certainty
+    current_certainty = sighting.get('id_certainty', '')
+    certainty_display = current_certainty if current_certainty else 'not set'
+    print(f"ID Certainty [{certainty_display}]: [H]igh, [M]edium, [L]ow, or skip")
+    new_certainty = input("ID Certainty: ").strip().lower()
+    if new_certainty in ["h", "high"]:
+        sighting["id_certainty"] = "high"
+    elif new_certainty in ["m", "medium"]:
+        sighting["id_certainty"] = "medium"
+    elif new_certainty in ["l", "low"]:
+        sighting["id_certainty"] = "low"
 
     # Time of day
     current_tod = sighting.get('time_of_day', '')
@@ -1112,6 +1263,9 @@ def main():
     addimage_parser.add_argument("image", help="Path to image file")
     addimage_parser.add_argument("--keep", "-k", action="store_true", help="Keep source file (don't delete)")
 
+    # logweb command
+    subparsers.add_parser("logweb", help="Open web UI for logging observations")
+
     args = parser.parse_args()
 
     if args.command == "add":
@@ -1130,6 +1284,9 @@ def main():
         cmd_status(args)
     elif args.command == "addimage":
         cmd_addimage(args)
+    elif args.command == "logweb":
+        import logweb
+        logweb.main()
     else:
         parser.print_help()
 

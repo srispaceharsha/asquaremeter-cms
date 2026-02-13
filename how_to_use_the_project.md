@@ -185,7 +185,21 @@ The post will appear in the Posts section and RSS feed.
 
 For species you see frequently (like carpenter ants), you can quickly log sightings without adding photos. This keeps a count for your records without cluttering your site with repetitive images.
 
-### Quick Log Sightings
+### Option 1: Web UI (Recommended)
+
+```bash
+uv run python pipeline.py logweb
+```
+
+Opens a local web page at http://localhost:8001 where you can:
+- See all species with thumbnails
+- Filter by category or search by name
+- Check multiple species at once
+- Submit with one click
+
+Species already logged today are grayed out to avoid duplicates.
+
+### Option 2: Command Line
 
 ```bash
 # Interactive mode (shows known species, prompts for input)
@@ -215,11 +229,20 @@ Time of day [morning/afternoon/evening/night]: morning
 Logged 2 observation(s)
 ```
 
-### Auto-Correction
+### Auto-Correction & Validation
 
-Names are automatically normalized to Title Case and matched against existing species to prevent duplicates from typos:
-- `carpenter ant` → `Carpenter Ant`
-- `WOLF SPIDER` → `Wolf Spider`
+Names are automatically validated and normalized:
+
+**Common names:**
+- Converted to Title Case: `carpenter ant` → `Carpenter Ant`
+- Matched against existing species to prevent duplicates
+- Cannot contain scientific names in parentheses (enter them separately)
+
+**Scientific names:**
+- Format: `Genus species` or `Genus sp.` for unknown species
+- Genus is capitalized, species is lowercase: `Camponotus parius`
+- Must end with `sp.` (with period) for unknown species
+- Example error: `Camponotus sp` → "Did you mean 'sp.' with a period?"
 
 Quick logs are saved to `data/observations.json` and included in your statistics (total count and unique species), but they don't create individual pages on the site.
 
@@ -408,7 +431,10 @@ uv run python pipeline.py add
 # Add specific file
 uv run python pipeline.py add --file path/to/image.jpg
 
-# Quick log common species (no photo)
+# Quick log via web UI (recommended)
+uv run python pipeline.py logweb
+
+# Quick log via command line
 uv run python pipeline.py log
 uv run python pipeline.py log "Carpenter Ant"
 uv run python pipeline.py log "Carpenter Ant, Wolf Spider, Tropical Fire Ant"

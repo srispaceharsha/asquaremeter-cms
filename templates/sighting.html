@@ -42,9 +42,9 @@
         </div>
 
         <!-- Lightbox Modal -->
-        <div id="lightbox" class="lightbox">
-            <button class="lightbox-close">&times;</button>
-            <img class="lightbox-image" src="" alt="">
+        <div id="lightbox" class="lightbox" role="dialog" aria-label="Image viewer">
+            <button class="lightbox-close" aria-label="Close image viewer">&times;</button>
+            <img class="lightbox-image" src="" alt="{{ sighting.common_name }}">
         </div>
         {% endif %}
 
@@ -84,6 +84,13 @@
                     <span class="tag">{{ tag }}</span>
                     {% endfor %}
                 </div>
+            </div>
+            {% endif %}
+
+            {% if sighting.id_certainty %}
+            <div class="meta-group">
+                <h3>ID Certainty</h3>
+                <span class="certainty-badge certainty-{{ sighting.id_certainty | lower }}">{{ sighting.id_certainty | upper }}</span>
             </div>
             {% endif %}
 
@@ -153,6 +160,32 @@
         <div class="sighting-notes">
             <h3>Notes</h3>
             <p>{{ sighting.notes }}</p>
+        </div>
+        {% endif %}
+
+        {% if timeline and timeline_max > 0 %}
+        <div class="observation-timeline">
+            <h3>Observations of {{ sighting.common_name }}</h3>
+            <div class="timeline-chart">
+                <div class="timeline-y-axis">
+                    {% for i in range(7, 0, -1) %}
+                    <span class="y-tick">{{ i }}</span>
+                    {% endfor %}
+                </div>
+                <div class="timeline-main">
+                    <div class="timeline-bars">
+                        {% for count in timeline %}
+                        <div class="timeline-bar" style="height: {{ (count / 7 * 100) }}%;" title="Week {{ loop.index }}: {{ count }} observation{{ 's' if count != 1 else '' }}">
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="timeline-months">
+                        {% for m in timeline_months %}
+                        <span class="month-label" style="left: {{ (m.week / 52 * 100) }}%;">{{ m.label }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
         </div>
         {% endif %}
 

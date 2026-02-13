@@ -11,11 +11,13 @@
     {% block head %}{% endblock %}
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="site-header">
         <div class="container">
             <a href="{{ base_url }}/" class="site-title">{{ config.site_title }}</a>
-            <nav class="site-nav">
+            <nav class="site-nav" aria-label="Main navigation">
                 <a href="{{ base_url }}/about.html">About</a>
+                <a href="{{ base_url }}/highlights.html">Highlights</a>
                 <a href="{{ base_url }}/posts/">Posts</a>
                 <a href="{{ base_url }}/browse.html">Browse</a>
                 <a href="{{ base_url }}/tree.html">Tree</a>
@@ -24,7 +26,7 @@
         </div>
     </header>
 
-    <main class="site-main">
+    <main class="site-main" id="main-content">
         {% block content %}{% endblock %}
     </main>
 
