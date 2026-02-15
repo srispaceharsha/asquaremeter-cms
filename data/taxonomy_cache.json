@@ -1972,5 +1972,68 @@
     "canonical_name": "Alternanthera ficoidea",
     "match_type": "EXACT"
   },
-  "dendryphantina sp.": null
+  "dendryphantina sp.": null,
+  "camponotus sericeus": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Formicidae",
+    "genus": "Camponotus",
+    "species": "Camponotus sericeus",
+    "gbif_key": 5034753,
+    "canonical_name": "Camponotus sericeus",
+    "match_type": "EXACT"
+  },
+  "macrosiphini sp.": null,
+  "sarcophaginae sp.": null,
+  "paragus crenulatus": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Diptera",
+    "family": "Syrphidae",
+    "genus": "Paragus",
+    "species": "Paragus crenulatus",
+    "gbif_key": 1535725,
+    "canonical_name": "Paragus crenulatus",
+    "match_type": "EXACT"
+  },
+  "pipunculinae sp.": null,
+  "bradina sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Crambidae",
+    "genus": "Bradina",
+    "species": "Bradina",
+    "gbif_key": 1885792,
+    "canonical_name": "Bradina",
+    "match_type": "HIGHERRANK"
+  },
+  "carinostigmus sp.": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Crabronidae",
+    "genus": "Carinostigmus",
+    "species": "Carinostigmus",
+    "gbif_key": 4674675,
+    "canonical_name": "Carinostigmus",
+    "match_type": "HIGHERRANK"
+  },
+  "rungia pectinata": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Lamiales",
+    "family": "Acanthaceae",
+    "genus": "Rungia",
+    "species": "Rungia pectinata",
+    "gbif_key": 3780135,
+    "canonical_name": "Rungia pectinata",
+    "match_type": "EXACT"
+  }
 }

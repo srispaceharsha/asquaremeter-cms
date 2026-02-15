@@ -852,6 +852,17 @@ li {
     margin-bottom: 0;
 }
 
+/* Stacked meta-groups for Tags + ID Certainty */
+.meta-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.meta-stack .meta-group {
+    flex: 1;
+}
+
 .tags-list {
     display: flex;
     flex-wrap: wrap;

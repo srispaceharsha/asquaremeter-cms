@@ -14051,5 +14051,1382 @@
       "sunrise": "06:54",
       "sunset": "18:36"
     }
+  },
+  {
+    "date": "2026-02-13",
+    "time": "14:25",
+    "common_name": "ground beetle",
+    "scientific_name": "bembidion quadrimaculatum",
+    "time_of_day": "afternoon",
+    "note": "",
+    "created_at": "2026-02-13T14:25:35.899692+05:30",
+    "weather": {
+      "temp_max_c": 28.8,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 61,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 314,
+      "soil_temp_c": null,
+      "uv_index": 8.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.2,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-13",
+    "time": "14:25",
+    "common_name": "tropical fire ant",
+    "scientific_name": "solenopsis geminata",
+    "time_of_day": "afternoon",
+    "note": "",
+    "created_at": "2026-02-13T14:25:35.899692+05:30",
+    "weather": {
+      "temp_max_c": 28.8,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 61,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 314,
+      "soil_temp_c": null,
+      "uv_index": 8.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.2,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-13",
+    "time": "14:25",
+    "common_name": "lynx spider",
+    "scientific_name": "oxyopes sertatus",
+    "time_of_day": "afternoon",
+    "note": "",
+    "created_at": "2026-02-13T14:25:35.899692+05:30",
+    "weather": {
+      "temp_max_c": 28.8,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 61,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 314,
+      "soil_temp_c": null,
+      "uv_index": 8.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.2,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-13",
+    "time": "16:21",
+    "common_name": "smooth-headed mummy wasp",
+    "scientific_name": "aleiodes politiceps",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-02-13T16:21:55.070679+05:30",
+    "weather": {
+      "temp_max_c": 28.6,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 62,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 21.8,
+      "wind_direction_deg": 316,
+      "soil_temp_c": null,
+      "uv_index": 8.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.2,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-13",
+    "time": "16:21",
+    "common_name": "snail-killing fly",
+    "scientific_name": "sciomyzidae sp.",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-02-13T16:21:55.070679+05:30",
+    "weather": {
+      "temp_max_c": 28.6,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 62,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 21.8,
+      "wind_direction_deg": 316,
+      "soil_temp_c": null,
+      "uv_index": 8.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.2,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-13",
+    "time": "18:18",
+    "common_name": "golden-backed ant",
+    "scientific_name": "polyrhachis sp.",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-02-13T18:18:17.371435+05:30",
+    "weather": {
+      "temp_max_c": 28.6,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 62,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 21.8,
+      "wind_direction_deg": 316,
+      "soil_temp_c": null,
+      "uv_index": 8.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.2,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-13",
+    "time": "19:19",
+    "common_name": "black dump fly",
+    "scientific_name": "hydrotaea aenescens",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-13T19:19:40.620870+05:30",
+    "weather": {
+      "temp_max_c": 28.6,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 62,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 21.8,
+      "wind_direction_deg": 316,
+      "soil_temp_c": null,
+      "uv_index": 8.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.2,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-13",
+    "time": "19:19",
+    "common_name": "chalcid wasp",
+    "scientific_name": "eurytomidae sp.",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-13T19:19:40.620870+05:30",
+    "weather": {
+      "temp_max_c": 28.6,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 62,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 21.8,
+      "wind_direction_deg": 316,
+      "soil_temp_c": null,
+      "uv_index": 8.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.2,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-13",
+    "time": "21:11",
+    "common_name": "bot fly",
+    "scientific_name": "chetogena sp.",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-13T21:11:17.568256+05:30",
+    "weather": {
+      "temp_max_c": 28.6,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 62,
+      "pressure_hpa": 1011.4,
+      "wind_speed_kmh": 21.8,
+      "wind_direction_deg": 316,
+      "soil_temp_c": null,
+      "uv_index": 8.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.2,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-13",
+    "time": "21:21",
+    "common_name": "armed spiny ant",
+    "scientific_name": "polyrhachis armata sp.",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-13T21:21:47.431584+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 62,
+      "pressure_hpa": 1011.3,
+      "wind_speed_kmh": 21.8,
+      "wind_direction_deg": 316,
+      "soil_temp_c": null,
+      "uv_index": 8.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.2,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-13",
+    "time": "21:21",
+    "common_name": "lynx spider",
+    "scientific_name": "oxyopes salticus",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-13T21:21:57.465490+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 62,
+      "pressure_hpa": 1011.3,
+      "wind_speed_kmh": 21.8,
+      "wind_direction_deg": 316,
+      "soil_temp_c": null,
+      "uv_index": 8.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.2,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-13",
+    "time": "21:26",
+    "common_name": "white rice leafhopper",
+    "scientific_name": "cofana spectra",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-13T21:26:31.894123+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 62,
+      "pressure_hpa": 1011.3,
+      "wind_speed_kmh": 21.8,
+      "wind_direction_deg": 314,
+      "soil_temp_c": null,
+      "uv_index": 8.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.2,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-13",
+    "time": "21:26",
+    "common_name": "tailed grass crab spider",
+    "scientific_name": "monaeses sp.",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-13T21:26:31.894123+05:30",
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 62,
+      "pressure_hpa": 1011.3,
+      "wind_speed_kmh": 21.8,
+      "wind_direction_deg": 314,
+      "soil_temp_c": null,
+      "uv_index": 8.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.2,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "08:12",
+    "common_name": "planthopper nymph",
+    "scientific_name": "metadelphax propinqua",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-14T08:12:20.039175+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 74,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.9,
+      "wind_direction_deg": 305,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "08:12",
+    "common_name": "carpenter ant",
+    "scientific_name": "camponotus parius",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-14T08:12:34.228118+05:30",
+    "weather": {
+      "temp_max_c": null,
+      "temp_min_c": null,
+      "precipitation_mm": null,
+      "conditions": "Unknown",
+      "humidity_percent": null,
+      "pressure_hpa": null,
+      "wind_speed_kmh": null,
+      "wind_direction_deg": null,
+      "soil_temp_c": null,
+      "uv_index": null
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "08:12",
+    "common_name": "banded pearl",
+    "scientific_name": "sameodes cancellalis",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-14T08:12:45.759512+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 74,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.9,
+      "wind_direction_deg": 305,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "08:13",
+    "common_name": "lynx spider",
+    "scientific_name": "oxyopes salticus",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-14T08:13:01.435776+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 74,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.9,
+      "wind_direction_deg": 305,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "08:23",
+    "common_name": "rusty plum aphid",
+    "scientific_name": "hysteroneura setariae",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-14T08:23:51.802565+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 74,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.9,
+      "wind_direction_deg": 305,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "08:23",
+    "common_name": "tailed grass crab spider",
+    "scientific_name": "monaeses sp.",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-14T08:23:51.802565+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 74,
+      "pressure_hpa": 1010.8,
+      "wind_speed_kmh": 19.9,
+      "wind_direction_deg": 305,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "11:40",
+    "common_name": "acrobat ant",
+    "scientific_name": "crematogaster sp.",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-14T11:40:33.902762+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 18.9,
+      "wind_direction_deg": 294,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "11:40",
+    "common_name": "bean weevil",
+    "scientific_name": "chrysomelidae sp.",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-14T11:40:33.902762+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 18.9,
+      "wind_direction_deg": 294,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "11:40",
+    "common_name": "golden-backed ant",
+    "scientific_name": "polyrhachis sp.",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-14T11:40:33.902762+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 18.9,
+      "wind_direction_deg": 294,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "15:51",
+    "common_name": "black scavenger fly",
+    "scientific_name": "sepsidae sp.",
+    "time_of_day": "afternoon",
+    "note": "",
+    "created_at": "2026-02-14T15:51:21.053163+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "15:51",
+    "common_name": "bornean queenless ant",
+    "scientific_name": "diacamma rugosum",
+    "time_of_day": "afternoon",
+    "note": "",
+    "created_at": "2026-02-14T15:51:21.053163+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "18:56",
+    "common_name": "armed spiny ant",
+    "scientific_name": "polyrhachis armata sp.",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-02-14T18:56:57.887537+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "18:56",
+    "common_name": "ghost ant",
+    "scientific_name": "tapinoma melanocephalum",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-02-14T18:56:57.887537+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "18:56",
+    "common_name": "silky sugar ant",
+    "scientific_name": "camponotus sericeus",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-02-14T18:56:57.887537+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "18:56",
+    "common_name": "sugar ant",
+    "scientific_name": "camponotus carin",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-02-14T18:56:57.887537+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "18:56",
+    "common_name": "tropical fire ant",
+    "scientific_name": "solenopsis geminata",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-02-14T18:56:57.887537+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "18:56",
+    "common_name": "weaver ant",
+    "scientific_name": "oecophylla smaragdina",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-02-14T18:56:57.887537+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "19:01",
+    "common_name": "chalcidoid wasp",
+    "scientific_name": "chalcidoidea sp.",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-14T19:01:49.411290+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "19:01",
+    "common_name": "shield bug",
+    "scientific_name": "eysarcoris guttigerus",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-14T19:01:49.411290+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "19:03",
+    "common_name": "skin beetle",
+    "scientific_name": "dermestidae sp.",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-14T19:03:34.568523+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "19:03",
+    "common_name": "white-backed planthopper",
+    "scientific_name": "sogatella furcifera",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-14T19:03:34.568523+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "19:03",
+    "common_name": "whitefly",
+    "scientific_name": "aleyrodidae sp.",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-14T19:03:34.568523+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "19:05",
+    "common_name": "chalcid wasp",
+    "scientific_name": "eurytomidae sp.",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-14T19:05:10.418032+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "19:05",
+    "common_name": "micro bee",
+    "scientific_name": "mythicomyiidae sp.",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-14T19:05:10.418032+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "19:07",
+    "common_name": "chalcidoid wasp",
+    "scientific_name": "eurytoma sp.",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-14T19:07:02.089742+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "19:07",
+    "common_name": "transverse ladybird",
+    "scientific_name": "coccinella transversalis",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-14T19:07:38.369783+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "19:43",
+    "common_name": "bindweed seedeating bug",
+    "scientific_name": "graptostethus servus",
+    "time_of_day": "evening",
+    "note": "",
+    "created_at": "2026-02-14T19:43:22.005051+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "time": "19:47",
+    "common_name": "naio thrips",
+    "scientific_name": "klambothrips myopori",
+    "time_of_day": "night",
+    "note": "",
+    "created_at": "2026-02-14T19:47:41.155942+05:30",
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-15",
+    "time": "09:36",
+    "common_name": "acrobat ant",
+    "scientific_name": "crematogaster sp.",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-15T09:36:17.498393+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 25.9,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 78,
+      "pressure_hpa": 1011.1,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 306,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.07,
+      "sunrise": "06:53",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-15",
+    "time": "09:36",
+    "common_name": "bornean queenless ant",
+    "scientific_name": "diacamma rugosum",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-15T09:36:17.498393+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 25.9,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 78,
+      "pressure_hpa": 1011.1,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 306,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.07,
+      "sunrise": "06:53",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-15",
+    "time": "09:36",
+    "common_name": "carpenter ant",
+    "scientific_name": "camponotus parius",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-15T09:36:17.498393+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 25.9,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 78,
+      "pressure_hpa": 1011.1,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 306,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.07,
+      "sunrise": "06:53",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-15",
+    "time": "09:36",
+    "common_name": "ghost ant",
+    "scientific_name": "tapinoma melanocephalum",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-15T09:36:17.498393+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 25.9,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 78,
+      "pressure_hpa": 1011.1,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 306,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.07,
+      "sunrise": "06:53",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-15",
+    "time": "09:36",
+    "common_name": "golden-backed ant",
+    "scientific_name": "polyrhachis sp.",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-15T09:36:17.498393+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 25.9,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 78,
+      "pressure_hpa": 1011.1,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 306,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.07,
+      "sunrise": "06:53",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-15",
+    "time": "09:36",
+    "common_name": "silky sugar ant",
+    "scientific_name": "camponotus sericeus",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-15T09:36:17.498393+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 25.9,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 78,
+      "pressure_hpa": 1011.1,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 306,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.07,
+      "sunrise": "06:53",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-15",
+    "time": "09:36",
+    "common_name": "tropical fire ant",
+    "scientific_name": "solenopsis geminata",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-15T09:36:17.498393+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 25.9,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 78,
+      "pressure_hpa": 1011.1,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 306,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.07,
+      "sunrise": "06:53",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-15",
+    "time": "09:36",
+    "common_name": "transverse ladybird",
+    "scientific_name": "coccinella transversalis",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-15T09:36:25.769844+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 25.9,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 78,
+      "pressure_hpa": 1011.1,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 306,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.07,
+      "sunrise": "06:53",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-15",
+    "time": "09:36",
+    "common_name": "rusty plum aphid",
+    "scientific_name": "hysteroneura setariae",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-15T09:36:42.094384+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 25.9,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 78,
+      "pressure_hpa": 1011.1,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 306,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.07,
+      "sunrise": "06:53",
+      "sunset": "18:36"
+    }
+  },
+  {
+    "date": "2026-02-15",
+    "time": "09:37",
+    "common_name": "chalcidoid wasp",
+    "scientific_name": "chalcidoidea sp.",
+    "time_of_day": "morning",
+    "note": "",
+    "created_at": "2026-02-15T09:37:13.073774+05:30",
+    "weather": {
+      "temp_max_c": 28.4,
+      "temp_min_c": 25.9,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 78,
+      "pressure_hpa": 1011.1,
+      "wind_speed_kmh": 21.0,
+      "wind_direction_deg": 306,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.07,
+      "sunrise": "06:53",
+      "sunset": "18:36"
+    }
   }
 ]

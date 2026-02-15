@@ -8574,7 +8574,7 @@
         "caption": ""
       }
     ],
-    "common_name": "bean weevil",
+    "common_name": "Bean Weevil",
     "scientific_name": "Spermophagus sp.",
     "category": "insect",
     "captured_at": "2026-02-10T11:45:14+05:30",
@@ -8954,5 +8954,437 @@
     "notes": "This plant looks angry all the time for some reason. I think it is the spiky flowers.",
     "size_mm": null,
     "created_at": "2026-02-12T09:43:22.082210+05:30"
+  },
+  {
+    "id": "20260212-001",
+    "images": [
+      {
+        "filename": "20260212-001-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260212-001-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260212-001-c.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260212-001-d.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Black Ant Mimicking Jumper",
+    "scientific_name": "Toxeus magnus",
+    "category": "arachnid",
+    "captured_at": "2026-02-12T17:58:46+05:30",
+    "time_of_day": "evening",
+    "tags": [
+      "Spiders"
+    ],
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 25.9,
+      "precipitation_mm": 0,
+      "conditions": "Clear sky",
+      "humidity_percent": 53,
+      "pressure_hpa": 1012.5,
+      "wind_speed_kmh": 22.9,
+      "wind_direction_deg": 30,
+      "soil_temp_c": null,
+      "uv_index": 8.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.28,
+      "sunrise": "06:55",
+      "sunset": "18:35"
+    },
+    "season": "winter",
+    "notes": "I thought it is Corinnomma severum spider, but iNaturalist didn't agree. Let's see.",
+    "size_mm": 5.0,
+    "id_certainty": "medium",
+    "created_at": "2026-02-13T17:50:52.289213+05:30"
+  },
+  {
+    "id": "20260212-002",
+    "images": [
+      {
+        "filename": "20260212-002-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260212-002-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Silky Sugar Ant",
+    "scientific_name": "Camponotus sericeus",
+    "category": "insect",
+    "captured_at": "2026-02-12T11:46:10+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Ants"
+    ],
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 25.9,
+      "precipitation_mm": 0,
+      "conditions": "Clear sky",
+      "humidity_percent": 53,
+      "pressure_hpa": 1012.5,
+      "wind_speed_kmh": 22.9,
+      "wind_direction_deg": 30,
+      "soil_temp_c": null,
+      "uv_index": 8.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.28,
+      "sunrise": "06:55",
+      "sunset": "18:35"
+    },
+    "season": "winter",
+    "notes": "I thought this is Golden-backed Ant (Polyrhachis sp.), but iNaturalist disgrees. So, we go with this.",
+    "size_mm": null,
+    "id_certainty": "high",
+    "created_at": "2026-02-13T17:52:01.725332+05:30"
+  },
+  {
+    "id": "20260212-003",
+    "images": [
+      {
+        "filename": "20260212-003-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260212-003-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260212-003-c.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Typical Flesh Fly",
+    "scientific_name": "Sarcophaginae sp.",
+    "category": "insect",
+    "captured_at": "2026-02-12T07:43:04+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Flies"
+    ],
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 25.9,
+      "precipitation_mm": 0,
+      "conditions": "Clear sky",
+      "humidity_percent": 53,
+      "pressure_hpa": 1012.5,
+      "wind_speed_kmh": 22.9,
+      "wind_direction_deg": 30,
+      "soil_temp_c": null,
+      "uv_index": 8.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.28,
+      "sunrise": "06:55",
+      "sunset": "18:35"
+    },
+    "season": "winter",
+    "notes": "So, I used flash, and it reacted so quickly that it changed its posture by the time camera took the pic. Very fast reaction.",
+    "size_mm": 8.0,
+    "id_certainty": "high",
+    "created_at": "2026-02-13T17:53:33.493389+05:30"
+  },
+  {
+    "id": "20260212-004",
+    "images": [
+      {
+        "filename": "20260212-004-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260212-004-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260212-004-c.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260212-004-d.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260212-004-e.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260212-004-f.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Blackfly Aphid",
+    "scientific_name": "Macrosiphini sp.",
+    "category": "insect",
+    "captured_at": "2026-02-12T08:57:59+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Aphids"
+    ],
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 25.9,
+      "precipitation_mm": 0,
+      "conditions": "Clear sky",
+      "humidity_percent": 53,
+      "pressure_hpa": 1012.5,
+      "wind_speed_kmh": 22.9,
+      "wind_direction_deg": 30,
+      "soil_temp_c": null,
+      "uv_index": 8.05
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.28,
+      "sunrise": "06:55",
+      "sunset": "18:35"
+    },
+    "season": "winter",
+    "notes": "Photographing this was fun. It is so faint to the camera, that the autofocus won't work. It would keep moving, and manually focusing is quite hard.",
+    "size_mm": 5.0,
+    "id_certainty": "high",
+    "created_at": "2026-02-13T17:55:20.188586+05:30"
+  },
+  {
+    "id": "20260213-001",
+    "images": [
+      {
+        "filename": "20260213-001-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260213-001-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260213-001-c.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Big-headed Fly",
+    "scientific_name": "Pipunculinae sp.",
+    "category": "insect",
+    "captured_at": "2026-02-13T09:04:44+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Flies"
+    ],
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 62,
+      "pressure_hpa": 1011.3,
+      "wind_speed_kmh": 21.8,
+      "wind_direction_deg": 314,
+      "soil_temp_c": null,
+      "uv_index": 8.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.2,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    },
+    "season": "winter",
+    "notes": "What a fly. It has big head apparently, so says the biologists.",
+    "size_mm": 4.0,
+    "id_certainty": "high",
+    "created_at": "2026-02-13T21:23:58.178122+05:30"
+  },
+  {
+    "id": "20260213-002",
+    "images": [
+      {
+        "filename": "20260213-002-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260213-002-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260213-002-c.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Hover Fly",
+    "scientific_name": "Paragus crenulatus",
+    "category": "insect",
+    "captured_at": "2026-02-13T09:01:46+05:30",
+    "time_of_day": "morning",
+    "tags": [
+      "Flies"
+    ],
+    "weather": {
+      "temp_max_c": 28.9,
+      "temp_min_c": 26.0,
+      "precipitation_mm": 0,
+      "conditions": "Mainly clear",
+      "humidity_percent": 62,
+      "pressure_hpa": 1011.3,
+      "wind_speed_kmh": 21.8,
+      "wind_direction_deg": 314,
+      "soil_temp_c": null,
+      "uv_index": 8.1
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.2,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    },
+    "season": "winter",
+    "notes": "I love these ones. They hover around the plants. One day I'll click the photo where they are completely hovering.",
+    "size_mm": 4.0,
+    "id_certainty": "high",
+    "created_at": "2026-02-13T21:26:10.992004+05:30"
+  },
+  {
+    "id": "20260214-001",
+    "images": [
+      {
+        "filename": "20260214-001-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260214-001-b.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Aphid Wasp",
+    "scientific_name": "Carinostigmus sp.",
+    "category": "insect",
+    "captured_at": "2026-02-14T12:31:20+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Wasps"
+    ],
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    },
+    "season": "winter",
+    "notes": "Quite appropriately named, I must say. I saw it carrying an aphid and flying away!",
+    "size_mm": 4.0,
+    "id_certainty": "high",
+    "created_at": "2026-02-14T19:23:14.673064+05:30"
+  },
+  {
+    "id": "20260214-002",
+    "images": [
+      {
+        "filename": "20260214-002-a.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260214-002-b.jpg",
+        "caption": ""
+      },
+      {
+        "filename": "20260214-002-c.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Comb Rungia",
+    "scientific_name": "Rungia pectinata",
+    "category": "plant",
+    "captured_at": "2026-02-14T15:31:58+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Plants"
+    ],
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    },
+    "season": "winter",
+    "notes": "So, these flowers are small. Like 1 mm in width may be. YET I saw thrips on them!",
+    "size_mm": null,
+    "id_certainty": "high",
+    "created_at": "2026-02-14T19:24:18.401176+05:30"
+  },
+  {
+    "id": "20260214-003",
+    "images": [
+      {
+        "filename": "20260214-003-a.jpg",
+        "caption": ""
+      }
+    ],
+    "common_name": "Pearl Moth",
+    "scientific_name": "Bradina sp.",
+    "category": "insect",
+    "captured_at": "2026-02-14T15:26:35+05:30",
+    "time_of_day": "afternoon",
+    "tags": [
+      "Moths"
+    ],
+    "weather": {
+      "temp_max_c": 28.5,
+      "temp_min_c": 26.1,
+      "precipitation_mm": 0,
+      "conditions": "Partly cloudy",
+      "humidity_percent": 75,
+      "pressure_hpa": 1010.9,
+      "wind_speed_kmh": 19.1,
+      "wind_direction_deg": 304,
+      "soil_temp_c": null,
+      "uv_index": 8.15
+    },
+    "celestial": {
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": 0.12,
+      "sunrise": "06:54",
+      "sunset": "18:36"
+    },
+    "season": "winter",
+    "notes": "Just managed to get only one photo. It flew away because of my movements.",
+    "size_mm": 10.0,
+    "id_certainty": "high",
+    "created_at": "2026-02-14T19:25:06.951435+05:30"
   }
 ]

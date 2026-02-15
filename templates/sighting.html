@@ -76,21 +76,25 @@
                 </dl>
             </div>
 
-            {% if sighting.tags %}
-            <div class="meta-group">
-                <h3>Tags</h3>
-                <div class="tags-list">
-                    {% for tag in sighting.tags %}
-                    <span class="tag">{{ tag }}</span>
-                    {% endfor %}
+            {% if sighting.tags or sighting.id_certainty %}
+            <div class="meta-stack">
+                {% if sighting.tags %}
+                <div class="meta-group">
+                    <h3>Tags</h3>
+                    <div class="tags-list">
+                        {% for tag in sighting.tags %}
+                        <span class="tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
                 </div>
-            </div>
-            {% endif %}
+                {% endif %}
 
-            {% if sighting.id_certainty %}
-            <div class="meta-group">
-                <h3>ID Certainty</h3>
-                <span class="certainty-badge certainty-{{ sighting.id_certainty | lower }}">{{ sighting.id_certainty | upper }}</span>
+                {% if sighting.id_certainty %}
+                <div class="meta-group">
+                    <h3>ID Certainty</h3>
+                    <span class="certainty-badge certainty-{{ sighting.id_certainty | lower }}">{{ sighting.id_certainty | upper }}</span>
+                </div>
+                {% endif %}
             </div>
             {% endif %}
 
